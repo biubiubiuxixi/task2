@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="../parent/parent.w" __id="id_1" design="device:m;" class="window window cIFjQBf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIFjQBf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/popMenu/popMenu,">  
+  <style xmlns="">.x-menu.cIFjQBf{min-width: 100px} .x-menu.cIFjQBf li.cIFjQBf a.cIFjQBf{color: rgb(31, 31, 31); font-size: 18px; text-align: center} .titleCss.cIFjQBf{background-color: rgba(0, 0, 0, 0.5); font-size: 16px; height: 40px; margin-top: -40px; color: rgb(255, 255, 255); z-index: 100; position: absolute; width: 100%; padding-top: 10px; padding-left: 20px} .x-nav.x-row.cIFjQBf, .x-nav.cIFjQBf .x-col.cIFjQBf{padding: 0; background-color: rgb(250, 250, 250)} .x-nav.cIFjQBf .x-col.cIFjQBf:nth-child(1){height: 41px; overflow: hidden} .x-nav.cIFjQBf .x-col.cIFjQBf:nth-child(2){width: 50px} .x-nav.cIFjQBf .x-col.cIFjQBf .x-navbox.cIFjQBf{height: 61px; overflow-x: scroll; overflow-y: hidden} .x-nav.cIFjQBf .x-col.cIFjQBf .x-navbox.cIFjQBf .x-list.cIFjQBf{width: auto !important; white-space: nowrap; text-overflow: ellipsis} .x-nav.cIFjQBf .btn.cIFjQBf{height: 41px; border-top: 0; font-weight: normal; color: rgb(153, 153, 153)} .x-nav.cIFjQBf .btn.current.cIFjQBf{height: 41px; border-bottom: 2px solid rgb(234, 65, 60); color: rgb(234, 65, 60)} .x-nav.cIFjQBf .navMoreBtn.cIFjQBf{background-color: rgb(225, 225, 225)} .x-popOver-overlay.cIFjQBf{background-color: rgb(0, 0, 0)} .x-popOver-content.cIFjQBf{border-radius: 0} .x-wangyiOver.cIFjQBf h5.cIFjQBf{padding-left: 15px} .x-wangyiOver.cIFjQBf .x-titlebar.cIFjQBf{height: 40px; background-color: rgb(241, 241, 241)} .x-wangyiOver.cIFjQBf .x-navGroup.cIFjQBf{padding-bottom: 0} .x-wangyiOver.cIFjQBf .x-navGroup.cIFjQBf .col-xs-3.cIFjQBf{padding-left: 3px; padding-right: 3px} .x-wangyiOver.cIFjQBf .x-navGroup.cIFjQBf .col-xs-3.cIFjQBf .btn.cIFjQBf{border-color: rgb(204, 204, 204); border-radius: 3px; margin-bottom: 10px; color: rgb(102, 102, 102); display: block} .x-wangyiOver.cIFjQBf .x-navGroup.cIFjQBf .col-xs-3.cIFjQBf .btn.active.cIFjQBf{border-color: red; background-color: rgb(234, 65, 60); color: rgb(255, 255, 255)}</style>  
+  <div xmlns="" xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cIFjQBf" class="cIFjQBf"></div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cIFjQBf" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;menuBtn&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0}" __cid="cIFjQBf"> 
+    <div class="x-popMenu-overlay cIFjQBf" xid="div1" __cid="cIFjQBf"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cIFjQBf" xid="menu1" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cIFjQBf"> 
+      <li class="x-menu-item cIFjQBf" xid="item1" __cid="cIFjQBf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cIFjQBf" xid="firstPage" urlMapping="main" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;首页&quot;}" __cid="cIFjQBf"> 
+          <i xid="i5" __cid="cIFjQBf" class="cIFjQBf"/>  
+          <span xid="span6" __cid="cIFjQBf" class="cIFjQBf">首页</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cIFjQBf" xid="divider1" __cid="cIFjQBf"/>  
+      <li class="x-menu-item cIFjQBf" xid="item2" __cid="cIFjQBf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cIFjQBf" xid="wirtBtn" urlMapping="writing" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;师资培训&quot;}" __cid="cIFjQBf">  
+          <i xid="i6" __cid="cIFjQBf" class="cIFjQBf"/>  
+          <span xid="span7" xui:update-mode="merge-and-replace" __cid="cIFjQBf" class="cIFjQBf">师资培训</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cIFjQBf" xid="divider2" __cid="cIFjQBf"/>  
+      <li class="x-menu-item cIFjQBf" xid="item3" __cid="cIFjQBf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cIFjQBf" xid="wordBtn" urlMapping="word" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;联合科研&quot;}" __cid="cIFjQBf">  
+          <i xid="i7" __cid="cIFjQBf" class="cIFjQBf"/>  
+          <span xid="span8" xui:update-mode="merge-and-replace" __cid="cIFjQBf" class="cIFjQBf">联合科研</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cIFjQBf" xid="divider3" __cid="cIFjQBf"/>  
+      <li class="x-menu-item cIFjQBf" xid="item4" __cid="cIFjQBf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cIFjQBf" xid="readBtn" urlMapping="read" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;专业共建&quot;}" __cid="cIFjQBf">  
+          <i xid="i8" __cid="cIFjQBf" class="cIFjQBf"/>  
+          <span xid="span9" xui:update-mode="merge-and-replace" __cid="cIFjQBf" class="cIFjQBf">专业共建</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cIFjQBf" xid="divider4" __cid="cIFjQBf"/>  
+      <li class="x-menu-item cIFjQBf" xid="item5" __cid="cIFjQBf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cIFjQBf" xid="listenBtn" urlMapping="listen" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;学习论坛&quot;}" __cid="cIFjQBf">  
+          <i xid="i9" __cid="cIFjQBf" class="cIFjQBf"/>  
+          <span xid="span10" xui:update-mode="merge-and-replace" __cid="cIFjQBf" class="cIFjQBf">学习论坛</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cIFjQBf" xid="divider5" __cid="cIFjQBf"/>  
+      <li class="x-menu-item cIFjQBf" xid="item6" __cid="cIFjQBf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cIFjQBf" xid="studyBtn" urlMapping="study" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;考试认证&quot;}" __cid="cIFjQBf">  
+          <i xid="i10" __cid="cIFjQBf" class="cIFjQBf"/>  
+          <span xid="span11" xui:update-mode="merge-and-replace" __cid="cIFjQBf" class="cIFjQBf">考试认证</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cIFjQBf" xid="divider6" __cid="cIFjQBf"/>  
+      <li class="x-menu-item cIFjQBf" xid="item7" __cid="cIFjQBf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cIFjQBf" xid="aboutBtn" urlMapping="about" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;个人中心&quot;}" __cid="cIFjQBf">  
+          <i xid="i11" __cid="cIFjQBf" class="cIFjQBf"/>  
+          <span xid="span12" xui:update-mode="merge-and-replace" __cid="cIFjQBf" class="cIFjQBf">个人中心</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cIFjQBf" xid="divider7" __cid="cIFjQBf"/> 
+    </ul> 
+  </div>  
+  <div xmlns="" xmlns:xui="http://www.justep.com/xui" class="x-popOver x-wangyiOver cIFjQBf" component="$model/UI2/system/components/justep/popOver/popOver" style="height:100%;" xid="popOver" xui:before="panel1" xui:parent="window" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;navMenuTop&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0.5}" __cid="cIFjQBf">  
+    <div class="x-popOver-overlay cIFjQBf" xid="div2" __cid="cIFjQBf"/>  
+    <div class="x-full x-popOver-content panel cIFjQBf" xid="div4" __cid="cIFjQBf"> 
+      <a class="btn btn-link btn-only-icon pull-right cIFjQBf" component="$model/UI2/system/components/justep/button/button" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-up&quot;}" __cid="cIFjQBf"> 
+        <i class="text-muted icon-ios7-arrow-up cIFjQBf" xid="i51_8" __cid="cIFjQBf"/> 
+      </a>  
+      <h5 class="text-muted cIFjQBf" xid="h52_8" __cid="cIFjQBf">请选择</h5>  
+      <div class="x-list o-nomargin x-navGroup panel-body cIFjQBf" component="$model/UI2/system/components/justep/list/list" dataItemAlias="navRow" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'navLiClick')}" data-config="{&quot;data&quot;:&quot;navData&quot;}" __cid="cIFjQBf"> 
+        <ul class="x-list-template hide cIFjQBf" xid="listTemplateUl1" __cid="cIFjQBf" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element),as:'navRow'}"> 
+          <li class="col col-xs-3 cIFjQBf" xid="li1" __cid="cIFjQBf"> 
+            <div class="btn btn-link cIFjQBf" xid="div6_8" __cid="cIFjQBf" data-bind="css:{'active':navRow.val('fID')==$model.navData.val('fID')}"> 
+              <span xid="span1" __cid="cIFjQBf" class="cIFjQBf" data-bind="text:ref('fName')"/> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcNnYzMr-iosstatusbar cIFjQBf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIFjQBf"> 
+    <div xmlns:xui="http://www.justep.com/xui" class="x-panel-content cIFjQBf" xid="content1" _xid="C77F378195000001179FB7A013CCD2A0" style="bottom: 0px;" xui:update-mode="merge" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIFjQBf">  
+      <div class="x-panel x-full pc63i6fi-iosstatusbar cIFjQBf" component="$model/UI2/system/components/justep/panel/panel" xid="panel1_6" xui:parent="content1" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIFjQBf"> 
+        <div class="x-panel-top cIFjQBf" xid="top1_6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIFjQBf"> 
+          <div class="x-row x-nav cIFjQBf" component="$model/UI2/system/components/justep/row/row" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cIFjQBf"> 
+            <div class="x-col cIFjQBf" xid="col15" __cid="cIFjQBf"> 
+              <div class="x-navbox cIFjQBf" xid="div7_8" __cid="cIFjQBf"> 
+                <div class="x-list cIFjQBf" component="$model/UI2/system/components/justep/list/list" dataItemAlias="navRow" xid="navList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'navLiClick')}" data-config="{&quot;data&quot;:&quot;navData&quot;}" __cid="cIFjQBf"> 
+                  <ul class="x-list-template hide cIFjQBf" xid="listTemplateUl2" __cid="cIFjQBf" data-bind="foreach:{data:$model.foreach_navList($element),afterRender:$model.foreach_afterRender_navList.bind($model,$element),as:'navRow'}"> 
+                    <li class="btn btn-link cIFjQBf" xid="li2" __cid="cIFjQBf" data-bind="css:{'current':navRow.val('fID')==$model.navData.val('fID')}"> 
+                      <span xid="span7_8" __cid="cIFjQBf" class="cIFjQBf" data-bind="text:ref('fName')"/> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-col x-col-fixed cIFjQBf" xid="col16" __cid="cIFjQBf"> 
+              <a class="btn btn-link btn-only-icon pull-right center-block navMoreBtn cIFjQBf" component="$model/UI2/system/components/justep/button/button" xid="button19" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.show'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-down&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cIFjQBf"> 
+                <i class="text-muted icon-ios7-arrow-down cIFjQBf" xid="i15" __cid="cIFjQBf"/>  
+                <span xid="span611_9" __cid="cIFjQBf" class="cIFjQBf"/> 
+              </a> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content cIFjQBf" xid="content1_6" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIFjQBf"> 
+          <div class="x-window-container cIFjQBf" component="$model/UI2/system/components/justep/windowContainer/windowContainer" xid="windowContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/cxxy/child/jxdg.w&quot;}" __cid="cIFjQBf"> 
+            <div xid="window" class="window cymAnui" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cymAnui" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,"> 
+              <style>null</style>  
+              <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cymAnui" class="cymAnui"></div>  
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcFRzee2-iosstatusbar cymAnui" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cymAnui">  
+                <div class="x-panel-content cymAnui" xid="content5" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cymAnui"> 
+                  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcamqEvq-iosstatusbar cymAnui" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cymAnui"> 
+                    <div class="x-panel-top cymAnui" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cymAnui"> 
+                      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-xs btn-group-justified center-block cymAnui" xid="buttonGroup2" style="font-size:6px;font-style:inherit;background-color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cymAnui"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label active cymAnui" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;HTML&quot;,&quot;target&quot;:&quot;htmlContent&quot;}" __cid="cymAnui"> 
+                          <i xid="i5" __cid="cymAnui" class="cymAnui"/>  
+                          <span xid="span1" __cid="cymAnui" class="cymAnui">HTML</span> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cymAnui" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;JavaScript&quot;,&quot;target&quot;:&quot;jsContent&quot;}" __cid="cymAnui"> 
+                          <i xid="i7" __cid="cymAnui" class="cymAnui"/>  
+                          <span xid="span5" __cid="cymAnui" class="cymAnui">JavaScript</span> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cymAnui" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;CSS&quot;,&quot;target&quot;:&quot;cssContent&quot;}" __cid="cymAnui"> 
+                          <i xid="i6" __cid="cymAnui" class="cymAnui"/>  
+                          <span xid="span2" __cid="cymAnui" class="cymAnui">CSS</span> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cymAnui" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;Node.js&quot;,&quot;target&quot;:&quot;nodeContent&quot;}" __cid="cymAnui"> 
+                          <i xid="i12" __cid="cymAnui" class="cymAnui"/>  
+                          <span xid="span6" __cid="cymAnui" class="cymAnui">Node.js</span> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cymAnui" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;React&quot;,&quot;target&quot;:&quot;reactContent&quot;}" __cid="cymAnui"> 
+                          <i xid="i1" __cid="cymAnui" class="cymAnui"/>  
+                          <span xid="span12" __cid="cymAnui" class="cymAnui">React</span> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cymAnui" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;AugularJS&quot;,&quot;target&quot;:&quot;augularContent&quot;}" __cid="cymAnui"> 
+                          <i xid="i2" __cid="cymAnui" class="cymAnui"/>  
+                          <span xid="span7" __cid="cymAnui" class="cymAnui">AugularJS</span> 
+                        </a> 
+                      </div> 
+                    </div>  
+                    <div class="x-panel-content cymAnui" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cymAnui"> 
+                      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cymAnui" xid="contents2" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChange:contents2ActiveChange" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:false,&quot;swipe&quot;:false,&quot;wrap&quot;:false}" __cid="cymAnui"> 
+                        <div class="x-contents-content active cymAnui" xid="htmlContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cymAnui"> 
+                          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cymAnui" xid="navContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true,&quot;src&quot;:&quot;$model/UI2/cxxy/child/drawer.w&quot;}" __cid="cymAnui"> 
+                            <div xid="window" class="window cMBfEfa" component="$model/UI2/system/components/justep/window/window" design="device:m;" style="width: 100%; height: 100%;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMBfEfa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,"> 
+                              <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cMBfEfa" class="cMBfEfa"/>  
+                              <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cMBfEfa" xid="controlGroup1" style="height:570px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;HTML基础教程&quot;}" __cid="cMBfEfa"> 
+                                <div class="x-control-group-title cMBfEfa" xid="controlGroupTitle1" style="background-color:#FFFFFF;" __cid="cMBfEfa"> 
+                                  <span xid="span1" __cid="cMBfEfa" class="cMBfEfa">HTML基础教程</span> 
+                                </div>  
+                                <div xid="oneDiv" style="height:33px;line-height:33px;" class="bg-info cMBfEfa" __cid="cMBfEfa" data-bind="event:{click:$model._callModelFn.bind($model, 'oneDivClick')}"> 
+                                  <span xid="span4" style="text-align:center;" __cid="cMBfEfa" class="cMBfEfa">HTML简介</span> 
+                                </div>  
+                                <div xid="div6" style="height:auto;" __cid="cMBfEfa" class="cMBfEfa" data-bind="visible:$model.statusData.val(&quot;one&quot;)==1"> 
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col1" __cid="cMBfEfa"> 
+                                      <h4 xid="h41" __cid="cMBfEfa" class="cMBfEfa">什么是 HTML？</h4>  
+                                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row25" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                        <div class="x-col cMBfEfa" xid="col3" __cid="cMBfEfa"> 
+                                          <span xid="span2" __cid="cMBfEfa" class="cMBfEfa"> 
+                                            <p __cid="cMBfEfa" class="cMBfEfa">HTML 是用来描述网页的一种语言。</p>  
+                                            <ul __cid="cMBfEfa" class="cMBfEfa"> 
+                                              <li __cid="cMBfEfa" class="cMBfEfa">HTML 指的是超文本标记语言 ( 
+                                                <b __cid="cMBfEfa" class="cMBfEfa">H</b>yper 
+                                                <b __cid="cMBfEfa" class="cMBfEfa">T</b>ext 
+                                                <b __cid="cMBfEfa" class="cMBfEfa">M</b>arkup 
+                                                <b __cid="cMBfEfa" class="cMBfEfa">L</b>anguage)
+                                              </li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">HTML 不是一种编程语言，而是一种 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">标记语言</em> (markup language)
+                                              </li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">标记语言是一套 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">标记标签</em> (markup tag)
+                                              </li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">HTML 使用 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">标记标签</em>来描述网页
+                                              </li> 
+                                            </ul> 
+                                          </span> 
+                                        </div> 
+                                      </div> 
+                                    </div> 
+                                  </div>  
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col11" __cid="cMBfEfa"> 
+                                      <h4 xid="h42" __cid="cMBfEfa" class="cMBfEfa">HTML 标签</h4>  
+                                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row26" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                        <div class="x-col cMBfEfa" xid="col9" __cid="cMBfEfa"> 
+                                          <span xid="span35" __cid="cMBfEfa" class="cMBfEfa"> 
+                                            <p __cid="cMBfEfa" class="cMBfEfa">HTML 标记标签通常被称为 HTML 标签 (HTML tag)。</p>  
+                                            <ul __cid="cMBfEfa" class="cMBfEfa"> 
+                                              <li __cid="cMBfEfa" class="cMBfEfa">HTML 标签是由 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">尖括号</em>包围的关键词，比如 &lt;html&gt;
+                                              </li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">HTML 标签通常是 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">成对出现</em>的，比如 &lt;b&gt; 和 &lt;/b&gt;
+                                              </li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">标签对中的第一个标签是 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">开始标签</em>，第二个标签是 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">结束标签</em> 
+                                              </li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">开始和结束标签也被称为 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">开放标签</em>和 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">闭合标签</em> 
+                                              </li> 
+                                            </ul> 
+                                          </span> 
+                                        </div> 
+                                      </div> 
+                                    </div> 
+                                  </div>  
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col12" __cid="cMBfEfa"> 
+                                      <h4 xid="h43" __cid="cMBfEfa" class="cMBfEfa">HTML 文档 = 网页</h4>  
+                                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row27" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                        <div class="x-col cMBfEfa" xid="col33" __cid="cMBfEfa"> 
+                                          <span xid="span36" __cid="cMBfEfa" class="cMBfEfa"> 
+                                            <ul __cid="cMBfEfa" class="cMBfEfa"> 
+                                              <li __cid="cMBfEfa" class="cMBfEfa">HTML 文档 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">描述网页</em> 
+                                              </li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">HTML 文档 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">包含 HTML 标签</em>和纯文本
+                                              </li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">HTML 文档也被称为 
+                                                <em __cid="cMBfEfa" class="cMBfEfa">网页</em> 
+                                              </li> 
+                                            </ul> 
+                                          </span> 
+                                        </div> 
+                                      </div> 
+                                    </div> 
+                                  </div>  
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col34" __cid="cMBfEfa"> 
+                                      <h4 xid="h44" __cid="cMBfEfa" class="cMBfEfa">什么是 HTML？</h4>  
+                                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row28" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                        <div class="x-col cMBfEfa" xid="col35" __cid="cMBfEfa"> 
+                                          <span xid="span37" __cid="cMBfEfa" class="cMBfEfa"> 
+                                            <p __cid="cMBfEfa" class="cMBfEfa">Web 浏览器的作用是读取 HTML 文档，并以网页的形式显示出它们。浏览器不会显示 HTML 标签，而是使用标签来解释页面的内容：</p>  
+                                            <pre __cid="cMBfEfa" class="cMBfEfa">&lt;html&gt;
+                                              <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;body&gt; 
+                                              <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;h1&gt;My First Heading&lt;/h1&gt; 
+                                              <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;p&gt;My first paragraph.&lt;/p&gt; 
+                                              <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;/body&gt; 
+                                              <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;/html&gt;
+                                            </pre>  
+                                            <h6 __cid="cMBfEfa" class="cMBfEfa">例子解释</h6>  
+                                            <ul __cid="cMBfEfa" class="cMBfEfa"> 
+                                              <li __cid="cMBfEfa" class="cMBfEfa">&lt;html&gt; 与 &lt;/html&gt; 之间的文本描述网页</li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">&lt;body&gt; 与 &lt;/body&gt; 之间的文本是可见的页面内容</li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">&lt;h1&gt; 与 &lt;/h1&gt; 之间的文本被显示为标题</li>  
+                                              <li __cid="cMBfEfa" class="cMBfEfa">&lt;p&gt; 与 &lt;/p&gt; 之间的文本被显示为段落</li> 
+                                            </ul> 
+                                          </span> 
+                                        </div> 
+                                      </div> 
+                                    </div> 
+                                  </div> 
+                                </div>  
+                                <div xid="twoDiv" style="height:33px;line-height:33px;" class="bg-success cMBfEfa" __cid="cMBfEfa" data-bind="event:{click:$model._callModelFn.bind($model, 'twoDivClick')}"> 
+                                  <span xid="span9" style="text-align:center;" __cid="cMBfEfa" class="cMBfEfa">HTML 元素</span> 
+                                </div>  
+                                <div xid="div8" style="height:auto;" __cid="cMBfEfa" class="cMBfEfa" data-bind="visible:$model.statusData.val(&quot;two&quot;)==1"> 
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col16" __cid="cMBfEfa"> 
+                                      <span xid="span13" __cid="cMBfEfa" class="cMBfEfa"> 
+                                        <h4 __cid="cMBfEfa" class="cMBfEfa">HTML 元素语法</h4>  
+                                        <ul __cid="cMBfEfa" class="cMBfEfa"> 
+                                          <li __cid="cMBfEfa" class="cMBfEfa">HTML 元素以 
+                                            <em __cid="cMBfEfa" class="cMBfEfa">开始标签</em>起始
+                                          </li>  
+                                          <li __cid="cMBfEfa" class="cMBfEfa">HTML 元素以 
+                                            <em __cid="cMBfEfa" class="cMBfEfa">结束标签</em>终止
+                                          </li>  
+                                          <li __cid="cMBfEfa" class="cMBfEfa"> 
+                                            <em __cid="cMBfEfa" class="cMBfEfa">元素的内容</em>是开始标签与结束标签之间的内容
+                                          </li>  
+                                          <li __cid="cMBfEfa" class="cMBfEfa">某些 HTML 元素具有 
+                                            <em __cid="cMBfEfa" class="cMBfEfa">空内容（empty content）</em> 
+                                          </li>  
+                                          <li __cid="cMBfEfa" class="cMBfEfa">空元素 
+                                            <em __cid="cMBfEfa" class="cMBfEfa">在开始标签中进行关闭</em>（以开始标签的结束而结束）
+                                          </li>  
+                                          <li __cid="cMBfEfa" class="cMBfEfa">大多数 HTML 元素可拥有 
+                                            <em __cid="cMBfEfa" class="cMBfEfa">属性</em> 
+                                          </li> 
+                                        </ul> 
+                                      </span> 
+                                    </div> 
+                                  </div>  
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col14" __cid="cMBfEfa"> 
+                                      <span xid="span11" __cid="cMBfEfa" class="cMBfEfa"> 
+                                        <h4 __cid="cMBfEfa" class="cMBfEfa">HTML 文档实例</h4>  
+                                        <pre __cid="cMBfEfa" class="cMBfEfa">&lt;html&gt;
+                                          <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;body&gt; 
+                                          <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;p&gt;This is my first paragraph.&lt;/p&gt; 
+                                          <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;/body&gt; 
+                                          <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;/html&gt;
+                                        </pre> 
+                                      </span> 
+                                    </div> 
+                                  </div>  
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col15" __cid="cMBfEfa"> 
+                                      <span xid="span12" __cid="cMBfEfa" class="cMBfEfa"> 
+                                        <h4 __cid="cMBfEfa" class="cMBfEfa">&lt;p&gt; 元素：</h4>  
+                                        <pre __cid="cMBfEfa" class="cMBfEfa">&lt;p&gt;This is my first paragraph.&lt;/p&gt;</pre>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">这个 &lt;p&gt; 元素定义了 HTML 文档中的一个段落。</p>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">这个元素拥有一个开始标签 &lt;p&gt;，以及一个结束标签 &lt;/p&gt;。</p>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">元素内容是：This is my first paragraph。</p> 
+                                      </span> 
+                                    </div> 
+                                  </div>  
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col13" __cid="cMBfEfa"> 
+                                      <span xid="span10" __cid="cMBfEfa" class="cMBfEfa"> 
+                                        <h4 __cid="cMBfEfa" class="cMBfEfa">&lt;body&gt; 元素：</h4>  
+                                        <pre __cid="cMBfEfa" class="cMBfEfa">&lt;body&gt;
+                                          <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;p&gt;This is my first paragraph.&lt;/p&gt; 
+                                          <br __cid="cMBfEfa" class="cMBfEfa"/> &lt;/body&gt;
+                                        </pre> 
+                                      </span> 
+                                    </div> 
+                                  </div> 
+                                </div>  
+                                <div xid="threeDiv" style="height:33px;line-height:33px;" class="bg-danger cMBfEfa" __cid="cMBfEfa" data-bind="event:{click:$model._callModelFn.bind($model, 'threeDivClick')}"> 
+                                  <span xid="span14" style="text-align:center;" __cid="cMBfEfa" class="cMBfEfa">HTML 属性</span> 
+                                </div>  
+                                <div xid="div10" style="height:auto;" __cid="cMBfEfa" class="cMBfEfa" data-bind="visible:$model.statusData.val(&quot;three&quot;)==1"> 
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col19" __cid="cMBfEfa"> 
+                                      <span xid="span18" __cid="cMBfEfa" class="cMBfEfa"> 
+                                        <h4 __cid="cMBfEfa" class="cMBfEfa">HTML 属性</h4>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">HTML 标签可以拥有 
+                                          <em __cid="cMBfEfa" class="cMBfEfa">属性</em>。属性提供了有关 HTML 元素的 
+                                          <em __cid="cMBfEfa" class="cMBfEfa">更多的信息</em>。
+                                        </p>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">属性总是以名称/值对的形式出现，比如： 
+                                          <em __cid="cMBfEfa" class="cMBfEfa">name="value"</em>。
+                                        </p>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">属性总是在 HTML 元素的 
+                                          <em __cid="cMBfEfa" class="cMBfEfa">开始标签</em>中规定。
+                                        </p> 
+                                      </span> 
+                                    </div> 
+                                  </div>  
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col17" __cid="cMBfEfa"> 
+                                      <span xid="span16" __cid="cMBfEfa" class="cMBfEfa"> 
+                                        <h4 __cid="cMBfEfa" class="cMBfEfa">HTML 提示：使用小写属性</h4>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">属性和属性值对大小写 
+                                          <em __cid="cMBfEfa" class="cMBfEfa">不敏感</em>。
+                                        </p>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">不过，万维网联盟在其 HTML 4 推荐标准中推荐小写的属性/属性值。</p>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">而新版本的 (X)HTML 要求使用小写属性。</p> 
+                                      </span> 
+                                    </div> 
+                                  </div>  
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col20" __cid="cMBfEfa"> 
+                                      <span xid="span15" __cid="cMBfEfa" class="cMBfEfa"> 
+                                        <h4 __cid="cMBfEfa" class="cMBfEfa">始终为属性值加引号</h4>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">属性值应该始终被包括在引号内。双引号是最常用的，不过使用单引号也没有问题。</p>  
+                                        <p __cid="cMBfEfa" class="cMBfEfa">在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：</p>  
+                                        <pre __cid="cMBfEfa" class="cMBfEfa">name='Bill "HelloWorld" Gates'</pre> 
+                                      </span> 
+                                    </div> 
+                                  </div>  
+                                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cMBfEfa" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cMBfEfa"> 
+                                    <div class="x-col cMBfEfa" xid="col18" __cid="cMBfEfa"> 
+                                      <span xid="span17" __cid="cMBfEfa" class="cMBfEfa"> 
+                                        <p __cid="cMBfEfa" class="cMBfEfa">下面列出了适用于大多数 HTML 元素的属性：</p>  
+                                        <table class="dataintable cMBfEfa" __cid="cMBfEfa"> 
+                                          <tr __cid="cMBfEfa" class="cMBfEfa"> 
+                                            <th __cid="cMBfEfa" class="cMBfEfa">属性</th>  
+                                            <th __cid="cMBfEfa" class="cMBfEfa">值</th>  
+                                            <th __cid="cMBfEfa" class="cMBfEfa">描述</th> 
+                                          </tr>  
+                                          <tr __cid="cMBfEfa" class="cMBfEfa"> 
+                                            <td __cid="cMBfEfa" class="cMBfEfa">class</td>  
+                                            <td __cid="cMBfEfa" class="cMBfEfa"> 
+                                              <i __cid="cMBfEfa" class="cMBfEfa">classname</i> 
+                                            </td>  
+                                            <td __cid="cMBfEfa" class="cMBfEfa">规定元素的类名（classname）</td> 
+                                          </tr>  
+                                          <tr __cid="cMBfEfa" class="cMBfEfa"> 
+                                            <td __cid="cMBfEfa" class="cMBfEfa">id</td>  
+                                            <td __cid="cMBfEfa" class="cMBfEfa"> 
+                                              <i __cid="cMBfEfa" class="cMBfEfa">id</i> 
+                                            </td>  
+                                            <td __cid="cMBfEfa" class="cMBfEfa">规定元素的唯一 id</td> 
+                                          </tr>  
+                                          <tr __cid="cMBfEfa" class="cMBfEfa"> 
+                                            <td __cid="cMBfEfa" class="cMBfEfa">style</td>  
+                                            <td __cid="cMBfEfa" class="cMBfEfa"> 
+                                              <i __cid="cMBfEfa" class="cMBfEfa">style_definition</i> 
+                                            </td>  
+                                            <td __cid="cMBfEfa" class="cMBfEfa">规定元素的行内样式（inline style）</td> 
+                                          </tr>  
+                                          <tr __cid="cMBfEfa" class="cMBfEfa"> 
+                                            <td __cid="cMBfEfa" class="cMBfEfa">title</td>  
+                                            <td __cid="cMBfEfa" class="cMBfEfa"> 
+                                              <i __cid="cMBfEfa" class="cMBfEfa">text</i> 
+                                            </td>  
+                                            <td __cid="cMBfEfa" class="cMBfEfa">规定元素的额外信息（可在工具提示中显示）</td> 
+                                          </tr> 
+                                        </table> 
+                                      </span> 
+                                    </div> 
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <div class="x-contents-content cymAnui" xid="jsContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cymAnui"> 
+                          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cymAnui" xid="navContainer2" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/cxxy/child/drawer2.w&quot;}" __cid="cymAnui"/> 
+                        </div>  
+                        <div class="x-contents-content cymAnui" xid="cssContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cymAnui"> 
+                          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cymAnui" xid="navContainer3" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/cxxy/child/drawer3.w&quot;}" __cid="cymAnui"/> 
+                        </div>  
+                        <div class="x-contents-content cymAnui" xid="nodeContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cymAnui"> 
+                          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cymAnui" xid="navContainer4" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/cxxy/child/drawer4.w&quot;}" __cid="cymAnui"/> 
+                        </div>  
+                        <div class="x-contents-content  cymAnui" xid="reactContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cymAnui"> 
+                          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cymAnui" xid="navContainer5" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/cxxy/child/drawer5.w&quot;}" __cid="cymAnui"/> 
+                        </div>  
+                        <div class="x-contents-content cymAnui" xid="augularContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cymAnui"> 
+                          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cymAnui" xid="navContainer6" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/cxxy/child/drawer6.w&quot;}" __cid="cymAnui"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <style __cid="cymAnui" class="cymAnui">.x-panel.pcamqEvq-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcamqEvq-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcamqEvq-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcamqEvq-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcamqEvq-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcamqEvq-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcamqEvq-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcamqEvq-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcamqEvq-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+                  </div> 
+                </div>  
+                <style __cid="cymAnui" class="cymAnui">.x-panel.pcFRzee2-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcFRzee2-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcFRzee2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcFRzee2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFRzee2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcFRzee2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFRzee2-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFRzee2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFRzee2-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cIFjQBf" class="cIFjQBf">.x-panel.pc63i6fi-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc63i6fi-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc63i6fi-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc63i6fi-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc63i6fi-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc63i6fi-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc63i6fi-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc63i6fi-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc63i6fi-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+      </div> 
+    </div>  
+    <style __cid="cIFjQBf" class="cIFjQBf">.x-panel.pcNnYzMr-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcNnYzMr-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcNnYzMr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcNnYzMr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNnYzMr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcNnYzMr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNnYzMr-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNnYzMr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNnYzMr-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

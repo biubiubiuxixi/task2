@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNbQ3ui" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNbQ3ui" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">h5.cNbQ3ui, .h5.cNbQ3ui{color: rgb(0, 0, 0); font-size: 16px} .img1.cNbQ3ui{height: 200px} .img_new.cNbQ3ui{width: 100px; height: 70px} .img_small.cNbQ3ui{height: 15px} .o-nomargintop.cNbQ3ui{margin-top: 0} .x-seach.cNbQ3ui{background-color: rgb(246, 246, 246); display: none} .x-seach.cNbQ3ui span.cNbQ3ui{margin: 10px 10px 0 0} .x-banner.cNbQ3ui{overflow-x: hidden} .x-banner.cNbQ3ui .carousel-indicators.cNbQ3ui{bottom: 20px; margin-left: 10%} .x-banner.cNbQ3ui .carousel-indicators.cNbQ3ui .active.cNbQ3ui{width: 8px; height: 8px} .x-banner.cNbQ3ui .carousel-indicators.cNbQ3ui li.cNbQ3ui{width: 6px; height: 6px} .x-banner.cNbQ3ui .x-contents.cNbQ3ui .x-contents-content.cNbQ3ui .x-title.cNbQ3ui{background-color: rgb(255, 255, 255); padding: 5px} .x-wangyi.panel.cNbQ3ui{margin-bottom: 10px} .x-wangyi.panel.cNbQ3ui &gt; .panel-heading.cNbQ3ui .panel-title.cNbQ3ui{color: rgb(51, 51, 51)} .x-wangyi.cNbQ3ui .list-group-item.cNbQ3ui{border-radius: 0} .x-wangyi.cNbQ3ui .list-group-item.cNbQ3ui:last-child{border-bottom: 0} .o-nomargin.cNbQ3ui{margin-left: 0; margin-right: 0} .o-nopadding.cNbQ3ui{padding-left: 0; padding-right: 0}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cNbQ3ui" class="cNbQ3ui"/>  
+  <div class="list-group-item x-seach cNbQ3ui" xid="div16" __cid="cNbQ3ui"> 
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-inputText cNbQ3ui" xid="keyInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cNbQ3ui"/>  
+    <span class="glyphicon glyphicon-search form-control-feedback cNbQ3ui" aria-hidden="true" xid="span34" __cid="cNbQ3ui"/> 
+  </div>  
+  <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel x-banner cNbQ3ui" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" __cid="cNbQ3ui"> 
+    <ol class="carousel-indicators cNbQ3ui" xid="ol1" __cid="cNbQ3ui"/>  
+    <div class="x-contents carousel-inner cNbQ3ui" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="bannerContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cNbQ3ui"> 
+      <div class="x-contents-content active cNbQ3ui" xid="banner1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cNbQ3ui"> 
+        <img alt="" xid="image1" id="image1" class="image-wall img1 cNbQ3ui" bind-attr-src="$model.getImageUrl('./img/1.jpg')" __cid="cNbQ3ui"/>  
+        <div class="x-title cNbQ3ui" xid="div17" __cid="cNbQ3ui"> 
+          <img alt="" class="img_small cNbQ3ui" bind-attr-src="$model.getImageUrl('./img/icon1.png')" xid="image4" __cid="cNbQ3ui"/>  
+          <span xid="span35" __cid="cNbQ3ui" class="cNbQ3ui">一周图片：马来西亚青年躺河里纳凉</span> 
+        </div> 
+      </div>  
+      <div class="x-contents-content cNbQ3ui" xid="banner2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cNbQ3ui"> 
+        <img alt="" xid="image2" id="image2" class="image-wall img1 cNbQ3ui" bind-attr-src="$model.getImageUrl('./img/2.jpg')" __cid="cNbQ3ui"/>  
+        <div class="x-title cNbQ3ui" xid="div10" __cid="cNbQ3ui"> 
+          <img alt="" class="img_small cNbQ3ui" xid="image8" bind-attr-src="$model.getImageUrl('./img/icon5.png')" __cid="cNbQ3ui"/>  
+          <span xid="span22" __cid="cNbQ3ui" class="cNbQ3ui">福特旗舰座驾金牛座开启预售</span> 
+        </div> 
+      </div>  
+      <div class="x-contents-content cNbQ3ui" xid="banner3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cNbQ3ui"> 
+        <img alt="" xid="image13" id="image13" class="image-wall img1 cNbQ3ui" bind-attr-src="$model.getImageUrl('./img/3.jpg')" __cid="cNbQ3ui"/>  
+        <div class="x-title cNbQ3ui" xid="div11" __cid="cNbQ3ui"> 
+          <img alt="" class="img_small cNbQ3ui" xid="image9" bind-attr-src="$model.getImageUrl('./img/icon1.png')" __cid="cNbQ3ui"/>  
+          <span xid="span23" __cid="cNbQ3ui" class="cNbQ3ui">俯瞰上海迪士尼在建大城堡露真容</span> 
+        </div> 
+      </div>  
+      <div class="x-contents-content cNbQ3ui" xid="banner4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cNbQ3ui"> 
+        <img alt="" xid="image14" id="image14" class="image-wall img1 cNbQ3ui" bind-attr-src="$model.getImageUrl('../img/10.jpg')" __cid="cNbQ3ui"/>  
+        <div class="x-title cNbQ3ui" xid="div12" __cid="cNbQ3ui"> 
+          <img alt="" class="img_small cNbQ3ui" xid="image10" bind-attr-src="$model.getImageUrl('./img/icon1.png')" __cid="cNbQ3ui"/>  
+          <span xid="span24" __cid="cNbQ3ui" class="cNbQ3ui">全新迈锐宝驾问世竞猜赢好礼</span> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div class="panel panel-default x-card x-wangyi cNbQ3ui" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cNbQ3ui"> 
+    <div component="$model/UI2/system/components/justep/list/list" class="x-list cNbQ3ui" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newsData&quot;,&quot;limit&quot;:3}" __cid="cNbQ3ui"> 
+      <ul class="x-list-template hide cNbQ3ui" xid="listTemplateUl1" bind-click="detailClick" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cNbQ3ui"> 
+        <li xid="li1" class="list-group-item x-flex cNbQ3ui" __cid="cNbQ3ui"> 
+          <div xid="div8" class="media-left cNbQ3ui" __cid="cNbQ3ui"> 
+            <a xid="a1" __cid="cNbQ3ui" class="cNbQ3ui"> 
+              <img alt="" xid="image4" class="img-responsive img_new cNbQ3ui" bind-attr-src="$model.getImageUrl(val('fImg'))" __cid="cNbQ3ui"/> 
+            </a> 
+          </div>  
+          <div class="x-flex1 cNbQ3ui" xid="col26" __cid="cNbQ3ui"> 
+            <h5 bind-text="ref('fTitle')" class="o-nomargintop cNbQ3ui" xid="h51" __cid="cNbQ3ui"/>  
+            <span style="text-align: justify;" bind-text="ref('fOmit')" class="text-muted cNbQ3ui" xid="span36" __cid="cNbQ3ui"/>  
+            <span bind-text="ref('fPostNumber')" class="pull-right cNbQ3ui" xid="span37" __cid="cNbQ3ui"/> 
+          </div> 
+        </li> 
+      </ul> 
+    </div>  
+    <div xid="div18" __cid="cNbQ3ui" class="cNbQ3ui"> 
+      <h5 class="panel-heading cNbQ3ui" xid="h52" __cid="cNbQ3ui">广州女子为追回爱犬贼轧双腿
+        <span xid="span12" class="pull-right text-muted cNbQ3ui" __cid="cNbQ3ui">16071跟帖</span> 
+      </h5>  
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row o-nomargin panel cNbQ3ui" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNbQ3ui"> 
+        <div class="col col-xs-4 cNbQ3ui" xid="col1" __cid="cNbQ3ui"> 
+          <img src="" alt="" xid="image6" class="img-responsive cNbQ3ui" bind-attr-src="$model.getImageUrl('./img/a3.jpg')" __cid="cNbQ3ui"/> 
+        </div>  
+        <div class="col col-xs-4 cNbQ3ui" xid="col2" __cid="cNbQ3ui"> 
+          <img src="" alt="" xid="image7" class="img-responsive cNbQ3ui" bind-attr-src="$model.getImageUrl('./img/a4.jpg')" __cid="cNbQ3ui"/> 
+        </div>  
+        <div class="col col-xs-4 cNbQ3ui" xid="col3" __cid="cNbQ3ui"> 
+          <img src="" alt="" xid="image11" class="img-responsive cNbQ3ui" bind-attr-src="$model.getImageUrl('./img/a5.jpg')" __cid="cNbQ3ui"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/list/list" class="x-list cNbQ3ui" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newsData&quot;,&quot;limit&quot;:3}" __cid="cNbQ3ui"> 
+      <ul class="x-list-template hide cNbQ3ui" xid="listTemplateUl1" bind-click="detailClick" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cNbQ3ui"> 
+        <li xid="li1" class="list-group-item x-flex cNbQ3ui" __cid="cNbQ3ui"> 
+          <div xid="div8" class="media-left cNbQ3ui" __cid="cNbQ3ui"> 
+            <a xid="a1" __cid="cNbQ3ui" class="cNbQ3ui"> 
+              <img alt="" xid="image4" class="img-responsive img_new cNbQ3ui" bind-attr-src="$model.getImageUrl(val('fImg'))" __cid="cNbQ3ui"/> 
+            </a> 
+          </div>  
+          <div class="x-flex1 cNbQ3ui" xid="col26" __cid="cNbQ3ui"> 
+            <h5 bind-text="ref('fTitle')" class="o-nomargintop cNbQ3ui" xid="h53" __cid="cNbQ3ui"/>  
+            <span style="text-align: justify;" bind-text="ref('fOmit')" class="text-muted cNbQ3ui" xid="span38" __cid="cNbQ3ui"/>  
+            <span bind-text="ref('fPostNumber')" class="pull-right cNbQ3ui" xid="span39" __cid="cNbQ3ui"/> 
+          </div> 
+        </li> 
+      </ul> 
+    </div> 
+  </div> 
+</div>

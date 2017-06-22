@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" __id="id_1" extends="../parent/parent.w" component="$model/UI2/system/components/justep/window/window" xid="window" class="window window cVjArqq" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVjArqq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style>.x-menu.cVjArqq{min-width: 100px} .x-menu.cVjArqq li.cVjArqq a.cVjArqq{color: rgb(31, 31, 31); font-size: 18px; text-align: center}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cVjArqq" class="cVjArqq"/>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cVjArqq" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;menuBtn&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0}" __cid="cVjArqq"> 
+    <div class="x-popMenu-overlay cVjArqq" xid="div1" __cid="cVjArqq"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cVjArqq" xid="menu1" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cVjArqq"> 
+      <li class="x-menu-item cVjArqq" xid="item1" __cid="cVjArqq"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVjArqq" xid="firstPage" urlMapping="main" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;首页&quot;}" __cid="cVjArqq"> 
+          <i xid="i5" __cid="cVjArqq" class="cVjArqq"/>  
+          <span xid="span6" __cid="cVjArqq" class="cVjArqq">首页</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cVjArqq" xid="divider1" __cid="cVjArqq"/>  
+      <li class="x-menu-item cVjArqq" xid="item2" __cid="cVjArqq"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVjArqq" xid="wirtBtn" urlMapping="writing" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;写作&quot;}" __cid="cVjArqq"> 
+          <i xid="i6" __cid="cVjArqq" class="cVjArqq"/>  
+          <span xid="span7" __cid="cVjArqq" class="cVjArqq">写作</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cVjArqq" xid="divider2" __cid="cVjArqq"/>  
+      <li class="x-menu-item cVjArqq" xid="item3" __cid="cVjArqq"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVjArqq" xid="wordBtn" urlMapping="word" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;单词&quot;}" __cid="cVjArqq"> 
+          <i xid="i7" __cid="cVjArqq" class="cVjArqq"/>  
+          <span xid="span8" __cid="cVjArqq" class="cVjArqq">单词</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cVjArqq" xid="divider3" __cid="cVjArqq"/>  
+      <li class="x-menu-item cVjArqq" xid="item4" __cid="cVjArqq"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVjArqq" xid="readBtn" urlMapping="read" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;阅读&quot;}" __cid="cVjArqq"> 
+          <i xid="i8" __cid="cVjArqq" class="cVjArqq"/>  
+          <span xid="span9" __cid="cVjArqq" class="cVjArqq">阅读</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cVjArqq" xid="divider4" __cid="cVjArqq"/>  
+      <li class="x-menu-item cVjArqq" xid="item5" __cid="cVjArqq"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVjArqq" xid="listenBtn" urlMapping="listen" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;听力&quot;}" __cid="cVjArqq"> 
+          <i xid="i9" __cid="cVjArqq" class="cVjArqq"/>  
+          <span xid="span10" __cid="cVjArqq" class="cVjArqq">听力</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cVjArqq" xid="divider5" __cid="cVjArqq"/>  
+      <li class="x-menu-item cVjArqq" xid="item6" __cid="cVjArqq"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVjArqq" xid="studyBtn" urlMapping="study" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;学习社区&quot;}" __cid="cVjArqq"> 
+          <i xid="i10" __cid="cVjArqq" class="cVjArqq"/>  
+          <span xid="span11" __cid="cVjArqq" class="cVjArqq">学习社区</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cVjArqq" xid="divider6" __cid="cVjArqq"/>  
+      <li class="x-menu-item cVjArqq" xid="item7" __cid="cVjArqq"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVjArqq" xid="aboutBtn" urlMapping="about" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;关于我们&quot;}" __cid="cVjArqq"> 
+          <i xid="i11" __cid="cVjArqq" class="cVjArqq"/>  
+          <span xid="span12" __cid="cVjArqq" class="cVjArqq">关于我们</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cVjArqq" xid="divider7" __cid="cVjArqq"/> 
+    </ul> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc2QJRzi-iosstatusbar cVjArqq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVjArqq"> 
+    <div class="x-panel-top cVjArqq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVjArqq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cVjArqq" xid="titleBar1" style="font-size:18px;background-color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;英语学习&quot;}" __cid="cVjArqq"> 
+        <div class="x-titlebar-left cVjArqq" xid="left1" __cid="cVjArqq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cVjArqq" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVjArqq"> 
+            <i xid="i1" class="icon-chevron-left cVjArqq" __cid="cVjArqq"/>  
+            <span xid="span1" __cid="cVjArqq" class="cVjArqq"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cVjArqq" xid="title1" __cid="cVjArqq">英语学习</div>  
+        <div class="x-titlebar-right  cVjArqq" xid="right1" __cid="cVjArqq">
+          <div class="empty cVjArqq" __cid="cVjArqq"/>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cVjArqq" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVjArqq"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cVjArqq" xid="row1" style="background-color:#68c398;height:49px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVjArqq"> 
+        <div class="x-col x-col-center cVjArqq" xid="col1" __cid="cVjArqq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cVjArqq" xid="button2" style="color:#FFFFFF;font-size:18px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;英语角&quot;}" __cid="cVjArqq"> 
+            <i xid="i2" __cid="cVjArqq" class="cVjArqq"/>  
+            <span xid="span2" __cid="cVjArqq" class="cVjArqq">英语角</span> 
+          </a> 
+        </div>  
+        <div class="x-col x-col-fixed cVjArqq" xid="col2" style="width:auto;" __cid="cVjArqq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cVjArqq" xid="loginBtn" style="font-size:20px;color:#FFFFFF;height:38px;margin-top:-8px;" urlMapping="login" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;icon&quot;:&quot;icon-person&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVjArqq"> 
+            <i xid="i3" class="icon-person cVjArqq" __cid="cVjArqq"/>  
+            <span xid="span3" __cid="cVjArqq" class="cVjArqq"/> 
+          </a> 
+        </div>  
+        <div class="x-col x-col-fixed cVjArqq" xid="col3" style="width:auto;" __cid="cVjArqq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cVjArqq" style="font-size:20px;color:#FFFFFF;height:38px;margin-top:-8px;" xid="menuBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:menuBtnClick" data-config="{&quot;icon&quot;:&quot;icon-drag&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVjArqq"> 
+            <i xid="i4" class="icon-drag cVjArqq" __cid="cVjArqq"/>  
+            <span xid="span4" __cid="cVjArqq" class="cVjArqq"/> 
+          </a> 
+        </div> 
+      </div>  
+      <div style="font-size:18px;margin:20px 20px 20px 20px;" xid="div1_4" xmlns:xui="http://www.justep.com/xui" xui:parent="content1" xui:update-mode="insert" __cid="cVjArqq" class="cVjArqq">英语作文必备句式</div>
+    </div>  
+    <style __cid="cVjArqq" class="cVjArqq">.x-panel.pc2QJRzi-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc2QJRzi-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc2QJRzi-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2QJRzi-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2QJRzi-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc2QJRzi-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2QJRzi-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2QJRzi-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2QJRzi-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+</div>

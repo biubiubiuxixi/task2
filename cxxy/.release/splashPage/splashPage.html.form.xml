@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjUFrIj" class="cjUFrIj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cjUFrIj" class="cjUFrIj"/>  
+  <div style="z-index: 9999; position: absolute!important; top: 0; bottom: 0; width: 100%; font-size: 0;" __cid="cjUFrIj" class="cjUFrIj">
+    <iframe style="border: 0; height: 100%; width: 100%;" src="http://chuye.cloud7.com.cn/Cloud7BeginPage/50455" width="300" height="150" __cid="cjUFrIj" class="cjUFrIj"/>
+  </div>  
+  <script __cid="cjUFrIj" class="cjUFrIj">// 
+    function closeSplashPage(){
+        /**
+            如果只需要引导页面出现一次就设置参数为false
+            如果需要每次都出现就不要设置
+            如果后续有需求需要再次显示引导页就 localStorage.removeItem('splashPage');
+        **/
+        localStorage.setItem('splashPage','false');
+        /**
+              通知首页关闭引导页
+        **/
+        window.parent.postMessage('splashPageClose','*');
+    };
+// </script>  
+  <div style="left: 50%; bottom: 100px; position: absolute; z-index: 10000;" __cid="cjUFrIj" class="cjUFrIj">跳过</div> 
+</div>

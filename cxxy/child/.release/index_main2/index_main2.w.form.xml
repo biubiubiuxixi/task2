@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cMVrMvm" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMVrMvm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">h5.cMVrMvm, .h5.cMVrMvm{color: rgb(0, 0, 0); font-size: 16px} .img1.cMVrMvm{height: 200px} .img_new.cMVrMvm{width: 100px; height: 70px} .img_small.cMVrMvm{height: 15px} .btn.cMVrMvm i.cMVrMvm{font-size: 20px} .x-seach.cMVrMvm{background-color: rgb(246, 246, 246); display: none} .x-seach.cMVrMvm span.cMVrMvm{margin: 10px 10px 0 0} .x-banner.cMVrMvm{overflow-x: hidden} .x-banner.cMVrMvm .carousel-indicators.cMVrMvm{bottom: 20px; margin-left: 10%} .x-banner.cMVrMvm .carousel-indicators.cMVrMvm .active.cMVrMvm{width: 8px; height: 8px} .x-banner.cMVrMvm .carousel-indicators.cMVrMvm li.cMVrMvm{width: 6px; height: 6px} .x-banner.cMVrMvm .x-contents.cMVrMvm .x-contents-content.cMVrMvm .x-title.cMVrMvm{background-color: rgb(255, 255, 255); padding: 5px} .x-wangyi.panel.cMVrMvm{margin-bottom: 10px} .x-wangyi.panel.cMVrMvm &gt; .panel-heading.cMVrMvm .panel-title.cMVrMvm{color: rgb(51, 51, 51)} .x-wangyi.cMVrMvm .list-group-item.cMVrMvm{border-radius: 0} .x-wangyi.cMVrMvm .list-group-item.cMVrMvm:last-child{border-bottom: 0} .o-nomargintop.cMVrMvm{margin-top: 0} .o-nomargin.cMVrMvm{margin-left: 0; margin-right: 0}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cMVrMvm" class="cMVrMvm"/>  
+  <div class="list-group-item x-seach cMVrMvm" xid="div1" __cid="cMVrMvm"> 
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-inputText cMVrMvm" xid="keyInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cMVrMvm"/>  
+    <span class="glyphicon glyphicon-search form-control-feedback cMVrMvm" aria-hidden="true" xid="span1" __cid="cMVrMvm"/>
+  </div>  
+  <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel x-banner cMVrMvm" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" __cid="cMVrMvm"> 
+    <ol class="carousel-indicators cMVrMvm" xid="ol1" __cid="cMVrMvm"/>  
+    <div class="x-contents carousel-inner cMVrMvm" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="bannerContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cMVrMvm"> 
+      <div class="x-contents-content active cMVrMvm" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cMVrMvm"> 
+        <img alt="" xid="image1" id="image1" class="image-wall img1 cMVrMvm" bind-attr-src="$model.getImageUrl('./img/5.jpg')" __cid="cMVrMvm"/>  
+        <div class="x-title cMVrMvm" xid="div2" __cid="cMVrMvm"> 
+          <img alt="" class="img_small cMVrMvm" bind-attr-src="$model.getImageUrl('./img/icon1.png')" xid="image3" __cid="cMVrMvm"/>  
+          <span xid="span2" __cid="cMVrMvm" class="cMVrMvm">一周图片：马来西亚青年躺河里纳凉</span>
+        </div> 
+      </div>  
+      <div class="x-contents-content cMVrMvm" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cMVrMvm"> 
+        <img alt="" xid="image2" id="image2" class="image-wall img1 cMVrMvm" bind-attr-src="$model.getImageUrl('./img/4.jpg')" __cid="cMVrMvm"/>  
+        <div class="x-title cMVrMvm" xid="div10" __cid="cMVrMvm"> 
+          <img alt="" class="img_small cMVrMvm" xid="image8" bind-attr-src="$model.getImageUrl('./img/icon5.png')" __cid="cMVrMvm"/>  
+          <span xid="span22" __cid="cMVrMvm" class="cMVrMvm">福特旗舰座驾金牛座开启预售</span>
+        </div> 
+      </div>  
+      <div class="x-contents-content cMVrMvm" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cMVrMvm"> 
+        <img alt="" xid="image13" id="image13" class="image-wall img1 cMVrMvm" bind-attr-src="$model.getImageUrl('./img/3.jpg')" __cid="cMVrMvm"/>  
+        <div class="x-title cMVrMvm" xid="div11" __cid="cMVrMvm"> 
+          <img alt="" class="img_small cMVrMvm" xid="image9" bind-attr-src="$model.getImageUrl('./img/icon1.png')" __cid="cMVrMvm"/>  
+          <span xid="span23" __cid="cMVrMvm" class="cMVrMvm">俯瞰上海迪士尼在建大城堡露真容</span>
+        </div> 
+      </div>  
+      <div class="x-contents-content cMVrMvm" xid="content6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cMVrMvm"> 
+        <img alt="" xid="image14" id="image14" class="image-wall img1 cMVrMvm" bind-attr-src="$model.getImageUrl('./img/2.jpg')" __cid="cMVrMvm"/>  
+        <div class="x-title cMVrMvm" xid="div12" __cid="cMVrMvm"> 
+          <img alt="" class="img_small cMVrMvm" xid="image10" bind-attr-src="$model.getImageUrl('./img/icon1.png')" __cid="cMVrMvm"/>  
+          <span xid="span24" __cid="cMVrMvm" class="cMVrMvm">全新迈锐宝驾问世竞猜赢好礼</span>
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div class="panel panel-default x-card x-wangyi cMVrMvm" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cMVrMvm"> 
+    <div component="$model/UI2/system/components/justep/list/list" class="x-list cMVrMvm" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newsData&quot;,&quot;limit&quot;:3}" __cid="cMVrMvm"> 
+      <ul class="x-list-template hide cMVrMvm" xid="listTemplateUl1" bind-click="detailClick" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cMVrMvm"> 
+        <li xid="li1" class="list-group-item x-flex cMVrMvm" __cid="cMVrMvm"> 
+          <div xid="div8" class="media-left cMVrMvm" __cid="cMVrMvm"> 
+            <a xid="a1" __cid="cMVrMvm" class="cMVrMvm"> 
+              <img alt="" xid="image4" class="img-responsive img_new cMVrMvm" bind-attr-src="$model.getImageUrl(val('fImg'))" __cid="cMVrMvm"/>
+            </a> 
+          </div>  
+          <div class="x-flex1 cMVrMvm" xid="col26" __cid="cMVrMvm"> 
+            <h5 bind-text="ref('fTitle')" class="o-nomargintop cMVrMvm" __cid="cMVrMvm"/>  
+            <span style="text-align: justify;" bind-text="ref('fOmit')" class="text-muted cMVrMvm" xid="span3" __cid="cMVrMvm"/>  
+            <span bind-text="ref('fPostNumber')" class="pull-right cMVrMvm" xid="span4" __cid="cMVrMvm"/>
+          </div> 
+        </li> 
+      </ul> 
+    </div>  
+    <div xid="div3" __cid="cMVrMvm" class="cMVrMvm"> 
+      <h5 xid="h51" class="panel-heading cMVrMvm" __cid="cMVrMvm">广州女子为追回爱犬贼轧双腿
+        <span xid="span12" class="pull-right text-muted cMVrMvm" __cid="cMVrMvm">16071跟帖</span>
+      </h5>  
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row o-nomargin panel cMVrMvm" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cMVrMvm"> 
+        <div class="col col-xs-4 cMVrMvm" xid="col1" __cid="cMVrMvm"> 
+          <img src="" alt="" xid="image6" class="img-responsive cMVrMvm" bind-attr-src="$model.getImageUrl('./img/a3.jpg')" __cid="cMVrMvm"/>
+        </div>  
+        <div class="col col-xs-4 cMVrMvm" xid="col2" __cid="cMVrMvm"> 
+          <img src="" alt="" xid="image7" class="img-responsive cMVrMvm" bind-attr-src="$model.getImageUrl('./img/a4.jpg')" __cid="cMVrMvm"/>
+        </div>  
+        <div class="col col-xs-4 cMVrMvm" xid="col3" __cid="cMVrMvm"> 
+          <img src="" alt="" xid="image11" class="img-responsive cMVrMvm" bind-attr-src="$model.getImageUrl('./img/a5.jpg')" __cid="cMVrMvm"/>
+        </div> 
+      </div> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/list/list" class="x-list cMVrMvm" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newsData&quot;,&quot;limit&quot;:3}" __cid="cMVrMvm"> 
+      <ul class="x-list-template hide cMVrMvm" xid="listTemplateUl1" bind-click="detailClick" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cMVrMvm"> 
+        <li xid="li1" class="list-group-item x-flex cMVrMvm" __cid="cMVrMvm"> 
+          <div xid="div8" class="media-left cMVrMvm" __cid="cMVrMvm"> 
+            <a xid="a1" __cid="cMVrMvm" class="cMVrMvm"> 
+              <img alt="" xid="image4" class="img-responsive img_new cMVrMvm" bind-attr-src="$model.getImageUrl(val('fImg'))" __cid="cMVrMvm"/>
+            </a> 
+          </div>  
+          <div class="x-flex1 cMVrMvm" xid="col26" __cid="cMVrMvm"> 
+            <h5 bind-text="ref('fTitle')" class="o-nomargintop cMVrMvm" __cid="cMVrMvm"/>  
+            <span style="text-align: justify;" bind-text="ref('fOmit')" class="text-muted cMVrMvm" xid="span5" __cid="cMVrMvm"/>  
+            <span bind-text="ref('fPostNumber')" class="pull-right cMVrMvm" xid="span6" __cid="cMVrMvm"/>
+          </div> 
+        </li> 
+      </ul> 
+    </div> 
+  </div>
+</div>

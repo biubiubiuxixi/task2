@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cYjaQVv" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cYjaQVv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.cYjaQVv{color: rgb(33, 33, 33)} .text-danger.cYjaQVv{color: rgb(255, 68, 0)} .thumbnail.cYjaQVv{margin-bottom: 0; padding: 8px 0} .tb-text-del.cYjaQVv{text-decoration: line-through} .tb-line.cYjaQVv{border-right: 1px solid rgb(209, 209, 209)} .tb-nopadding.cYjaQVv{padding-left: 0; padding-right: 0} .x-cards.cYjaQVv{padding-top: 0} .panel.panel-default.cYjaQVv{margin-bottom: 10px} .row.cYjaQVv{margin: 0} h4.cYjaQVv{margin-top: 0} .tb-img.cYjaQVv{width: 100%; height: 251px} .tb-trans.cYjaQVv .x-panel-top.cYjaQVv{z-index: 100} .tb-trans.cYjaQVv .x-panel-top.cYjaQVv .x-titlebar.cYjaQVv{background: none} .tb-trans.cYjaQVv .x-panel-content.cYjaQVv{top: 0 !important} .tb-trans.x-panel.cYjaQVv .no-iosstatusbar.cYjaQVv &gt; .x-panel-content.cYjaQVv{top: -20px !important} .tb-box.cYjaQVv .tb-backBtn.cYjaQVv, .tb-box.cYjaQVv .tb-cartBtn.cYjaQVv, .tb-box.cYjaQVv .tb-moreBtn.cYjaQVv{width: 40px; height: 40px; border-radius: 65px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.4)} .tb-cartBtn.cYjaQVv{margin-top: -7px} .x-popOver-overlay.cYjaQVv{background-color: rgb(0, 0, 0)} .tb-tabs.cYjaQVv{padding-bottom: 10px; background-color: rgb(239, 239, 239)} .tb-tabs.cYjaQVv a.btn.cYjaQVv{color: rgb(102, 102, 102); background-color: rgb(255, 255, 255)} .tb-tabs.cYjaQVv .btn.active.cYjaQVv{border-bottom: 2px solid rgb(255, 68, 0); color: rgb(255, 68, 0)} .btn-icon-top.cYjaQVv span.cYjaQVv{font-size: 12px} .x-panel-bottom.cYjaQVv{border-top: 1px solid rgb(211, 211, 211); border-bottom: 1px solid rgb(211, 211, 211)} .x-panel-bottom.cYjaQVv .btn.cYjaQVv{color: rgb(102, 102, 102); padding: 3px 0 0 0} .x-panel-bottom.cYjaQVv .btn.cYjaQVv:nth-child(2){border-left: 1px solid rgb(220, 220, 220); border-right: 1px solid rgb(220, 220, 220)} .tb-shopping.cYjaQVv .btn.cYjaQVv{height: 48px; font-size: 14px; margin: 0; padding: 0; border-radius: 0; box-shadow: none; border: none; box-sizing: none; background: none; color: rgb(255, 255, 255)} .tb-shopping.cYjaQVv .btn.cYjaQVv:first-child{background-color: rgb(254, 145, 0)} .tb-shopping.cYjaQVv .btn.cYjaQVv:last-child{background-color: rgb(253, 80, 1)} .x-popOver.cYjaQVv .x-popOver-overlay.cYjaQVv{background-color: rgb(0, 0, 0)} .x-popOver.cYjaQVv .x-popOver-content.cYjaQVv{width: 100%; background-color: rgb(255, 255, 255); bottom: 0 !important} .tb-colorImg.cYjaQVv{position: absolute; top: -20px; left: 10px; width: 110px; height: 120px} .tb-title.cYjaQVv{padding: 20px 0 0 130px} .tb-close.cYjaQVv{font-size: 30px} .tb-colorList.cYjaQVv .col.cYjaQVv{padding-left: 0; padding-right: 10px; margin-bottom: 10px} .tb-colorList.cYjaQVv .col.cYjaQVv div.cYjaQVv{line-height: 30px; background-color: rgb(239, 239, 239); border-radius: 5px} .tb-colorList.cYjaQVv .col.cYjaQVv div.current.cYjaQVv{background-color: rgb(255, 68, 0); color: rgb(255, 255, 255)} .tb-colorOk.cYjaQVv{background-color: rgb(255, 68, 0); color: rgb(255, 255, 255); border-radius: 0}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cYjaQVv" class="cYjaQVv"></div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cYjaQVv" xid="popOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;position&quot;:&quot;bottom&quot;}" __cid="cYjaQVv"> 
+    <div class="x-popOver-overlay cYjaQVv" xid="div2" __cid="cYjaQVv"/>  
+    <div class="x-popOver-content cYjaQVv" xid="div3" __cid="cYjaQVv"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right tb-close text-black cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-close-outline&quot;}" __cid="cYjaQVv"> 
+        <i xid="i17" class="icon-ios7-close-outline cYjaQVv" __cid="cYjaQVv"/>  
+        <span xid="span35" __cid="cYjaQVv" class="cYjaQVv"/> 
+      </a>  
+      <img src="$model/UI2/demo/taobao/detail/img/pic1.png" alt="" class="img-thumbnail tb-colorImg cYjaQVv" __cid="cYjaQVv"/>  
+      <div class="tb-title cYjaQVv" __cid="cYjaQVv"> 
+        <span class="text-danger h4 cYjaQVv" __cid="cYjaQVv">￥</span>  
+        <span bind-text="goodsData.ref('fPrice')" class="text-danger h4 cYjaQVv" __cid="cYjaQVv"/>  
+        <div xid="div7" __cid="cYjaQVv" class="cYjaQVv"/>  
+        <span __cid="cYjaQVv" class="cYjaQVv">库存</span>  
+        <span bind-text="goodsData.ref('fRecord')" __cid="cYjaQVv" class="cYjaQVv"/>  
+        <span xid="span47" __cid="cYjaQVv" class="cYjaQVv">件</span>  
+        <h5 xid="h52" class="text-black cYjaQVv" __cid="cYjaQVv">请选择颜色分类</h5> 
+      </div>  
+      <div class="panel-body cYjaQVv" __cid="cYjaQVv"> 
+        <h4 class="text-black cYjaQVv" __cid="cYjaQVv">颜色分类</h4>  
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-colorList cYjaQVv" xid="colorList" bind-click="colorLiClick" dataItemAlias="colorRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;colorData&quot;}" __cid="cYjaQVv"> 
+          <ul class="x-list-template hide cYjaQVv" xid="ul2" componentname="ul(html)" id="undefined_ul2" bind-foreach="{data:$model.foreach_colorList($element),afterRender:$model.foreach_afterRender_colorList.bind($model,$element),as:'colorRow'}" __cid="cYjaQVv"> 
+            <li xid="li2" class="col col-xs-6 cYjaQVv" componentname="li(html)" id="undefined_li2" __cid="cYjaQVv"> 
+              <div class="text-center cYjaQVv" bind-css="{'current':colorRow.val('fState')==1}" __cid="cYjaQVv"> 
+                <span bind-text="ref('fColor')" __cid="cYjaQVv" class="cYjaQVv"/> 
+              </div> 
+            </li> 
+          </ul> 
+        </div>  
+        <div class="clearfix cYjaQVv" __cid="cYjaQVv"/> 
+      </div>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label btn-block tb-colorOk cYjaQVv" bind-visible="$model.stateData.val(&quot;state&quot;)==0" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cYjaQVv"> 
+        <i xid="i18" __cid="cYjaQVv" class="cYjaQVv"/>  
+        <span xid="span50" __cid="cYjaQVv" class="cYjaQVv">确定</span> 
+      </a>  
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified tb-shopping cYjaQVv" xid="buttonGroup4" bind-visible="$model.stateData.val(&quot;state&quot;)==1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cYjaQVv"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;加入购物车&quot;}" __cid="cYjaQVv"> 
+          <i xid="i16" __cid="cYjaQVv" class="cYjaQVv"/>  
+          <span xid="span34" __cid="cYjaQVv" class="cYjaQVv">加入购物车</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;立即购买&quot;}" __cid="cYjaQVv"> 
+          <i xid="i19" __cid="cYjaQVv" class="cYjaQVv"/>  
+          <span xid="span37" __cid="cYjaQVv" class="cYjaQVv">立即购买</span> 
+        </a> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card tb-trans x-has-iosstatu pcfAzQNn-iosstatusbar cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYjaQVv"> 
+    <div class="x-panel-top cYjaQVv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYjaQVv">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar tb-box cYjaQVv" xid="titleBar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cYjaQVv"> 
+        <div class="x-titlebar-left cYjaQVv" xid="left1" __cid="cYjaQVv">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon tb-backBtn cYjaQVv" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;}" __cid="cYjaQVv"> 
+            <i xid="i6" class="icon-chevron-left cYjaQVv" __cid="cYjaQVv"/>  
+            <span xid="span6" __cid="cYjaQVv" class="cYjaQVv">关闭</span> 
+          </a>
+        </div>  
+        <div class="x-titlebar-title cYjaQVv" xid="title1" __cid="cYjaQVv">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon tb-cartBtn pull-right cYjaQVv" xid="cartBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:shoppingCartBtnClick" data-config="{&quot;icon&quot;:&quot;icon-ios7-cart&quot;}" __cid="cYjaQVv"> 
+            <i xid="i12" class="icon-ios7-cart cYjaQVv" __cid="cYjaQVv"/>  
+            <span xid="span4" __cid="cYjaQVv" class="cYjaQVv"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-right  cYjaQVv" xid="right1" __cid="cYjaQVv">
+          <div class="empty cYjaQVv" __cid="cYjaQVv"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon tb-moreBtn pull-right cYjaQVv" xid="moreBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-more&quot;}" __cid="cYjaQVv"> 
+            <i xid="i13" class="icon-android-more cYjaQVv" __cid="cYjaQVv"/>  
+            <span xid="span23" __cid="cYjaQVv" class="cYjaQVv"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="x-panel-content x-cards tb-trans cYjaQVv" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYjaQVv"> 
+      <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel cYjaQVv" xid="carousel1" style="height:251px;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" data-config="{&quot;auto&quot;:false}" __cid="cYjaQVv"> 
+        <ol class="carousel-indicators cYjaQVv" xid="default1" __cid="cYjaQVv"/>  
+        <div class="x-contents carousel-inner cYjaQVv" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cYjaQVv"> 
+          <div class="x-contents-content active cYjaQVv" xid="content1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cYjaQVv"> 
+            <img src="" alt="" xid="image1" class="image-wall tb-img cYjaQVv" __cid="cYjaQVv"/> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card panel-body pcJNZBz2-iosstatusbar cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYjaQVv"> 
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row tb-nopadding cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cYjaQVv"> 
+          <div class="col col-xs-10  tb-nopadding cYjaQVv" xid="col8" __cid="cYjaQVv"> 
+            <h4 xid="h41" class=" text-black cYjaQVv" bind-text="goodsData.ref('fTitle')" __cid="cYjaQVv"/>  
+            <div xid="div4" __cid="cYjaQVv" class="cYjaQVv"> 
+              <span xid="span17" class="text-danger h3 cYjaQVv" __cid="cYjaQVv">￥</span>  
+              <span xid="span29" bind-text="goodsData.ref('fPrice')" class="text-danger h3 cYjaQVv" __cid="cYjaQVv"/> 
+            </div>  
+            <div xid="div5" class="text-muted cYjaQVv" __cid="cYjaQVv"> 
+              <span xid="span19" __cid="cYjaQVv" class="cYjaQVv">价格：</span>  
+              <span xid="span18" class="tb-text-del cYjaQVv" __cid="cYjaQVv">￥</span>  
+              <span xid="span13" bind-text="goodsData.ref('fOldPrice')" class="tb-text-del cYjaQVv" __cid="cYjaQVv"/> 
+            </div> 
+          </div>  
+          <div class="col col-xs-2  tb-nopadding cYjaQVv" xid="col9" __cid="cYjaQVv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top pull-right tb-nopadding cYjaQVv" xid="shareBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:shareBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-share&quot;,&quot;label&quot;:&quot;分享&quot;}" __cid="cYjaQVv"> 
+              <i xid="i10" class="text-success icon-android-share cYjaQVv" __cid="cYjaQVv"/>  
+              <span xid="span10" class="text-success cYjaQVv" __cid="cYjaQVv">分享</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row text-muted h5 tb-nopadding cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cYjaQVv"> 
+          <div class="col col-xs-4  tb-nopadding cYjaQVv" xid="col11" __cid="cYjaQVv"> 
+            <span xid="span14" __cid="cYjaQVv" class="cYjaQVv">快递</span>  
+            <span xid="span15" bind-text="goodsData.ref('fPostage')" __cid="cYjaQVv" class="cYjaQVv"/> 
+          </div>  
+          <div class="col col-xs-4 text-center cYjaQVv" xid="col12" __cid="cYjaQVv"> 
+            <span xid="span24" __cid="cYjaQVv" class="cYjaQVv">月销</span>  
+            <span xid="span26" bind-text="goodsData.ref('fRecord')" __cid="cYjaQVv" class="cYjaQVv"/>  
+            <span xid="span27" __cid="cYjaQVv" class="cYjaQVv">笔</span> 
+          </div>  
+          <div class="col col-xs-4 text-center cYjaQVv" xid="col13" __cid="cYjaQVv"> 
+            <span xid="span16" bind-text="goodsData.ref('fAddress')" __cid="cYjaQVv" class="cYjaQVv"/> 
+          </div> 
+        </div>  
+        <style __cid="cYjaQVv" class="cYjaQVv">.x-panel.pcJNZBz2-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcJNZBz2-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcJNZBz2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJNZBz2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJNZBz2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcJNZBz2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJNZBz2-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJNZBz2-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJNZBz2-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div>  
+      <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-heading x-card pcz22YZr-iosstatusbar cYjaQVv" bind-click="popOverClick" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYjaQVv"> 
+        <i xid="i4" class="text-muted icon-chevron-right pull-right btn-sm cYjaQVv" __cid="cYjaQVv"/>  
+        <span xid="span20" __cid="cYjaQVv" class="cYjaQVv">选择颜色分类</span>  
+        <style __cid="cYjaQVv" class="cYjaQVv">.x-panel.pcz22YZr-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcz22YZr-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcz22YZr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcz22YZr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcz22YZr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcz22YZr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcz22YZr-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcz22YZr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcz22YZr-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div>  
+      <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcqu2aUj-iosstatusbar cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYjaQVv"> 
+        <div class="panel-body cYjaQVv" __cid="cYjaQVv"> 
+          <div class="h5 text-black cYjaQVv" __cid="cYjaQVv"> 
+            <span xid="span22" __cid="cYjaQVv" class="cYjaQVv">宝贝评价（</span>  
+            <span xid="span25" bind-text="goodsData.ref('fCommentsNumber')" __cid="cYjaQVv" class="cYjaQVv"/>  
+            <span xid="span28" __cid="cYjaQVv" class="cYjaQVv">）</span> 
+          </div>  
+          <div class="media-left cYjaQVv" __cid="cYjaQVv"> 
+            <img src="" alt="" xid="image3" class="img-circle cYjaQVv" bind-attr-src="commentsData.ref('fUserImg')" height="40px" style="width:40px;" __cid="cYjaQVv"/> 
+          </div>  
+          <div class="media-body cYjaQVv" __cid="cYjaQVv"> 
+            <span xid="span30" bind-text="commentsData.ref('fUserName')" __cid="cYjaQVv" class="cYjaQVv"/> 
+          </div>  
+          <div __cid="cYjaQVv" class="cYjaQVv"> 
+            <span xid="span32" bind-text="commentsData.ref('fContent')" __cid="cYjaQVv" class="cYjaQVv"/> 
+          </div>  
+          <div class="text-muted cYjaQVv" __cid="cYjaQVv"> 
+            <span xid="span36" bind-text="commentsData.ref('fDate')" __cid="cYjaQVv" class="cYjaQVv"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cYjaQVv" xid="buttonGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cYjaQVv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label text-black cYjaQVv" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;查看更多评论&quot;}" __cid="cYjaQVv"> 
+              <i xid="i11" __cid="cYjaQVv" class="cYjaQVv"/>  
+              <span xid="span5" __cid="cYjaQVv" class="cYjaQVv">查看更多评论</span> 
+            </a> 
+          </div> 
+        </div>  
+        <style __cid="cYjaQVv" class="cYjaQVv">.x-panel.pcqu2aUj-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcqu2aUj-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcqu2aUj-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcqu2aUj-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqu2aUj-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcqu2aUj-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcqu2aUj-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqu2aUj-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcqu2aUj-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div>  
+      <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcjuyIVz-iosstatusbar cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYjaQVv"> 
+        <div xid="div9" class="panel-body tb-nopadding cYjaQVv" __cid="cYjaQVv"> 
+          <div class="panel-body media cYjaQVv" __cid="cYjaQVv"> 
+            <div class="media-left cYjaQVv" __cid="cYjaQVv"> 
+              <img src="" alt="" xid="image4" class="img-rounded cYjaQVv" bind-attr-src="shopData.ref('fShopImg')" height="50px" style="width:50px;" __cid="cYjaQVv"/> 
+            </div>  
+            <div class="media-body cYjaQVv" __cid="cYjaQVv"> 
+              <span xid="span46" bind-text="shopData.ref('fShopName')" class="show cYjaQVv" __cid="cYjaQVv"/>  
+              <span xid="span48" bind-text="shopData.ref('fLevel')" __cid="cYjaQVv" class="cYjaQVv"/> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/bootstrap/row/row" class="row cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cYjaQVv"> 
+            <div class="col col-xs-5 cYjaQVv" xid="col17" __cid="cYjaQVv"> 
+              <span class="text-muted cYjaQVv" xid="span9" __cid="cYjaQVv">描述相符</span>  
+              <span bind-text="shopData.ref('fConsistent')" class="text-danger cYjaQVv" xid="span11" __cid="cYjaQVv"/> 
+            </div>  
+            <div class="col col-xs-7 cYjaQVv" xid="col18" __cid="cYjaQVv"> 
+              <span class="text-muted cYjaQVv" xid="span12" __cid="cYjaQVv">服务态度</span>  
+              <span bind-text="shopData.ref('fService')" class="text-success cYjaQVv" xid="span21" __cid="cYjaQVv"/> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cYjaQVv"> 
+          <div class="col col-xs-6 tb-line cYjaQVv" xid="col1" __cid="cYjaQVv"> 
+            <span xid="span41" bind-text="shopData.ref('fGoodsNumber')" class="show text-center cYjaQVv" __cid="cYjaQVv"/>  
+            <span xid="goodsBtn" class="show text-center text-muted cYjaQVv" bind-click="goodsBtnClick" __cid="cYjaQVv">全部宝贝</span> 
+          </div>  
+          <div class="col col-xs-6 cYjaQVv" xid="col2" __cid="cYjaQVv"> 
+            <span xid="span44" bind-text="shopData.ref('fFocusNumber')" class="show text-center cYjaQVv" __cid="cYjaQVv"/>  
+            <span xid="span43" class="show text-center text-muted cYjaQVv" __cid="cYjaQVv">关注人数</span> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/bootstrap/row/row" class="row panel-body cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cYjaQVv"> 
+          <div class="col col-xs-6 cYjaQVv" xid="col4" __cid="cYjaQVv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-block thumbnail text-black cYjaQVv" xid="classBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:classBtnClick" data-config="{&quot;icon&quot;:&quot;icon-navicon&quot;,&quot;label&quot;:&quot;查看宝贝分类&quot;}" __cid="cYjaQVv"> 
+              <i xid="i9" class="icon-navicon cYjaQVv" __cid="cYjaQVv"/>  
+              <span xid="span40" __cid="cYjaQVv" class="cYjaQVv">查看宝贝分类</span> 
+            </a> 
+          </div>  
+          <div class="col col-xs-6 cYjaQVv" xid="col5" __cid="cYjaQVv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-block thumbnail text-black cYjaQVv" xid="storeBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:storeBtnClick" data-config="{&quot;icon&quot;:&quot;icon-bag&quot;,&quot;label&quot;:&quot;进店逛逛&quot;}" __cid="cYjaQVv"> 
+              <i xid="i5" class="icon-bag cYjaQVv" __cid="cYjaQVv"/>  
+              <span xid="span39" __cid="cYjaQVv" class="cYjaQVv">进店逛逛</span> 
+            </a> 
+          </div> 
+        </div>  
+        <style __cid="cYjaQVv" class="cYjaQVv">.x-panel.pcjuyIVz-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcjuyIVz-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcjuyIVz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcjuyIVz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjuyIVz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcjuyIVz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjuyIVz-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjuyIVz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjuyIVz-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div>  
+      <div component="$model/UI2/system/components/justep/panel/panel" class="panel x-card pc2uEBFr-iosstatusbar cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cYjaQVv"> 
+        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified tb-tabs cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cYjaQVv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label active cYjaQVv" xid="detailsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;图文详情&quot;,&quot;target&quot;:&quot;detailsContent&quot;}" __cid="cYjaQVv"> 
+            <i xid="i14" __cid="cYjaQVv" class="cYjaQVv"/>  
+            <span xid="span31" __cid="cYjaQVv" class="cYjaQVv">图文详情</span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cYjaQVv" xid="parameterBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;产品参数&quot;,&quot;target&quot;:&quot;parameterContent&quot;}" __cid="cYjaQVv"> 
+            <i xid="i15" __cid="cYjaQVv" class="cYjaQVv"/>  
+            <span xid="span33" __cid="cYjaQVv" class="cYjaQVv">产品参数</span> 
+          </a> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cYjaQVv"> 
+          <div class="x-contents-content panel-body active cYjaQVv" xid="detailsContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cYjaQVv"> 
+            <div bind-html="$model.goodsData.val(&quot;fDetail&quot;)" __cid="cYjaQVv" class="cYjaQVv"/> 
+          </div>  
+          <div class="x-contents-content panel-body cYjaQVv" xid="parameterContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cYjaQVv"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list x-cards cYjaQVv" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;parameterData&quot;}" __cid="cYjaQVv"> 
+              <ul class="x-list-template hide cYjaQVv" xid="ul1" componentname="ul(html)" id="undefined_ul1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cYjaQVv"> 
+                <li xid="li1" componentname="li(html)" id="undefined_li1" class="list-group-item cYjaQVv" __cid="cYjaQVv"> 
+                  <span bind-text="ref('fName')" class="col col-xs-4 tb-nopadding text-muted cYjaQVv" __cid="cYjaQVv"/>  
+                  <span bind-text="ref('fParameter')" class="x-flex col col-xs-8 tb-nopadding cYjaQVv" __cid="cYjaQVv"/>  
+                  <div class="clearfix cYjaQVv" __cid="cYjaQVv"/> 
+                </li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cYjaQVv" class="cYjaQVv">.x-panel.pc2uEBFr-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pc2uEBFr-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc2uEBFr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2uEBFr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2uEBFr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc2uEBFr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2uEBFr-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2uEBFr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2uEBFr-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cYjaQVv" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cYjaQVv"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row cYjaQVv" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cYjaQVv"> 
+        <div class="col col-xs-5 tb-nopadding cYjaQVv" xid="col3" __cid="cYjaQVv"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cYjaQVv" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cYjaQVv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cYjaQVv" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-chatboxes-outline&quot;,&quot;label&quot;:&quot;客服&quot;}" __cid="cYjaQVv"> 
+              <i xid="i1" class="icon icon-ios7-chatboxes-outline cYjaQVv" __cid="cYjaQVv"/>  
+              <span xid="span1" __cid="cYjaQVv" class="cYjaQVv">客服</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cYjaQVv" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-bag&quot;,&quot;label&quot;:&quot;店铺&quot;}" __cid="cYjaQVv"> 
+              <i xid="i2" class="icon icon-bag cYjaQVv" __cid="cYjaQVv"/>  
+              <span xid="span2" __cid="cYjaQVv" class="cYjaQVv">店铺</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cYjaQVv" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-star-outline&quot;,&quot;label&quot;:&quot;收藏&quot;}" __cid="cYjaQVv"> 
+              <i xid="i3" class="icon icon-ios7-star-outline cYjaQVv" __cid="cYjaQVv"/>  
+              <span xid="span3" __cid="cYjaQVv" class="cYjaQVv">收藏</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div class="col col-xs-7 tb-nopadding cYjaQVv" xid="col6" __cid="cYjaQVv"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified tb-shopping cYjaQVv" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cYjaQVv"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cYjaQVv" xid="joinCartBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:joinCartBtnClick" data-config="{&quot;icon&quot;:&quot;icon-radio-waves&quot;,&quot;label&quot;:&quot;加入购物车&quot;}" __cid="cYjaQVv"> 
+              <i xid="i8" class="icon-radio-waves icon cYjaQVv" __cid="cYjaQVv"/>  
+              <span xid="span7" __cid="cYjaQVv" class="cYjaQVv">加入购物车</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cYjaQVv" xid="buyBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:buyBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-display&quot;,&quot;label&quot;:&quot;立即购买&quot;}" __cid="cYjaQVv"> 
+              <i xid="i7" class="icon-android-display icon cYjaQVv" __cid="cYjaQVv"/>  
+              <span xid="span8" __cid="cYjaQVv" class="cYjaQVv">立即购买</span> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cYjaQVv" class="cYjaQVv">.x-panel.pcfAzQNn-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcfAzQNn-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfAzQNn-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfAzQNn-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfAzQNn-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfAzQNn-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfAzQNn-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfAzQNn-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfAzQNn-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

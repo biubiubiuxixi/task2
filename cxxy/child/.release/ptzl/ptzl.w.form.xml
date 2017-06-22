@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cbYzMZr" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbYzMZr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cbYzMZr" class="cbYzMZr"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcbAname-iosstatusbar cbYzMZr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbYzMZr"> 
+    <div class="x-panel-top cbYzMZr" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbYzMZr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cbYzMZr" xid="titleBar1" style="font-size:18px;background-color:#68c398;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cbYzMZr"> 
+        <div class="x-titlebar-left cbYzMZr" xid="left1" __cid="cbYzMZr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cbYzMZr" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;返回&quot;}" __cid="cbYzMZr"> 
+            <i xid="i4" class="icon-chevron-left cbYzMZr" __cid="cbYzMZr"/>  
+            <span xid="span5" __cid="cbYzMZr" class="cbYzMZr">返回</span>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cbYzMZr" xid="title1" __cid="cbYzMZr"> 
+          <span xid="span6" __cid="cbYzMZr" class="cbYzMZr">配套资料</span>
+        </div>  
+        <div class="x-titlebar-right  cbYzMZr" xid="right1" __cid="cbYzMZr">
+          <div class="empty cbYzMZr" __cid="cbYzMZr"/>
+        </div>
+      </div> 
+    </div>
+    <div class="x-panel-content  x-scroll-view cbYzMZr" xid="content1" _xid="C77BB012ACF000012385FDC81350A740" style="bottom: 0px; top: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbYzMZr"> 
+      <div class="x-scroll cbYzMZr" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cbYzMZr"> 
+        <div xid="div1" __cid="cbYzMZr" class="cbYzMZr"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cbYzMZr" xid="i1" __cid="cbYzMZr"/>  
+          <span class="x-pull-down-label cbYzMZr" xid="span1" __cid="cbYzMZr">下拉刷新...</span>
+        </div>
+        <div xid="div2" class="x-scroll-content cbYzMZr" style="margin-top:30px;" __cid="cbYzMZr"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cbYzMZr" xid="row2" style="margin-bottom:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbYzMZr"> 
+            <div class="x-col cbYzMZr" xid="col2" bind-click="col2Click" __cid="cbYzMZr"> 
+              <div xid="div3" style="margin-right:15px;margin-left:15px;box-shadow:2px 4px 6px #8fbc8f;text-align:center;" __cid="cbYzMZr" class="cbYzMZr"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cbYzMZr" xid="bookBtn" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/cxxy/img/wex5zj.png&quot;,&quot;label&quot;:&quot;wex5中级教程&quot;}" __cid="cbYzMZr"> 
+                  <i xid="i3" __cid="cbYzMZr" class="cbYzMZr"/>  
+                  <img src="$model/UI2/cxxy/img/wex5zj.png" xid="image2" style="width:90%;" height="95%" __cid="cbYzMZr" class="cbYzMZr"/>  
+                  <span xid="span4" style="font-size:large;font-family:MS PGothic;color:#400000;" __cid="cbYzMZr" class="cbYzMZr">WeX5中级教程</span>
+                </a> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cbYzMZr" xid="row1" style="margin-bottom:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbYzMZr"> 
+            <div class="x-col cbYzMZr" xid="col1" bind-click="col1Click" __cid="cbYzMZr"> 
+              <div xid="div4" style="margin-right:15px;margin-left:15px;box-shadow:2px 4px 6px #8fbc8f;text-align:center;" __cid="cbYzMZr" class="cbYzMZr"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cbYzMZr" xid="button1" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/cxxy/img/htmls.png&quot;,&quot;label&quot;:&quot;Head First HTML与CSS、XHTML（中文版）&quot;}" __cid="cbYzMZr"> 
+                  <i xid="i2" __cid="cbYzMZr" class="cbYzMZr"/>  
+                  <img src="$model/UI2/cxxy/img/htmls.png" xid="image1" style="width:90%;" height="95%" __cid="cbYzMZr" class="cbYzMZr"/>  
+                  <span xid="span2" style="font-size:large;font-family:MS PGothic;color:#400000;" __cid="cbYzMZr" class="cbYzMZr">Head First HTML与CSS、XHTML（中文版）</span>
+                </a> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cbYzMZr" class="cbYzMZr">.x-panel.pcbAname-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcbAname-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcbAname-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcbAname-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbAname-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcbAname-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbAname-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbAname-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbAname-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

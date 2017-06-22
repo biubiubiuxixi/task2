@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="../parent/parent.w" __id="id_1" design="device:m;" class="window window cNzueMf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNzueMf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="">.x-menu.cNzueMf{min-width: 100px} .x-menu.cNzueMf li.cNzueMf a.cNzueMf{color: rgb(31, 31, 31); font-size: 18px; text-align: center} .titleCss.cNzueMf{background-color: rgba(0, 0, 0, 0.5); font-size: 16px; height: 40px; margin-top: -40px; color: rgb(255, 255, 255); z-index: 100; position: absolute; width: 100%; padding-top: 10px; padding-left: 20px} .x-nav.x-row.cNzueMf, .x-nav.cNzueMf .x-col.cNzueMf{padding: 0; background-color: rgb(250, 250, 250)} .x-nav.cNzueMf .x-col.cNzueMf:nth-child(1){height: 41px; overflow: hidden} .x-nav.cNzueMf .x-col.cNzueMf:nth-child(2){width: 50px} .x-nav.cNzueMf .x-col.cNzueMf .x-navbox.cNzueMf{height: 61px; overflow-x: scroll; overflow-y: hidden} .x-nav.cNzueMf .x-col.cNzueMf .x-navbox.cNzueMf .x-list.cNzueMf{width: auto !important; white-space: nowrap; text-overflow: ellipsis} .x-nav.cNzueMf .btn.cNzueMf{height: 41px; border-top: 0; font-weight: normal; color: rgb(153, 153, 153)} .x-nav.cNzueMf .btn.current.cNzueMf{height: 41px; border-bottom: 2px solid rgb(234, 65, 60); color: rgb(234, 65, 60)} .x-nav.cNzueMf .navMoreBtn.cNzueMf{background-color: rgb(225, 225, 225)} .x-popOver-overlay.cNzueMf{background-color: rgb(0, 0, 0)} .x-popOver-content.cNzueMf{border-radius: 0} .x-wangyiOver.cNzueMf h5.cNzueMf{padding-left: 15px} .x-wangyiOver.cNzueMf .x-titlebar.cNzueMf{height: 40px; background-color: rgb(241, 241, 241)} .x-wangyiOver.cNzueMf .x-navGroup.cNzueMf{padding-bottom: 0} .x-wangyiOver.cNzueMf .x-navGroup.cNzueMf .col-xs-3.cNzueMf{padding-left: 3px; padding-right: 3px} .x-wangyiOver.cNzueMf .x-navGroup.cNzueMf .col-xs-3.cNzueMf .btn.cNzueMf{border-color: rgb(204, 204, 204); border-radius: 3px; margin-bottom: 10px; color: rgb(102, 102, 102); display: block} .x-wangyiOver.cNzueMf .x-navGroup.cNzueMf .col-xs-3.cNzueMf .btn.active.cNzueMf{border-color: red; background-color: rgb(234, 65, 60); color: rgb(255, 255, 255)}</style>  
+  <div xmlns="" xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cNzueMf" class="cNzueMf"></div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cNzueMf" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;menuBtn&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0}" __cid="cNzueMf"> 
+    <div class="x-popMenu-overlay cNzueMf" xid="div1" __cid="cNzueMf"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cNzueMf" xid="menu1" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cNzueMf"> 
+      <li class="x-menu-item cNzueMf" xid="item1" __cid="cNzueMf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNzueMf" xid="firstPage" urlMapping="main" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;首页&quot;}" __cid="cNzueMf"> 
+          <i xid="i5" __cid="cNzueMf" class="cNzueMf"/>  
+          <span xid="span6" __cid="cNzueMf" class="cNzueMf">首页</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cNzueMf" xid="divider1" __cid="cNzueMf"/>  
+      <li class="x-menu-item cNzueMf" xid="item2" __cid="cNzueMf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNzueMf" xid="wirtBtn" urlMapping="writing" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;师资培训&quot;}" __cid="cNzueMf">  
+          <i xid="i6" __cid="cNzueMf" class="cNzueMf"/>  
+          <span xid="span7" xui:update-mode="merge-and-replace" __cid="cNzueMf" class="cNzueMf">师资培训</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cNzueMf" xid="divider2" __cid="cNzueMf"/>  
+      <li class="x-menu-item cNzueMf" xid="item3" __cid="cNzueMf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNzueMf" xid="wordBtn" urlMapping="word" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;联合科研&quot;}" __cid="cNzueMf">  
+          <i xid="i7" __cid="cNzueMf" class="cNzueMf"/>  
+          <span xid="span8" xui:update-mode="merge-and-replace" __cid="cNzueMf" class="cNzueMf">联合科研</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cNzueMf" xid="divider3" __cid="cNzueMf"/>  
+      <li class="x-menu-item cNzueMf" xid="item4" __cid="cNzueMf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNzueMf" xid="readBtn" urlMapping="read" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;专业共建&quot;}" __cid="cNzueMf">  
+          <i xid="i8" __cid="cNzueMf" class="cNzueMf"/>  
+          <span xid="span9" xui:update-mode="merge-and-replace" __cid="cNzueMf" class="cNzueMf">专业共建</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cNzueMf" xid="divider4" __cid="cNzueMf"/>  
+      <li class="x-menu-item cNzueMf" xid="item5" __cid="cNzueMf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNzueMf" xid="listenBtn" urlMapping="listen" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;学习论坛&quot;}" __cid="cNzueMf">  
+          <i xid="i9" __cid="cNzueMf" class="cNzueMf"/>  
+          <span xid="span10" xui:update-mode="merge-and-replace" __cid="cNzueMf" class="cNzueMf">学习论坛</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cNzueMf" xid="divider5" __cid="cNzueMf"/>  
+      <li class="x-menu-item cNzueMf" xid="item6" __cid="cNzueMf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNzueMf" xid="studyBtn" urlMapping="study" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;考试认证&quot;}" __cid="cNzueMf">  
+          <i xid="i10" __cid="cNzueMf" class="cNzueMf"/>  
+          <span xid="span11" xui:update-mode="merge-and-replace" __cid="cNzueMf" class="cNzueMf">考试认证</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cNzueMf" xid="divider6" __cid="cNzueMf"/>  
+      <li class="x-menu-item cNzueMf" xid="item7" __cid="cNzueMf"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNzueMf" xid="aboutBtn" urlMapping="about" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;个人中心&quot;}" __cid="cNzueMf">  
+          <i xid="i11" __cid="cNzueMf" class="cNzueMf"/>  
+          <span xid="span12" xui:update-mode="merge-and-replace" __cid="cNzueMf" class="cNzueMf">个人中心</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cNzueMf" xid="divider7" __cid="cNzueMf"/> 
+    </ul> 
+  </div>  
+  <div xmlns="" xmlns:xui="http://www.justep.com/xui" class="x-popOver x-wangyiOver cNzueMf" component="$model/UI2/system/components/justep/popOver/popOver" style="height:100%;" xid="popOver" xui:before="panel1" xui:parent="window" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;navMenuTop&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0.5}" __cid="cNzueMf">  
+    <div class="x-popOver-overlay cNzueMf" xid="div2" __cid="cNzueMf"/>  
+    <div class="x-full x-popOver-content panel cNzueMf" xid="div4" __cid="cNzueMf"> 
+      <a class="btn btn-link btn-only-icon pull-right cNzueMf" component="$model/UI2/system/components/justep/button/button" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-up&quot;}" __cid="cNzueMf"> 
+        <i class="text-muted icon-ios7-arrow-up cNzueMf" xid="i51_8" __cid="cNzueMf"/> 
+      </a>  
+      <h5 class="text-muted cNzueMf" xid="h52_8" __cid="cNzueMf">请选择</h5>  
+      <div class="x-list o-nomargin x-navGroup panel-body cNzueMf" component="$model/UI2/system/components/justep/list/list" dataItemAlias="navRow" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'navLiClick')}" data-config="{&quot;data&quot;:&quot;navData&quot;}" __cid="cNzueMf"> 
+        <ul class="x-list-template hide cNzueMf" xid="listTemplateUl1" __cid="cNzueMf" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element),as:'navRow'}"> 
+          <li class="col col-xs-3 cNzueMf" xid="li1" __cid="cNzueMf"> 
+            <div class="btn btn-link cNzueMf" xid="div6_8" __cid="cNzueMf" data-bind="css:{'active':navRow.val('fID')==$model.navData.val('fID')}"> 
+              <span xid="span1" __cid="cNzueMf" class="cNzueMf" data-bind="text:ref('fName')"/> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcEbiY3u-iosstatusbar cNzueMf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNzueMf"> 
+    <div xmlns:xui="http://www.justep.com/xui" class="x-panel-top cNzueMf" xid="top1" xui:before="content1" xui:parent="panel1" xui:update-mode="insert" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNzueMf">  
+      <div class="x-titlebar cNzueMf" component="$model/UI2/system/components/justep/titleBar/titleBar" style="font-size:18px;background-color:#68c398;" xid="titleBar1111_6" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cNzueMf"> 
+        <div class="x-titlebar-left cNzueMf" xid="left1111_6" __cid="cNzueMf"> 
+          <a class="btn btn-link btn-only-icon cNzueMf" component="$model/UI2/system/components/justep/button/button" xid="button2111_6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cNzueMf"> 
+            <i class="icon-chevron-left cNzueMf" xid="i1111_6" __cid="cNzueMf"/>  
+            <span xid="span1111_6" __cid="cNzueMf" class="cNzueMf"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cNzueMf" xid="title1111_6" xui:update-mode="merge-and-replace" __cid="cNzueMf"> 
+          <span xid="span1_17" __cid="cNzueMf" class="cNzueMf">CSS</span> 
+        </div>  
+        <div class="x-titlebar-right  cNzueMf" xid="right1111_6" __cid="cNzueMf"> 
+          <div class="empty cNzueMf" __cid="cNzueMf"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div xmlns:xui="http://www.justep.com/xui" class="x-panel-content cNzueMf" xid="content1" _xid="C77F378195000001179FB7A013CCD2A0" style="bottom: 0px;" xui:update-mode="merge" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNzueMf">  
+      <iframe height="100%" src="http://www.w3school.com.cn/css/index.asp" width="100%" xid="iframe11_7" xui:parent="content1" xui:update-mode="insert" __cid="cNzueMf" class="cNzueMf"/> 
+    </div>  
+    <style __cid="cNzueMf" class="cNzueMf">.x-panel.pcEbiY3u-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcEbiY3u-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcEbiY3u-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEbiY3u-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEbiY3u-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcEbiY3u-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEbiY3u-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEbiY3u-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEbiY3u-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

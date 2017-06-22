@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" __id="id_1" component="$model/UI2/system/components/justep/window/window" extends="../parent/parent.w" xid="window" class="window window cz6RJZr" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cz6RJZr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="">.x-menu.cz6RJZr{min-width: 100px} .x-menu.cz6RJZr li.cz6RJZr a.cz6RJZr{color: rgb(31, 31, 31); font-size: 18px; text-align: center} .titleCss.cz6RJZr{background-color: rgba(0, 0, 0, 0.5); font-size: 16px; height: 40px; margin-top: -40px; color: rgb(255, 255, 255); z-index: 100; position: absolute; width: 100%; padding-top: 10px; padding-left: 20px}</style>  
+  <div xmlns="" xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cz6RJZr" class="cz6RJZr"></div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cz6RJZr" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;menuBtn&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0}" __cid="cz6RJZr"> 
+    <div class="x-popMenu-overlay cz6RJZr" xid="div1" __cid="cz6RJZr"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cz6RJZr" xid="menu1" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cz6RJZr"> 
+      <li class="x-menu-item cz6RJZr" xid="item1" __cid="cz6RJZr"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="firstPage" urlMapping="main" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;首页&quot;}" __cid="cz6RJZr"> 
+          <i xid="i5" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span6" __cid="cz6RJZr" class="cz6RJZr">首页</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider1" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item2" __cid="cz6RJZr"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="wirtBtn" urlMapping="writing" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;写作&quot;}" __cid="cz6RJZr"> 
+          <i xid="i6" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span7" __cid="cz6RJZr" class="cz6RJZr">写作</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider2" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item3" __cid="cz6RJZr"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="wordBtn" urlMapping="word" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;单词&quot;}" __cid="cz6RJZr"> 
+          <i xid="i7" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span8" __cid="cz6RJZr" class="cz6RJZr">单词</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider3" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item4" __cid="cz6RJZr"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="readBtn" urlMapping="read" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;阅读&quot;}" __cid="cz6RJZr"> 
+          <i xid="i8" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span9" __cid="cz6RJZr" class="cz6RJZr">阅读</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider4" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item5" __cid="cz6RJZr"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="listenBtn" urlMapping="listen" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;听力&quot;}" __cid="cz6RJZr"> 
+          <i xid="i9" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span10" __cid="cz6RJZr" class="cz6RJZr">听力</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider5" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item6" __cid="cz6RJZr"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="studyBtn" urlMapping="study" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;学习社区&quot;}" __cid="cz6RJZr"> 
+          <i xid="i10" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span11" __cid="cz6RJZr" class="cz6RJZr">学习社区</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider6" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item7" __cid="cz6RJZr"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="aboutBtn" urlMapping="about" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;关于我们&quot;}" __cid="cz6RJZr"> 
+          <i xid="i11" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span12" __cid="cz6RJZr" class="cz6RJZr">关于我们</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider7" __cid="cz6RJZr"/> 
+    </ul> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcB3em63-iosstatusbar cz6RJZr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cz6RJZr"> 
+    <div class="x-panel-top cz6RJZr" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cz6RJZr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cz6RJZr" xid="titleBar1" style="font-size:18px;background-color:#000000;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;英语学习&quot;}" __cid="cz6RJZr"> 
+        <div class="x-titlebar-left cz6RJZr" xid="left1" __cid="cz6RJZr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cz6RJZr" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cz6RJZr"> 
+            <i xid="i1" class="icon-chevron-left cz6RJZr" __cid="cz6RJZr"/>  
+            <span xid="span1" __cid="cz6RJZr" class="cz6RJZr"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cz6RJZr" xid="title1" __cid="cz6RJZr">英语学习</div>  
+        <div class="x-titlebar-right  cz6RJZr" xid="right1" __cid="cz6RJZr"> 
+          <div class="empty cz6RJZr" __cid="cz6RJZr"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cz6RJZr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cz6RJZr"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cz6RJZr" xid="row1" style="background-color:#68c398;height:49px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cz6RJZr"> 
+        <div class="x-col x-col-center cz6RJZr" xid="col1" __cid="cz6RJZr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="button2" style="color:#FFFFFF;font-size:18px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;英语角&quot;}" __cid="cz6RJZr"> 
+            <i xid="i2" __cid="cz6RJZr" class="cz6RJZr"/>  
+            <span xid="span2" __cid="cz6RJZr" class="cz6RJZr">英语角</span> 
+          </a> 
+        </div>  
+        <div class="x-col x-col-fixed cz6RJZr" xid="col2" style="width:auto;" __cid="cz6RJZr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cz6RJZr" xid="loginBtn" style="font-size:20px;color:#FFFFFF;height:38px;margin-top:-8px;" urlMapping="login" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;icon&quot;:&quot;icon-person&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cz6RJZr"> 
+            <i xid="i3" class="icon-person cz6RJZr" __cid="cz6RJZr"/>  
+            <span xid="span3" __cid="cz6RJZr" class="cz6RJZr"/> 
+          </a> 
+        </div>  
+        <div class="x-col x-col-fixed cz6RJZr" xid="col3" style="width:auto;" __cid="cz6RJZr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cz6RJZr" style="font-size:20px;color:#FFFFFF;height:38px;margin-top:-8px;" xid="menuBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:menuBtnClick" data-config="{&quot;icon&quot;:&quot;icon-drag&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cz6RJZr"> 
+            <i xid="i4" class="icon-drag cz6RJZr" __cid="cz6RJZr"/>  
+            <span xid="span4" __cid="cz6RJZr" class="cz6RJZr"/> 
+          </a> 
+        </div> 
+      </div>  
+      <img xmlns:xui="http://www.justep.com/xui" alt="" src="" style="width:100%;" xid="image1" xui:parent="content1" xui:update-mode="insert" __cid="cz6RJZr" class="cz6RJZr" data-bind="attr:{src:$model.getImageUrl('9.jpg')}"></img>  
+      <div xmlns:xui="http://www.justep.com/xui" class="titleCss cz6RJZr" xid="div3" xui:parent="content1" xui:update-mode="insert" __cid="cz6RJZr">敬请期待</div> 
+    </div>  
+    <style __cid="cz6RJZr" class="cz6RJZr">.x-panel.pcB3em63-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcB3em63-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcB3em63-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcB3em63-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcB3em63-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcB3em63-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcB3em63-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcB3em63-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcB3em63-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

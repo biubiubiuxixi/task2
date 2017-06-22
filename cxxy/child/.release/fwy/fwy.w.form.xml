@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="../parent/parent.w" __id="id_1" design="device:m;" class="window window cmyMvaa" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmyMvaa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style>.x-menu.cmyMvaa{min-width: 100px} .x-menu.cmyMvaa li.cmyMvaa a.cmyMvaa{color: rgb(31, 31, 31); font-size: 18px; text-align: center} .titleCss.cmyMvaa{background-color: rgba(0, 0, 0, 0.5); font-size: 16px; height: 40px; margin-top: -40px; color: rgb(255, 255, 255); z-index: 100; position: absolute; width: 100%; padding-top: 10px; padding-left: 20px} .x-nav.x-row.cmyMvaa, .x-nav.cmyMvaa .x-col.cmyMvaa{padding: 0; background-color: rgb(250, 250, 250)} .x-nav.cmyMvaa .x-col.cmyMvaa:nth-child(1){height: 41px; overflow: hidden} .x-nav.cmyMvaa .x-col.cmyMvaa:nth-child(2){width: 50px} .x-nav.cmyMvaa .x-col.cmyMvaa .x-navbox.cmyMvaa{height: 61px; overflow-x: scroll; overflow-y: hidden} .x-nav.cmyMvaa .x-col.cmyMvaa .x-navbox.cmyMvaa .x-list.cmyMvaa{width: auto !important; white-space: nowrap; text-overflow: ellipsis} .x-nav.cmyMvaa .btn.cmyMvaa{height: 41px; border-top: 0; font-weight: normal; color: rgb(153, 153, 153)} .x-nav.cmyMvaa .btn.current.cmyMvaa{height: 41px; border-bottom: 2px solid rgb(234, 65, 60); color: rgb(234, 65, 60)} .x-nav.cmyMvaa .navMoreBtn.cmyMvaa{background-color: rgb(225, 225, 225)} .x-popOver-overlay.cmyMvaa{background-color: rgb(0, 0, 0)} .x-popOver-content.cmyMvaa{border-radius: 0} .x-wangyiOver.cmyMvaa h5.cmyMvaa{padding-left: 15px} .x-wangyiOver.cmyMvaa .x-titlebar.cmyMvaa{height: 40px; background-color: rgb(241, 241, 241)} .x-wangyiOver.cmyMvaa .x-navGroup.cmyMvaa{padding-bottom: 0} .x-wangyiOver.cmyMvaa .x-navGroup.cmyMvaa .col-xs-3.cmyMvaa{padding-left: 3px; padding-right: 3px} .x-wangyiOver.cmyMvaa .x-navGroup.cmyMvaa .col-xs-3.cmyMvaa .btn.cmyMvaa{border-color: rgb(204, 204, 204); border-radius: 3px; margin-bottom: 10px; color: rgb(102, 102, 102); display: block} .x-wangyiOver.cmyMvaa .x-navGroup.cmyMvaa .col-xs-3.cmyMvaa .btn.active.cmyMvaa{border-color: red; background-color: rgb(234, 65, 60); color: rgb(255, 255, 255)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cmyMvaa" class="cmyMvaa"/>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cmyMvaa" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;menuBtn&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0}" __cid="cmyMvaa"> 
+    <div class="x-popMenu-overlay cmyMvaa" xid="div1" __cid="cmyMvaa"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cmyMvaa" xid="menu1" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cmyMvaa"> 
+      <li class="x-menu-item cmyMvaa" xid="item1" __cid="cmyMvaa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmyMvaa" xid="firstPage" urlMapping="main" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;首页&quot;}" __cid="cmyMvaa"> 
+          <i xid="i5" __cid="cmyMvaa" class="cmyMvaa"/>  
+          <span xid="span6" __cid="cmyMvaa" class="cmyMvaa">首页</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cmyMvaa" xid="divider1" __cid="cmyMvaa"/>  
+      <li class="x-menu-item cmyMvaa" xid="item2" __cid="cmyMvaa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmyMvaa" xid="wirtBtn" urlMapping="writing" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;师资培训&quot;}" __cid="cmyMvaa"> 
+          <i xid="i6" __cid="cmyMvaa" class="cmyMvaa"/>  
+          <span xid="span7" xui:update-mode="merge-and-replace" __cid="cmyMvaa" class="cmyMvaa">师资培训</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cmyMvaa" xid="divider2" __cid="cmyMvaa"/>  
+      <li class="x-menu-item cmyMvaa" xid="item3" __cid="cmyMvaa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmyMvaa" xid="wordBtn" urlMapping="word" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;联合科研&quot;}" __cid="cmyMvaa"> 
+          <i xid="i7" __cid="cmyMvaa" class="cmyMvaa"/>  
+          <span xid="span8" xui:update-mode="merge-and-replace" __cid="cmyMvaa" class="cmyMvaa">联合科研</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cmyMvaa" xid="divider3" __cid="cmyMvaa"/>  
+      <li class="x-menu-item cmyMvaa" xid="item4" __cid="cmyMvaa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmyMvaa" xid="readBtn" urlMapping="read" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;专业共建&quot;}" __cid="cmyMvaa"> 
+          <i xid="i8" __cid="cmyMvaa" class="cmyMvaa"/>  
+          <span xid="span9" xui:update-mode="merge-and-replace" __cid="cmyMvaa" class="cmyMvaa">专业共建</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cmyMvaa" xid="divider4" __cid="cmyMvaa"/>  
+      <li class="x-menu-item cmyMvaa" xid="item5" __cid="cmyMvaa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmyMvaa" xid="listenBtn" urlMapping="listen" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;学习论坛&quot;}" __cid="cmyMvaa"> 
+          <i xid="i9" __cid="cmyMvaa" class="cmyMvaa"/>  
+          <span xid="span10" xui:update-mode="merge-and-replace" __cid="cmyMvaa" class="cmyMvaa">学习论坛</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cmyMvaa" xid="divider5" __cid="cmyMvaa"/>  
+      <li class="x-menu-item cmyMvaa" xid="item6" __cid="cmyMvaa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmyMvaa" xid="studyBtn" urlMapping="study" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;考试认证&quot;}" __cid="cmyMvaa"> 
+          <i xid="i10" __cid="cmyMvaa" class="cmyMvaa"/>  
+          <span xid="span11" xui:update-mode="merge-and-replace" __cid="cmyMvaa" class="cmyMvaa">考试认证</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cmyMvaa" xid="divider6" __cid="cmyMvaa"/>  
+      <li class="x-menu-item cmyMvaa" xid="item7" __cid="cmyMvaa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmyMvaa" xid="aboutBtn" urlMapping="about" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;个人中心&quot;}" __cid="cmyMvaa"> 
+          <i xid="i11" __cid="cmyMvaa" class="cmyMvaa"/>  
+          <span xid="span12" xui:update-mode="merge-and-replace" __cid="cmyMvaa" class="cmyMvaa">个人中心</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cmyMvaa" xid="divider7" __cid="cmyMvaa"/> 
+    </ul> 
+  </div>  
+  <div class="x-popOver x-wangyiOver cmyMvaa" component="$model/UI2/system/components/justep/popOver/popOver" style="height:100%;" xid="popOver" xmlns:xui="http://www.justep.com/xui" xui:before="panel1" xui:parent="window" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;navMenuTop&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0.5}" __cid="cmyMvaa"> 
+    <div class="x-popOver-overlay cmyMvaa" xid="div2" __cid="cmyMvaa"/>  
+    <div class="x-full x-popOver-content panel cmyMvaa" xid="div4" __cid="cmyMvaa"> 
+      <a class="btn btn-link btn-only-icon pull-right cmyMvaa" component="$model/UI2/system/components/justep/button/button" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-up&quot;}" __cid="cmyMvaa"> 
+        <i class="text-muted icon-ios7-arrow-up cmyMvaa" xid="i51_8" __cid="cmyMvaa"/> 
+      </a>  
+      <h5 class="text-muted cmyMvaa" xid="h52_8" __cid="cmyMvaa">请选择</h5>  
+      <div bind-click="navLiClick" class="x-list o-nomargin x-navGroup panel-body cmyMvaa" component="$model/UI2/system/components/justep/list/list" dataItemAlias="navRow" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;navData&quot;}" __cid="cmyMvaa"> 
+        <ul class="x-list-template hide cmyMvaa" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element),as:'navRow'}" __cid="cmyMvaa"> 
+          <li class="col col-xs-3 cmyMvaa" xid="li1" __cid="cmyMvaa"> 
+            <div bind-css="{'active':navRow.val('fID')==$model.navData.val('fID')}" class="btn btn-link cmyMvaa" xid="div6_8" __cid="cmyMvaa"> 
+              <span bind-text="ref('fName')" xid="span1" __cid="cmyMvaa" class="cmyMvaa"/> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+  </div>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmE3Yvm-iosstatusbar cmyMvaa" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmyMvaa"> 
+    <div class="x-panel-top cmyMvaa" xid="top1" xmlns:xui="http://www.justep.com/xui" xui:before="content1" xui:parent="panel1" xui:update-mode="insert" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmyMvaa"> 
+      <div class="x-titlebar cmyMvaa" component="$model/UI2/system/components/justep/titleBar/titleBar" style="font-size:18px;background-color:#68c398;" xid="titleBar1111_6" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cmyMvaa"> 
+        <div class="x-titlebar-left cmyMvaa" xid="left1111_6" __cid="cmyMvaa"> 
+          <a class="btn btn-link btn-only-icon cmyMvaa" component="$model/UI2/system/components/justep/button/button" xid="button2111_6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cmyMvaa"> 
+            <i class="icon-chevron-left cmyMvaa" xid="i1111_6" __cid="cmyMvaa"/>  
+            <span xid="span1111_6" __cid="cmyMvaa" class="cmyMvaa"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cmyMvaa" xid="title1111_6" xui:update-mode="merge-and-replace" __cid="cmyMvaa"> 
+          <span xid="span1_6" __cid="cmyMvaa" class="cmyMvaa">项目案例</span> 
+        </div>  
+        <div class="x-titlebar-right  cmyMvaa" xid="right1111_6" __cid="cmyMvaa">
+          <div class="empty cmyMvaa" __cid="cmyMvaa"/>
+        </div> 
+      </div> 
+    </div>
+    <div class="x-panel-content cmyMvaa" xid="content1" _xid="C77F378195000001179FB7A013CCD2A0" style="bottom: 0px;" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmyMvaa"> 
+      <iframe height="100%" src="http://demo.wex5.com/netease/index.html?device=m" width="100%" xid="iframe11_7" xui:parent="content1" xui:update-mode="insert" __cid="cmyMvaa" class="cmyMvaa"/>
+    </div>  
+    <style __cid="cmyMvaa" class="cmyMvaa">.x-panel.pcmE3Yvm-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcmE3Yvm-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcmE3Yvm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmE3Yvm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmE3Yvm-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcmE3Yvm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmE3Yvm-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmE3Yvm-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmE3Yvm-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+</div>

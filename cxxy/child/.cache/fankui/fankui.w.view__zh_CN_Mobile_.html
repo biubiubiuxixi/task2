@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c3QbAre" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c3QbAre" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">p.c3QbAre{padding: 10px 15px; margin-bottom: 0px} .x-attachment-content.c3QbAre{border: 0}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c3QbAre" class="c3QbAre"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcFbaumq-iosstatusbar c3QbAre" xid="panel1" style="background-color:#F2F2F2;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c3QbAre"> 
+    <div class="x-panel-top c3QbAre" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3QbAre"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c3QbAre" xid="titleBar1" style="font-size:18px;background-color:#68c398;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="c3QbAre"> 
+        <div class="x-titlebar-left c3QbAre" xid="left1" __cid="c3QbAre"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c3QbAre" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;返回&quot;}" __cid="c3QbAre"> 
+            <i xid="i1" class="icon-chevron-left c3QbAre" __cid="c3QbAre"/>  
+            <span xid="span2" __cid="c3QbAre" class="c3QbAre">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c3QbAre" xid="title1" __cid="c3QbAre"> 
+          <span xid="span1" __cid="c3QbAre" class="c3QbAre">意见反馈</span> 
+        </div>  
+        <div class="x-titlebar-right  c3QbAre" xid="right1" __cid="c3QbAre"> 
+          <div class="empty c3QbAre" __cid="c3QbAre"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c3QbAre" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c3QbAre"> 
+      <div xid="div1" __cid="c3QbAre" class="c3QbAre"> 
+        <p xid="p1" style="font-size:medium;" __cid="c3QbAre" class="c3QbAre">问题和意见</p> 
+      </div>  
+      <textarea component="$model/UI2/system/components/justep/textarea/textarea" xid="suggestTextarea" class="form-control c3QbAre" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;请详细描述你的问题或建议。。。&quot;}" __cid="c3QbAre"/>  
+      <div xid="div2" __cid="c3QbAre" class="c3QbAre"> 
+        <p xid="p2" style="font-size:medium;" __cid="c3QbAre" class="c3QbAre">图片（选填，提供问题截图）</p> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple1" data-bind="component:{name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="c3QbAre" class="c3QbAre"> 
+        <div class="x-attachment c3QbAre" xid="div3" __cid="c3QbAre"> 
+          <div class="x-attachment-content x-card-border c3QbAre" xid="div4" __cid="c3QbAre"> 
+            <div class="x-doc-process c3QbAre" xid="div5" __cid="c3QbAre"> 
+              <div class="progress-bar x-doc-process-bar c3QbAre" role="progressbar" style="width:0%;" xid="progressBar1" __cid="c3QbAre"/> 
+            </div>  
+            <div data-bind="foreach:$attachmentItems" xid="div6" __cid="c3QbAre" class="c3QbAre"> 
+              <div class="x-attachment-cell c3QbAre" xid="div7" __cid="c3QbAre"> 
+                <div class="x-attachment-item x-item-other c3QbAre" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div8" __cid="c3QbAre"> 
+                  <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget c3QbAre" xid="a1" __cid="c3QbAre"/> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-attachment-cell c3QbAre" data-bind="visible:$state.get() == 'upload'" xid="div9" __cid="c3QbAre"> 
+              <div class="x-attachment-item x-item-upload c3QbAre" data-bind="visible:$state.get() == 'upload'" xid="div10" __cid="c3QbAre"/> 
+            </div>  
+            <div class="x-attachment-cell c3QbAre" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div11" __cid="c3QbAre"> 
+              <div class="x-attachment-item x-item-remove c3QbAre" data-bind="click:changeState.bind($object,'remove')" xid="div12" __cid="c3QbAre"/> 
+            </div>  
+            <div style="clear:both;" xid="div13" __cid="c3QbAre" class="c3QbAre"/> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div14" __cid="c3QbAre" class="c3QbAre"> 
+        <p xid="p3" style="font-size:medium;" __cid="c3QbAre" class="c3QbAre">邮箱</p> 
+      </div>  
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control c3QbAre" xid="emailInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;（选填，方便我们联系你）&quot;}" __cid="c3QbAre"/>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c3QbAre" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c3QbAre"> 
+        <div class="x-col c3QbAre" xid="col1" __cid="c3QbAre"/>  
+        <div class="x-col x-col-80 c3QbAre" xid="col2" __cid="c3QbAre"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-green btn-only-label btn-block c3QbAre" xid="submitBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="c3QbAre"> 
+            <i xid="i2" __cid="c3QbAre" class="c3QbAre"/>  
+            <span xid="span5" __cid="c3QbAre" class="c3QbAre">提交</span> 
+          </a> 
+        </div>  
+        <div class="x-col c3QbAre" xid="col3" __cid="c3QbAre"/> 
+      </div> 
+    </div>  
+    <style __cid="c3QbAre" class="c3QbAre">.x-panel.pcFbaumq-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcFbaumq-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcFbaumq-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcFbaumq-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFbaumq-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcFbaumq-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcFbaumq-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFbaumq-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcFbaumq-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

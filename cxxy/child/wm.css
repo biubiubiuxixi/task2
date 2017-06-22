@@ -1,0 +1,33 @@
+.titleCss{
+	background-color: rgba(0,0,0,0.5);
+	font-size: 16px;
+	height: 40px;
+	margin-top: -40px;
+	color: #fff;
+	z-index:100;
+	position: absolute;
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+/*导航 */
+.x-nav.x-row ,.x-nav .x-col{ padding:0; background-color:#fafafa;}
+.x-nav .x-col:nth-child(1){ height:41px; overflow:hidden;}
+.x-nav .x-col:nth-child(2){ width:50px;}
+.x-nav .x-col .x-navbox{ height:61px; overflow-x:scroll; overflow-y:hidden;/* position:relative;*/}
+.x-nav .x-col .x-navbox .x-list{ width:auto !important; white-space:nowrap; text-overflow:ellipsis; }/*position:absolute;*/
+.x-nav .btn{ height:41px; border-top:0; font-weight:normal; color:#999;}
+.x-nav .btn.current{ height:41px; border-bottom:2px solid #ea413c; color:#ea413c; }
+.x-nav .navMoreBtn{ background-color:#e1e1e1;}
+
+/*弹出栏目*/
+.x-popOver-overlay{ background-color:#000;}
+.x-popOver-content{ border-radius:0;}
+
+.x-wangyiOver h5{ padding-left:15px;}
+.x-wangyiOver .x-titlebar{ height:40px; background-color:#f1f1f1;}
+.x-wangyiOver .x-navGroup{ padding-bottom:0;}
+.x-wangyiOver .x-navGroup .col-xs-3{ padding-left:3px; padding-right:3px; }
+.x-wangyiOver .x-navGroup .col-xs-3 .btn{ border-color:#ccc; border-radius:3px; margin-bottom:10px; color:#666; display:block;}
+.x-wangyiOver .x-navGroup .col-xs-3 .btn.active{ border-color:red; background-color:#ea413c; color:#fff;}

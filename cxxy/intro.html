@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="./intro/swiper/dist/css/swiper.min.css"/>
+    <script type="text/javascript" src="./intro/swiper/dist/js/swiper.min.js"></script>
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #try {
+            vertical-align: middle;
+            display: table-cell;
+            height: auto;
+            width: auto;
+            max-width:50%;
+            position: relative;
+            top: -120px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<!-- Slider main container -->
+<div class="swiper-container" style="height:100%;">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="./intro/img/01.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="./intro/img/02.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="./intro/img/03.png"/>
+            <img src="./intro/img/try.png" id="try"></img>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: false,
+        pagination: '.swiper-pagination'
+    });
+    function closeIntroPage() {
+        /**
+         如果只需要引导页面出现一次就设置参数为false
+         如果需要每次都出现就不要设置
+         如果后续有需求需要再次显示引导页就 localStorage.removeItem('splashPage');
+         **/
+         
+         //	/x5app\/([0-9.]*)/.exec("x5app/5.3.2")
+		var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+		var x5Version = "notInApp";
+		if(x5AppAgents && x5AppAgents.length > 1){
+			x5Version = x5AppAgents[1];
+		}
+        localStorage.setItem(x5Version + 'introPage', 'false');
+        /**
+         通知首页关闭引导页
+         **/
+        window.parent.postMessage('introPageClose', '*');
+    }
+
+    document.getElementById('try').addEventListener('click', function () {
+        closeIntroPage();
+    }, false);
+
+
+    mySwiper.on('reachEnd', function (event) {
+        if (event.activeIndex == 2) {
+            closeIntroPage();
+        }
+    });
+</script>
+
+
+</body>
+</html>

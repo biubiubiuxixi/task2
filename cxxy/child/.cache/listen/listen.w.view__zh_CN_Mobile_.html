@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="../parent/parent.w" __id="id_1" design="device:m;" class="window window cz6RJZr" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cz6RJZr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="">.x-menu.cz6RJZr{min-width: 100px} .x-menu.cz6RJZr li.cz6RJZr a.cz6RJZr{color: rgb(31, 31, 31); font-size: 18px; text-align: center} .titleCss.cz6RJZr{background-color: rgba(0, 0, 0, 0.5); font-size: 16px; height: 40px; margin-top: -40px; color: rgb(255, 255, 255); z-index: 100; position: absolute; width: 100%; padding-top: 10px; padding-left: 20px}</style>  
+  <div xmlns="" xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cz6RJZr" class="cz6RJZr"></div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cz6RJZr" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;menuBtn&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0}" __cid="cz6RJZr"> 
+    <div class="x-popMenu-overlay cz6RJZr" xid="div1" __cid="cz6RJZr"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cz6RJZr" xid="menu1" style="width:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cz6RJZr"> 
+      <li class="x-menu-item cz6RJZr" xid="item1" __cid="cz6RJZr"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="firstPage" urlMapping="main" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;首页&quot;}" __cid="cz6RJZr"> 
+          <i xid="i5" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span6" __cid="cz6RJZr" class="cz6RJZr">首页</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider1" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item2" __cid="cz6RJZr"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="wirtBtn" urlMapping="writing" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;师资培训&quot;}" __cid="cz6RJZr">  
+          <i xid="i6" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span7" xui:update-mode="merge-and-replace" __cid="cz6RJZr" class="cz6RJZr">师资培训</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider2" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item3" __cid="cz6RJZr"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="wordBtn" urlMapping="word" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;联合科研&quot;}" __cid="cz6RJZr">  
+          <i xid="i7" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span8" xui:update-mode="merge-and-replace" __cid="cz6RJZr" class="cz6RJZr">联合科研</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider3" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item4" __cid="cz6RJZr"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="readBtn" urlMapping="read" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;专业共建&quot;}" __cid="cz6RJZr">  
+          <i xid="i8" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span9" xui:update-mode="merge-and-replace" __cid="cz6RJZr" class="cz6RJZr">专业共建</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider4" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item5" __cid="cz6RJZr"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="listenBtn" urlMapping="listen" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;学习论坛&quot;}" __cid="cz6RJZr">  
+          <i xid="i9" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span10" xui:update-mode="merge-and-replace" __cid="cz6RJZr" class="cz6RJZr">学习论坛</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider5" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item6" __cid="cz6RJZr"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="studyBtn" urlMapping="study" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;考试认证&quot;}" __cid="cz6RJZr">  
+          <i xid="i10" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span11" xui:update-mode="merge-and-replace" __cid="cz6RJZr" class="cz6RJZr">考试认证</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider6" __cid="cz6RJZr"/>  
+      <li class="x-menu-item cz6RJZr" xid="item7" __cid="cz6RJZr"> 
+        <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-link cz6RJZr" xid="aboutBtn" urlMapping="about" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;label&quot;:&quot;个人中心&quot;}" __cid="cz6RJZr">  
+          <i xid="i11" __cid="cz6RJZr" class="cz6RJZr"/>  
+          <span xid="span12" xui:update-mode="merge-and-replace" __cid="cz6RJZr" class="cz6RJZr">个人中心</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cz6RJZr" xid="divider7" __cid="cz6RJZr"/> 
+    </ul> 
+  </div>  
+  <div xmlns="" xmlns:xui="http://www.justep.com/xui" class="x-panel x-full pcB3em63-iosstatusbar cz6RJZr" component="$model/UI2/system/components/justep/panel/panel" xid="panel1" xui:parent="window" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cz6RJZr">  
+    <div class="x-panel-top cz6RJZr" xid="top1" xui:before="content1" xui:parent="panel1" xui:update-mode="insert" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cz6RJZr"> 
+      <div class="x-titlebar cz6RJZr" component="$model/UI2/system/components/justep/titleBar/titleBar" style="font-size:18px;background-color:#68c398;" xid="titleBar1" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cz6RJZr"> 
+        <div class="x-titlebar-left cz6RJZr" xid="left1" __cid="cz6RJZr"> 
+          <a class="btn btn-link btn-only-icon cz6RJZr" component="$model/UI2/system/components/justep/button/button" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cz6RJZr"> 
+            <i class="icon-chevron-left cz6RJZr" xid="i1" __cid="cz6RJZr"/>  
+            <span xid="span1" __cid="cz6RJZr" class="cz6RJZr"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cz6RJZr" xid="title1" xui:update-mode="merge-and-replace" __cid="cz6RJZr"> 
+          <span xid="span1_2" __cid="cz6RJZr" class="cz6RJZr">学习论坛</span> 
+        </div>  
+        <div class="x-titlebar-right  cz6RJZr" xid="right1" __cid="cz6RJZr"> 
+          <div class="empty cz6RJZr" __cid="cz6RJZr"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cz6RJZr" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cz6RJZr"> 
+      <div class="x-panel x-full pc7JNv63-iosstatusbar cz6RJZr" component="$model/UI2/system/components/justep/panel/panel" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cz6RJZr"> 
+        <div class="x-panel-top cz6RJZr" xid="top11_3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cz6RJZr"> 
+          <div class="x-row cz6RJZr" component="$model/UI2/system/components/justep/row/row" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cz6RJZr"> 
+            <div class="x-col cz6RJZr" xid="col1" __cid="cz6RJZr"/>  
+            <div class="x-col x-col-80 cz6RJZr" xid="col2" __cid="cz6RJZr"> 
+              <a class="btn x-green btn-block cz6RJZr" component="$model/UI2/system/components/justep/button/button" xid="submitBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-pencil&quot;,&quot;label&quot;:&quot;                  发表主题&quot;,&quot;target&quot;:&quot;content6&quot;}" __cid="cz6RJZr"> 
+                <i class="linear linear-pencil cz6RJZr" xid="i2" __cid="cz6RJZr"/>  
+                <span xid="span5" __cid="cz6RJZr" class="cz6RJZr">发表主题</span> 
+              </a> 
+            </div>  
+            <div class="x-col cz6RJZr" xid="col3" __cid="cz6RJZr"/> 
+          </div> 
+        </div>  
+        <div class="x-panel-content cz6RJZr" style="background-color:#f2f2f2;" xid="content3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cz6RJZr"> 
+          <div class="x-contents x-full cz6RJZr" component="$model/UI2/system/components/justep/contents/contents" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cz6RJZr"> 
+            <div class="x-contents-content x-scroll-view active cz6RJZr" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cz6RJZr"> 
+              <div class="x-scroll cz6RJZr" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;hScroll&quot;:false}" __cid="cz6RJZr"> 
+                <div class="x-content-center x-pull-down container cz6RJZr" xid="div3" __cid="cz6RJZr"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down cz6RJZr" xid="i31_2" __cid="cz6RJZr"/>  
+                  <span class="x-pull-down-label cz6RJZr" xid="span31_2" __cid="cz6RJZr">下拉刷新...</span> 
+                </div>  
+                <div class="x-scroll-content cz6RJZr" xid="div4" __cid="cz6RJZr"> 
+                  <div style="border-bottom:#ccc 1px solid;" xid="div11" __cid="cz6RJZr" class="cz6RJZr"/>  
+                  <div class="x-list cz6RJZr" component="$model/UI2/system/components/justep/list/list" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;replyData&quot;}" __cid="cz6RJZr"> 
+                    <ul class="x-list-template hide cz6RJZr" xid="listTemplateUl4" __cid="cz6RJZr" data-bind="foreach:{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}"> 
+                      <li xid="li3" __cid="cz6RJZr" class="cz6RJZr"> 
+                        <div class="x-row cz6RJZr" component="$model/UI2/system/components/justep/row/row" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cz6RJZr"> 
+                          <div class="x-col x-col-20 cz6RJZr" xid="col5" __cid="cz6RJZr"> 
+                            <img alt="" class="center-block cz6RJZr" src="" style="width:60%;" xid="image1" __cid="cz6RJZr" data-bind="attr:{src:$model.getImageUrl(val(&quot;userPhoto&quot;))}"/> 
+                          </div>  
+                          <div class="x-col cz6RJZr" xid="col12" __cid="cz6RJZr"> 
+                            <label xid="label1" __cid="cz6RJZr" class="cz6RJZr" data-bind="text:val(&quot;name&quot;)"/>  
+                            <div class="pull-right cz6RJZr" xid="div11_3" __cid="cz6RJZr"> 
+                              <i class="linear linear-earth cz6RJZr" xid="i4" __cid="cz6RJZr"/>  
+                              <span style="font-size:xx-small;" xid="span4" __cid="cz6RJZr" class="cz6RJZr" data-bind="text:val(&quot;praise&quot;)"/> 
+                            </div>  
+                            <div xid="div7" __cid="cz6RJZr" class="cz6RJZr" data-bind="text:val(&quot;content&quot;)"/>  
+                            <div class="x-list cz6RJZr" component="$model/UI2/system/components/justep/list/list" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;imgData&quot;,&quot;disableInfiniteLoad&quot;:true,&quot;disablePullToRefresh&quot;:true,&quot;filter&quot;:&quot;$row.val(\&quot;parentID\&quot;) === $object.val(\&quot;fID\&quot;)&quot;}" __cid="cz6RJZr"> 
+                              <ul class="x-list-template hide cz6RJZr" xid="listTemplateUl3" __cid="cz6RJZr" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+                                <li class="pull-left cz6RJZr" xid="li4" __cid="cz6RJZr"> 
+                                  <img style="margin-left:20px;" xid="image2" __cid="cz6RJZr" class="cz6RJZr" data-bind="attr:{src:$model.toUrl( $object)}"/> 
+                                </li> 
+                              </ul> 
+                            </div>  
+                            <div style="clear:both;margin-top:30px;margin-left:20px;" xid="div6" __cid="cz6RJZr" class="cz6RJZr" data-bind="text:val(&quot;time&quot;)"/> 
+                          </div> 
+                        </div>  
+                        <div style="border-bottom:#ccc 1px solid;" xid="div10" __cid="cz6RJZr" class="cz6RJZr"/> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div>  
+                <div class="x-content-center x-pull-up cz6RJZr" xid="div5" __cid="cz6RJZr"> 
+                  <span class="x-pull-up-label cz6RJZr" xid="span41_2" __cid="cz6RJZr">加载更多...</span> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content cz6RJZr" xid="content6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cz6RJZr"> 
+              <input class="form-control cz6RJZr" component="$model/UI2/system/components/justep/input/input" xid="titleInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入标题&quot;}" __cid="cz6RJZr"/>  
+              <div class="borde cz6RJZr" xid="div2_3" __cid="cz6RJZr"/>  
+              <textarea class="form-control cz6RJZr" component="$model/UI2/system/components/justep/textarea/textarea" xid="zhengwenTextarea" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;请输入正文&quot;}" __cid="cz6RJZr"/>  
+              <div class="borde cz6RJZr" xid="div191_3" __cid="cz6RJZr"/>  
+              <div xid="div2" __cid="cz6RJZr" class="cz6RJZr"> 
+                <p style="font-size:medium;" xid="p2" __cid="cz6RJZr" class="cz6RJZr">图片（选填）</p> 
+              </div>  
+              <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple1" data-bind="component:{name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;}" __cid="cz6RJZr" class="cz6RJZr"> 
+                <div class="x-attachment cz6RJZr" xid="div181_3" __cid="cz6RJZr"> 
+                  <div class="x-attachment-content x-card-border cz6RJZr" xid="div171_3" __cid="cz6RJZr"> 
+                    <div class="x-doc-process cz6RJZr" xid="div161_3" __cid="cz6RJZr"> 
+                      <div class="progress-bar x-doc-process-bar cz6RJZr" role="progressbar" style="width:0%;" xid="progressBar1" __cid="cz6RJZr"/> 
+                    </div>  
+                    <div data-bind="foreach:$attachmentItems" xid="div151_3" __cid="cz6RJZr" class="cz6RJZr"> 
+                      <div class="x-attachment-cell cz6RJZr" xid="div141_3" __cid="cz6RJZr"> 
+                        <div class="x-attachment-item x-item-other cz6RJZr" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div8" __cid="cz6RJZr"> 
+                          <a class="x-remove-barget cz6RJZr" data-bind="visible:$model.$state.get() == 'remove'" xid="a1" __cid="cz6RJZr"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-attachment-cell cz6RJZr" data-bind="visible:$state.get() == 'upload'" xid="div9" __cid="cz6RJZr"> 
+                      <div class="x-attachment-item x-item-upload cz6RJZr" data-bind="visible:$state.get() == 'upload'" xid="div121_3" __cid="cz6RJZr"/> 
+                    </div>  
+                    <div class="x-attachment-cell cz6RJZr" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div131_3" __cid="cz6RJZr"> 
+                      <div class="x-attachment-item x-item-remove cz6RJZr" data-bind="click:changeState.bind($object,'remove')" xid="div12" __cid="cz6RJZr"/> 
+                    </div>  
+                    <div style="clear:both;" xid="div13" __cid="cz6RJZr" class="cz6RJZr"/> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-row cz6RJZr" component="$model/UI2/system/components/justep/row/row" xid="row21_3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cz6RJZr"> 
+                <div class="x-col cz6RJZr" xid="col61_3" __cid="cz6RJZr"/>  
+                <div class="x-col x-col-80 cz6RJZr" xid="col41_3" __cid="cz6RJZr"> 
+                  <a class="btn x-green btn-only-label btn-block cz6RJZr" component="$model/UI2/system/components/justep/button/button" xid="button21_3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="cz6RJZr"> 
+                    <i xid="i81_3" __cid="cz6RJZr" class="cz6RJZr"/>  
+                    <span xid="span81_3" __cid="cz6RJZr" class="cz6RJZr">提交</span> 
+                  </a> 
+                </div>  
+                <div class="x-col cz6RJZr" xid="col51_3" __cid="cz6RJZr"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cz6RJZr" class="cz6RJZr">.x-panel.pc7JNv63-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pc7JNv63-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc7JNv63-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7JNv63-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7JNv63-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc7JNv63-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7JNv63-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7JNv63-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7JNv63-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+      </div> 
+    </div>  
+    <style __cid="cz6RJZr" class="cz6RJZr">.x-panel.pcB3em63-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcB3em63-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcB3em63-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcB3em63-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcB3em63-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcB3em63-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcB3em63-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcB3em63-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcB3em63-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

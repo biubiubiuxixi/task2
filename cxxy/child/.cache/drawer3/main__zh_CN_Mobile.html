@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%" class="no-js">  
+  <head xmlns=""> 
+    <meta charset="utf-8"/>  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes"/>  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>  
+    <meta name="format-detection" content="telephone=no"/>  
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>  
+    <script src="../../../v_3c30d4eb27f8438cb41c0012154d095bl_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"/>  
+    <script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>  
+    <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" &amp;&amp; (mode!="2") &amp;&amp; (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents &amp;&amp; x5AppAgents.length &gt; 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i &lt; version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i &lt;= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i&lt;items.length; i++){
+							if (mode == "3"){
+								if (items[i] &amp;&amp; (items[i].indexOf("v_") === 0) 
+										&amp;&amp; (items[i].indexOf("l_") !== -1)
+										&amp;&amp; (items[i].indexOf("s_") !== -1)
+										&amp;&amp; (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] &amp;&amp; (items[i].indexOf("v-")===0) &amp;&amp; (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&amp;" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&amp;url=" + path;
+						if (query)
+							url += "&amp;" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) &amp;&amp; (xhr.status == 200) &amp;&amp; xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async &amp;&amp; (xhr.status == 200) &amp;&amp; xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") &amp;&amp; window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo &amp;&amp; versionInfo.resourceInfo.version &amp;&amp; (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>  
+    <link rel="stylesheet" href="../../../v_ed15bd7501a8424881aba935c9b961cel_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"/>
+    <link rel="stylesheet" href="../../../v_2efb0e09f03c4edaa3c3484e0b41a818l_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/dataTables/css/dataTables,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"/>
+  </head>  
+  <body xmlns="" style="width:100%;height:100%;margin: 0;"> 
+    <script intro="none"/>  
+    <div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block">
+      <div xmlns:xui="http://www.justep.com/xui" xid="window" class="window cV3eau2" component="$model/UI2/system/components/justep/window/window" design="device:m;" style="width: 100%; height: 100%;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cV3eau2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+        <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cV3eau2" class="cV3eau2"/>  
+        <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cV3eau2" xid="controlGroup1" style="height:570px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;CSS教程&quot;}" __cid="cV3eau2"> 
+          <div class="x-control-group-title cV3eau2" xid="controlGroupTitle1" style="background-color:#FFFFFF;" __cid="cV3eau2"> 
+            <span xid="span1" __cid="cV3eau2" class="cV3eau2">CSS教程</span> 
+          </div>  
+          <div xid="oneDiv" style="height:33px;line-height:33px;" class="bg-info cV3eau2" __cid="cV3eau2" data-bind="event:{click:$model._callModelFn.bind($model, 'oneDivClick')}"> 
+            <span xid="span4" style="text-align:center;" __cid="cV3eau2" class="cV3eau2">CSS 背景</span> 
+          </div>  
+          <div xid="div6" style="height:auto;" __cid="cV3eau2" class="cV3eau2" data-bind="visible:$model.statusData.val(&quot;one&quot;)==1"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col1" __cid="cV3eau2"> 
+                <h4 xid="h41" __cid="cV3eau2" class="cV3eau2">背景色</h4>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row25" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+                  <div class="x-col cV3eau2" xid="col3" __cid="cV3eau2"> 
+                    <span xid="span2" __cid="cV3eau2" class="cV3eau2"> 
+                      <p __cid="cV3eau2" class="cV3eau2">可以使用 background-color 属性为元素设置背景色。这个属性接受任何合法的颜色值。</p>  
+                      <p __cid="cV3eau2" class="cV3eau2">这条规则把元素的背景设置为灰色：</p>  
+                      <pre __cid="cV3eau2" class="cV3eau2">p {background-color: gray;}</pre>  
+                      <p __cid="cV3eau2" class="cV3eau2">如果您希望背景色从元素中的文本向外少有延伸，只需增加一些内边距：</p>  
+                      <pre __cid="cV3eau2" class="cV3eau2">p {background-color: gray; padding: 20px;}</pre>  
+                      <p __cid="cV3eau2" class="cV3eau2">可以为所有元素设置背景色，这包括 body 一直到 em 和 a 等行内元素。</p>  
+                      <p __cid="cV3eau2" class="cV3eau2">background-color 不能继承，其默认值是 transparent。transparent 有“透明”之意。也就是说，如果一个元素没有指定背景色，那么背景就是透明的，这样其祖先元素的背景才能可见。</p> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col11" __cid="cV3eau2"> 
+                <h4 xid="h42" __cid="cV3eau2" class="cV3eau2">背景图像</h4>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row26" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+                  <div class="x-col cV3eau2" xid="col9" __cid="cV3eau2"> 
+                    <span xid="span35" __cid="cV3eau2" class="cV3eau2"> 
+                      <p __cid="cV3eau2" class="cV3eau2">要把图像放入背景，需要使用 background-image 属性。background-image 属性的默认值是 none，表示背景上没有放置任何图像。</p>  
+                      <p __cid="cV3eau2" class="cV3eau2">如果需要设置一个背景图像，必须为这个属性设置一个 URL 值：</p>  
+                      <pre __cid="cV3eau2" class="cV3eau2">body {background-image: url(/i/eg_bg_04.gif);}</pre>  
+                      <p __cid="cV3eau2" class="cV3eau2">大多数背景都应用到 body 元素，不过并不仅限于此。</p>  
+                      <p __cid="cV3eau2" class="cV3eau2">下面例子为一个段落应用了一个背景，而不会对文档的其他部分应用背景：</p>  
+                      <pre __cid="cV3eau2" class="cV3eau2">p.flower {background-image: url(/i/eg_bg_03.gif);}</pre>  
+                      <p __cid="cV3eau2" class="cV3eau2">您甚至可以为行内元素设置背景图像，下面的例子为一个链接设置了背景图像：</p>  
+                      <pre __cid="cV3eau2" class="cV3eau2">a.radio {background-image: url(/i/eg_bg_07.gif);}</pre>  
+                      <p __cid="cV3eau2" class="cV3eau2">理论上讲，甚至可以向 textareas 和 select 等替换元素的背景应用图像，不过并不是所有用户代理都能很好地处理这种情况。</p>  
+                      <p __cid="cV3eau2" class="cV3eau2">另外还要补充一点，background-image 也不能继承。事实上，所有背景属性都不能继承。</p> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col34" __cid="cV3eau2"> 
+                <h4 xid="h44" __cid="cV3eau2" class="cV3eau2">背景重复</h4>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row28" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+                  <div class="x-col cV3eau2" xid="col35" __cid="cV3eau2"> 
+                    <span xid="span37" __cid="cV3eau2" class="cV3eau2"> 
+                      <p __cid="cV3eau2" class="cV3eau2">如果需要在页面上对背景图像进行平铺，可以使用 background-repeat 属性。</p>  
+                      <p __cid="cV3eau2" class="cV3eau2">属性值 repeat 导致图像在水平垂直方向上都平铺，就像以往背景图像的通常做法一样。repeat-x 和 repeat-y 分别导致图像只在水平或垂直方向上重复，no-repeat 则不允许图像在任何方向上平铺。</p>  
+                      <p __cid="cV3eau2" class="cV3eau2">默认地，背景图像将从一个元素的左上角开始。请看下面的例子：</p>  
+                      <pre __cid="cV3eau2" class="cV3eau2">body { 
+                        <br __cid="cV3eau2" class="cV3eau2"/> background-image: url(/i/eg_bg_03.gif);
+                        <br __cid="cV3eau2" class="cV3eau2"/> background-repeat: repeat-y; 
+                        <br __cid="cV3eau2" class="cV3eau2"/>}
+                      </pre> 
+                    </span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="twoDiv" style="height:33px;line-height:33px;" class="bg-success cV3eau2" __cid="cV3eau2" data-bind="event:{click:$model._callModelFn.bind($model, 'twoDivClick')}"> 
+            <span xid="span9" style="text-align:center;" __cid="cV3eau2" class="cV3eau2">CSS 文本</span> 
+          </div>  
+          <div xid="div8" style="height:auto;" __cid="cV3eau2" class="cV3eau2" data-bind="visible:$model.statusData.val(&quot;two&quot;)==1"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col16" __cid="cV3eau2"> 
+                <span xid="span13" __cid="cV3eau2" class="cV3eau2"> 
+                  <h4 __cid="cV3eau2" class="cV3eau2">缩进文本</h4>  
+                  <p __cid="cV3eau2" class="cV3eau2">把 Web 页面上的段落的第一行缩进，这是一种最常用的文本格式化效果。</p>  
+                  <p __cid="cV3eau2" class="cV3eau2">CSS 提供了 text-indent 属性，该属性可以方便地实现文本缩进。</p>  
+                  <p __cid="cV3eau2" class="cV3eau2">通过使用 text-indent 属性，所有元素的第一行都可以缩进一个给定的长度，甚至该长度可以是负值。</p>  
+                  <p __cid="cV3eau2" class="cV3eau2">这个属性最常见的用途是将段落的首行缩进，下面的规则会使所有段落的首行缩进 5 em：</p>  
+                  <pre __cid="cV3eau2" class="cV3eau2">p {text-indent: 5em;}</pre> 
+                </span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col14" __cid="cV3eau2"> 
+                <span xid="span11" __cid="cV3eau2" class="cV3eau2"> 
+                  <h4 __cid="cV3eau2" class="cV3eau2">使用负值</h4>  
+                  <p __cid="cV3eau2" class="cV3eau2">text-indent 还可以设置为负值。利用这种技术，可以实现很多有趣的效果，比如“悬挂缩进”，即第一行悬挂在元素中余下部分的左边：</p>  
+                  <pre __cid="cV3eau2" class="cV3eau2">p {text-indent: -5em;}</pre>  
+                  <p __cid="cV3eau2" class="cV3eau2">不过在为 text-indent 设置负值时要当心，如果对一个段落设置了负值，那么首行的某些文本可能会超出浏览器窗口的左边界。为了避免出现这种显示问题，建议针对负缩进再设置一个外边距或一些内边距：</p>  
+                  <pre __cid="cV3eau2" class="cV3eau2">p {text-indent: -5em; padding-left: 5em;}</pre> 
+                </span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col15" __cid="cV3eau2"> 
+                <span xid="span12" __cid="cV3eau2" class="cV3eau2"> 
+                  <h4 __cid="cV3eau2" class="cV3eau2">使用百分比值</h4>  
+                  <p __cid="cV3eau2" class="cV3eau2">text-indent 可以使用所有长度单位，包括百分比值。</p>  
+                  <p __cid="cV3eau2" class="cV3eau2">百分数要相对于缩进元素父元素的宽度。换句话说，如果将缩进值设置为 20%，所影响元素的第一行会缩进其父元素宽度的 20%。</p>  
+                  <p __cid="cV3eau2" class="cV3eau2">在下例中，缩进值是父元素的 20%，即 100 个像素：</p>  
+                  <pre __cid="cV3eau2" class="cV3eau2">div {width: 500px;} 
+                    <br __cid="cV3eau2" class="cV3eau2"/> p {text-indent: 20%;} 
+                    <br __cid="cV3eau2" class="cV3eau2"/> &lt;div&gt; &lt;p&gt;this is a paragragh&lt;/p&gt; &lt;/div&gt;
+                  </pre> 
+                </span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col13" __cid="cV3eau2"> 
+                <span xid="span10" __cid="cV3eau2" class="cV3eau2"> 
+                  <h4 __cid="cV3eau2" class="cV3eau2">继承</h4>  
+                  <p __cid="cV3eau2" class="cV3eau2">text-indent 属性可以继承，请考虑如下标记：</p>  
+                  <pre __cid="cV3eau2" class="cV3eau2">div#outer {width: 500px;} 
+                    <br __cid="cV3eau2" class="cV3eau2"/> div#inner {text-indent: 10%;} 
+                    <br __cid="cV3eau2" class="cV3eau2"/> p {width: 200px;} 
+                    <br __cid="cV3eau2" class="cV3eau2"/> &lt;div id="outer"&gt; 
+                    <br __cid="cV3eau2" class="cV3eau2"/> &lt;div id="inner"&gt; 
+                    <br __cid="cV3eau2" class="cV3eau2"/> some text. some text. some text. 
+                    <br __cid="cV3eau2" class="cV3eau2"/> &lt;p&gt;this is a paragragh.&lt;/p&gt; 
+                    <br __cid="cV3eau2" class="cV3eau2"/> &lt;/div&gt; 
+                    <br __cid="cV3eau2" class="cV3eau2"/>&lt;/div&gt;
+                  </pre>  
+                  <p __cid="cV3eau2" class="cV3eau2">以上标记中的段落也会缩进 50 像素，这是因为这个段落继承了 id 为 inner 的 div 元素的缩进值。</p> 
+                </span> 
+              </div> 
+            </div> 
+          </div>  
+          <div xid="threeDiv" style="height:33px;line-height:33px;" class="bg-danger cV3eau2" __cid="cV3eau2" data-bind="event:{click:$model._callModelFn.bind($model, 'threeDivClick')}"> 
+            <span xid="span14" style="text-align:center;" __cid="cV3eau2" class="cV3eau2">CSS 字体</span> 
+          </div>  
+          <div xid="div10" style="height:auto;" __cid="cV3eau2" class="cV3eau2" data-bind="visible:$model.statusData.val(&quot;three&quot;)==1"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col19" __cid="cV3eau2"> 
+                <span xid="span18" __cid="cV3eau2" class="cV3eau2"> 
+                  <h4 __cid="cV3eau2" class="cV3eau2">CSS 字体系列</h4>  
+                  <p __cid="cV3eau2" class="cV3eau2">在 CSS 中，有两种不同类型的字体系列名称：</p>  
+                  <ul __cid="cV3eau2" class="cV3eau2"> 
+                    <li __cid="cV3eau2" class="cV3eau2">通用字体系列 - 拥有相似外观的字体系统组合（比如 "Serif" 或 "Monospace"）</li>  
+                    <li __cid="cV3eau2" class="cV3eau2">特定字体系列 - 具体的字体系列（比如 "Times" 或 "Courier"）</li> 
+                  </ul>  
+                  <p __cid="cV3eau2" class="cV3eau2">除了各种特定的字体系列外，CSS 定义了 5 种通用字体系列：</p>  
+                  <ul __cid="cV3eau2" class="cV3eau2"> 
+                    <li __cid="cV3eau2" class="cV3eau2">Serif 字体</li>  
+                    <li __cid="cV3eau2" class="cV3eau2">Sans-serif 字体</li>  
+                    <li __cid="cV3eau2" class="cV3eau2">Monospace 字体</li>  
+                    <li __cid="cV3eau2" class="cV3eau2">Cursive 字体</li>  
+                    <li __cid="cV3eau2" class="cV3eau2">Fantasy 字体</li> 
+                  </ul> 
+                </span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col17" __cid="cV3eau2"> 
+                <span xid="span16" __cid="cV3eau2" class="cV3eau2"> 
+                  <h4 __cid="cV3eau2" class="cV3eau2">指定字体系列</h4>  
+                  <p __cid="cV3eau2" class="cV3eau2">使用 font-family 属性 定义文本的字体系列。</p>  
+                  <h4 __cid="cV3eau2" class="cV3eau2">使用通用字体系列</h4>  
+                  <p __cid="cV3eau2" class="cV3eau2">如果你希望文档使用一种 sans-serif 字体，但是你并不关心是哪一种字体，以下就是一个合适的声明：</p>  
+                  <pre __cid="cV3eau2" class="cV3eau2">body {font-family: sans-serif;}</pre> 
+                </span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col20" __cid="cV3eau2"> 
+                <span xid="span15" __cid="cV3eau2" class="cV3eau2"> 
+                  <h4 __cid="cV3eau2" class="cV3eau2">指定字体系列</h4>  
+                  <p __cid="cV3eau2" class="cV3eau2">除了使用通用的字体系列，您还可以通过 font-family 属性设置更具体的字体。</p>  
+                  <p __cid="cV3eau2" class="cV3eau2">下面的例子为所有 h1 元素设置了 Georgia 字体：</p>  
+                  <pre __cid="cV3eau2" class="cV3eau2">h1 {font-family: Georgia;}</pre> 
+                </span> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cV3eau2" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cV3eau2"> 
+              <div class="x-col cV3eau2" xid="col18" __cid="cV3eau2"> 
+                <span xid="span17" __cid="cV3eau2" class="cV3eau2"> 
+                  <h4 __cid="cV3eau2" class="cV3eau2">使用引号</h4>  
+                  <p __cid="cV3eau2" class="cV3eau2">您也许已经注意到了，上面的例子中使用了单引号。只有当字体名中有一个或多个空格（比如 New York），或者如果字体名包括 # 或 $ 之类的符号，才需要在 font-family 声明中加引号。</p>  
+                  <p __cid="cV3eau2" class="cV3eau2">单引号或双引号都可以接受。但是，如果把一个 font-family 属性放在 HTML 的 style 属性中，则需要使用该属性本身未使用的那种引号：</p>  
+                  <pre __cid="cV3eau2" class="cV3eau2">&lt;p style="font-family: Times, TimesNR, 'New Century Schoolbook', Georgia, 'New York', serif;"&gt;...&lt;/p&gt;</pre> 
+                </span> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <div id="downloadGCF" style="display:none;padding:50px;"> 
+      <span>您使用的浏览器需要下载插件才能使用,</span>  
+      <a id="downloadGCFLink" href="#">下载地址</a>  
+      <p>(安装后请重新打开浏览器)</p> 
+    </div>  
+    <script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() &amp;&amp; (browser.getVersion() &lt; 10) &amp;&amp; !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>  
+    <script id="_metaJS" src="../../../v_5ddffbe871c7401884271b7ead5a94f5l_zh_CNs_d_m/system/config/meta.js"> </script>  
+    <script id="_requireJS" src="../../../v_d86aa7392e8a4c789136325b2093a032l_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>  
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_96b0d48dfa664407aa15f6e8a4189c48l_zh_CNs_d_m/system/core.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_af297838bab142cbb9a3e0200b609e4el_zh_CNs_d_m/system/common.min.js"></script>
+    <script xmlns:xhtml="http://www.w3.org/1999/xhtml" src="../../../v_d2bacaf5e9a74f6988abab4cc67e1553l_zh_CNs_d_m/system/components/comp.min.js"></script>
+    <script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &amp;&amp;
+                                    !(node.attachEvent.toString &amp;&amp; node.attachEvent.toString().indexOf('[native code') &lt; 0) &amp;&amp;
+                                    !(typeof opera !== 'undefined' &amp;&amp; opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url &amp;&amp; window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url &amp;&amp; window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&amp;&amp; (items[items.length-1].indexOf("l_") !== -1)
+    								&amp;&amp; (items[items.length-1].indexOf("s_") !== -1)
+    								&amp;&amp; (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls &amp;&amp; urls.length&gt;0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i&lt;urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("&lt;script  src='" + url + "'/&gt;");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles &amp;&amp; styles.length&gt;0){
+            				for (var i=0; i&lt;styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("&lt;link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/&gt;");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i&lt;items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] &amp;&amp; (items[i].indexOf("v_")===0)
+            								&amp;&amp; (items[i].indexOf("l_")!==-1)
+            								&amp;&amp; (items[i].indexOf("s_")!==-1)
+            								&amp;&amp; (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i&lt;loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl &amp;&amp; (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url &amp;&amp; (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i&lt;items.length; i++){
+								if ((i===items.length-2) &amp;&amp; (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i&gt;0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i&lt;scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_3da1e82c18da48d08e31c6d57804a498l_zh_CNs_d_m/cxxy/child',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_3da1e82c18da48d08e31c6d57804a498l_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_3da1e82c18da48d08e31c6d57804a498l_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_3da1e82c18da48d08e31c6d57804a498l_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_3da1e82c18da48d08e31c6d57804a498l_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_3da1e82c18da48d08e31c6d57804a498l_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator &amp;&amp; navigator.splashscreen &amp;&amp; navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/cxxy/child/drawer3.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow &amp;&amp; window.parent &amp;&amp; window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid &amp;&amp; pwindow 
+    						&amp;&amp; pwindow.__justep &amp;&amp; pwindow.__justep.windowOpeners
+    						&amp;&amp; pwindow.__justep.windowOpeners[ownerid]
+    						&amp;&amp; $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener &amp;&amp; winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script> 
+  </body> 
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cuaiUFz" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuaiUFz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.text-black.cuaiUFz{color: rgb(0, 0, 0)} .text-danger.cuaiUFz{color: rgb(234, 65, 60)} .x-titlebar.cuaiUFz{background-color: rgb(234, 65, 60); font-size: 16px} .panel-heading.cuaiUFz{border-color: rgb(239, 239, 239)} .img3.cuaiUFz{width: 50px; height: 50px} .x-nopadding.cuaiUFz{padding-left: 0; padding-right: 0} .input-group.cuaiUFz i.cuaiUFz{font-size: 24px} .input-group.cuaiUFz .input-group-addon.cuaiUFz{background-color: rgb(255, 255, 255); border: 0; border-radius: 0} .input-group.cuaiUFz .form-control.cuaiUFz{border: 0; border-radius: 0; color: rgb(153, 153, 153)} .input-group.cuaiUFz .form-control.cuaiUFz:focus{box-shadow: none; border-color: rgb(239, 239, 239)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cuaiUFz" class="cuaiUFz"></div>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar pcja6nau-iosstatusbar cuaiUFz" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuaiUFz"> 
+    <div class="x-panel-content panel-body cuaiUFz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuaiUFz"> 
+      <div xid="div1" class="list-group cuaiUFz" __cid="cuaiUFz"> 
+        <div class="list-group-item cuaiUFz" __cid="cuaiUFz"> 
+          <div class="input-group cuaiUFz" xid="div7" __cid="cuaiUFz"> 
+            <span class="input-group-addon cuaiUFz" xid="span2" __cid="cuaiUFz"> 
+              <i class="icon-ios7-contact cuaiUFz" __cid="cuaiUFz"/>  
+              <div component="$model/UI2/system/components/justep/output/output" class="x-output cuaiUFz" xid="idoutput1" bind-text="$model.regData.label(&quot;usrname&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cuaiUFz"/>
+            </span> 
+          </div> 
+        </div>  
+        <div class="list-group-item cuaiUFz" xid="div6" __cid="cuaiUFz"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuaiUFz" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuaiUFz"> 
+            <label class="x-label cuaiUFz" xid="label8" bind-text="$model.regData.label(&quot;usrname&quot;)" __cid="cuaiUFz"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cuaiUFz" xid="input6" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cuaiUFz"/>
+          </div>
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuaiUFz" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuaiUFz"> 
+            <label class="x-label cuaiUFz" xid="label1" bind-text="$model.regData.label(&quot;name&quot;)" __cid="cuaiUFz"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cuaiUFz" xid="nserName" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cuaiUFz"/>
+          </div>
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuaiUFz" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuaiUFz"> 
+            <label class="x-label cuaiUFz" xid="label9" bind-text="$model.regData.label(&quot;age&quot;)" __cid="cuaiUFz"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cuaiUFz" xid="input7" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;format&quot;:&quot;0,000&quot;}" __cid="cuaiUFz"/>
+          </div>
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuaiUFz" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuaiUFz"> 
+            <label class="x-label cuaiUFz" xid="label4" bind-text="$model.regData.label(&quot;sex&quot;)" __cid="cuaiUFz"/>  
+            <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cuaiUFz" xid="select2" bind-options="data3.datas" bind-optionsValue="'sex'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'}" __cid="cuaiUFz"/>
+          </div>
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuaiUFz" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuaiUFz"> 
+            <label class="x-label cuaiUFz" xid="label5" bind-text="$model.regData.label(&quot;email&quot;)" __cid="cuaiUFz"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cuaiUFz" xid="input3" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;format&quot;:&quot;0,000&quot;}" __cid="cuaiUFz"/>
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuaiUFz" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuaiUFz"> 
+            <label class="x-label cuaiUFz" xid="label6" bind-text="$model.regData.label(&quot;school&quot;)" __cid="cuaiUFz"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cuaiUFz" xid="input4" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;format&quot;:&quot;0,000&quot;}" __cid="cuaiUFz"/>
+          </div>  
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuaiUFz" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuaiUFz"> 
+            <label class="x-label cuaiUFz" xid="label7" bind-text="$model.regData.label(&quot;tel&quot;)" __cid="cuaiUFz"/>  
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cuaiUFz" xid="input5" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;format&quot;:&quot;0,000&quot;}" __cid="cuaiUFz"/>
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cuaiUFz" xid="row1" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cuaiUFz"> 
+        <div class="x-col  cuaiUFz" xid="col2" __cid="cuaiUFz">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-green btn-only-label cuaiUFz" xid="button2" style="width:125px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;提交&quot;}" __cid="cuaiUFz"> 
+            <i xid="i1" __cid="cuaiUFz" class="cuaiUFz"/>  
+            <span xid="span1" __cid="cuaiUFz" class="cuaiUFz">提交</span>
+          </a>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cuaiUFz" class="cuaiUFz">.x-panel.pcja6nau-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcja6nau-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcja6nau-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcja6nau-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcja6nau-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcja6nau-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcja6nau-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcja6nau-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcja6nau-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

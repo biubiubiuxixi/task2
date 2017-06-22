@@ -1,0 +1,38 @@
+[
+	{
+		"id":"1",
+		"title":"仿微店APP",
+		"summary":"这是WeX5移动应用开发工具开发的一个H5 App，功能仿微店。",
+		"image":"img/fwd.png"
+	},
+	{
+		"id":"2",
+		"title":"仿淘宝APP",
+		"summary":"这是WeX5的仿淘宝App应用，源码就在您下载的WeX5里。",
+		"image":"img/ftb.png"
+	},
+	{
+		"id":"3",
+		"title":"仿网易APP",
+		"summary":"这是WeX5的仿网易App应用，源码就在您下载的WeX5里。",
+		"image":"img/fwy.png"
+	},
+	{
+		"id":"4",
+		"title":"记账本APP",
+		"summary":"这是WeX5的记账本App应用，源码就在您下载的WeX5里。",
+		"image":"img/jzb.png"
+	},
+	{
+		"id":"5",
+		"title":"仿途牛APP",
+		"summary":"这是WeX5的仿途牛App应用，源码就在您下载的WeX5里。",
+		"image":"img/ftn.png"
+	},
+	{
+		"id":"6",
+		"title":"外卖APP",
+		"summary":"这是WeX5的外卖订餐App应用，源码就在您下载的WeX5里。",
+		"image":"img/wm.png"
+	}
+]

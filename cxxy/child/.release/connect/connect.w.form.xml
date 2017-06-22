@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xui="http://www.justep.com/xui" xid="window" class="window cVb222y" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVb222y" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-list-padding.cVb222y{padding-left: 60px; padding-right: 10px} .timeline.cVb222y{position: relative} .x-panel-content.cVb222y:before{content: ""; position: absolute; top: 10px; bottom: 0; width: 2px; background: rgb(175, 220, 248); left: 60px} .time.cVb222y{position: absolute; left: -50px; top: 10px} .timeline-image.cVb222y{position: absolute; height: 10px; width: 10px; left: -5px; top: 10px; border-radius: 50%; z-index: 100} .timeline-content.cVb222y{position: relative; border: 1px solid rgb(232, 232, 232); border-left: 0; padding-left: 15px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cVb222y" class="cVb222y"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcaEbqM3-iosstatusbar cVb222y" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVb222y"> 
+    <div class="x-panel-top cVb222y" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVb222y"> 
+      <div class="x-titlebar cVb222y" component="$model/UI2/system/components/justep/titleBar/titleBar" style="font-size:18px;background-color:#68c398;" xid="titleBar1" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;我的消息&quot;}" __cid="cVb222y"> 
+        <div class="x-titlebar-left cVb222y" xid="left1" __cid="cVb222y">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cVb222y" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVb222y"> 
+            <i xid="i1" class="icon-chevron-left cVb222y" __cid="cVb222y"/>  
+            <span xid="span1" __cid="cVb222y" class="cVb222y"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cVb222y" xid="title1" xui:update-mode="merge-and-replace" __cid="cVb222y">我的消息</div>  
+        <div class="x-titlebar-right  cVb222y" xid="right1" __cid="cVb222y">
+          <div class="empty cVb222y" __cid="cVb222y"/>
+        </div> 
+      </div> 
+    </div>
+    <div class="x-panel-content  x-scroll-view cVb222y" xid="content1" _xid="C6FB78EFFFC00001CA6F1FE07CB01429" style="bottom: 54px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVb222y"> 
+      <div class="x-scroll cVb222y" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cVb222y"> 
+        <div class="x-content-center x-pull-down container cVb222y" xid="div2" __cid="cVb222y"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cVb222y" xid="i4" __cid="cVb222y"/>  
+          <span class="x-pull-down-label cVb222y" xid="span5" __cid="cVb222y">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content cVb222y" xid="div5" __cid="cVb222y">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list x-list-padding cVb222y" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;timeData&quot;,&quot;limit&quot;:10}" __cid="cVb222y"> 
+            <ul class="x-list-template hide cVb222y" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cVb222y"> 
+              <li xid="li1" __cid="cVb222y" class="cVb222y">
+                <div xid="div4" class="timeline cVb222y" __cid="cVb222y">
+                  <div xid="div6" class="time cVb222y" __cid="cVb222y">
+                    <span xid="span3" bind-text="ref('time')" bind-style="{&quot;color&quot;: $model.changeColor( $object.val(&quot;id&quot;))}" __cid="cVb222y" class="cVb222y"/>
+                  </div>
+                  <div xid="div3" class="timeline-image cVb222y" bind-style="{&quot;background-color&quot;: $model.changeColor( $object.val(&quot;id&quot;))}" __cid="cVb222y"/>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row timeline-content cVb222y" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVb222y"> 
+                    <div class="x-col cVb222y" xid="col4" __cid="cVb222y">
+                      <span xid="span14" style="font-weight:bold;" bind-text="ref('title')" __cid="cVb222y" class="cVb222y"/>  
+                      <p xid="p1" style="font-size:x-small;" bind-text=" $object.val(&quot;content&quot;)" __cid="cVb222y" class="cVb222y"/>
+                    </div>  
+                    <div class="x-col x-col-10 x-col-center cVb222y" xid="col6" __cid="cVb222y">
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cVb222y" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cVb222y"> 
+                        <i xid="i3" class="icon-chevron-right cVb222y" __cid="cVb222y"/>  
+                        <span xid="span4" __cid="cVb222y" class="cVb222y"/>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up cVb222y" xid="div7" __cid="cVb222y"> 
+          <span class="x-pull-up-label cVb222y" xid="span6" __cid="cVb222y">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cVb222y" class="cVb222y">.x-panel.pcaEbqM3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcaEbqM3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcaEbqM3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcaEbqM3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaEbqM3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcaEbqM3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaEbqM3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaEbqM3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaEbqM3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

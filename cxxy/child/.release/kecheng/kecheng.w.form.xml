@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window czu2i6j" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czu2i6j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="czu2i6j" class="czu2i6j"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcURrIJf-iosstatusbar czu2i6j" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czu2i6j"> 
+    <div class="x-panel-top czu2i6j" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czu2i6j">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar czu2i6j" xid="titleBar1" style="font-size:18px;background-color:#68c398;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;全部课程&quot;}" __cid="czu2i6j"> 
+        <div class="x-titlebar-left czu2i6j" xid="left1" __cid="czu2i6j"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon czu2i6j" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;返回&quot;}" __cid="czu2i6j"> 
+            <i xid="i1" class="icon-chevron-left czu2i6j" __cid="czu2i6j"/>  
+            <span xid="span2" __cid="czu2i6j" class="czu2i6j">返回</span>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title czu2i6j" xid="title1" __cid="czu2i6j"> 
+          <span xid="span1" __cid="czu2i6j" class="czu2i6j"/>全部课程
+        </div>  
+        <div class="x-titlebar-right  czu2i6j" xid="right1" __cid="czu2i6j">
+          <div class="empty czu2i6j" __cid="czu2i6j"/>
+        </div>
+      </div>
+    </div>
+    <div class="x-panel-content czu2i6j" xid="content1" style="background-color:#f2f2f2;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czu2i6j"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJNviya-iosstatusbar czu2i6j" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czu2i6j"> 
+        <div class="x-panel-content czu2i6j" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czu2i6j">
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full czu2i6j" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="czu2i6j"> 
+            <div class="x-contents-content  x-scroll-view active czu2i6j" xid="content3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="czu2i6j"> 
+              <div class="x-scroll czu2i6j" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="czu2i6j"> 
+                <div class="x-content-center x-pull-down container czu2i6j" xid="div1" __cid="czu2i6j"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down czu2i6j" xid="i4" __cid="czu2i6j"/>  
+                  <span class="x-pull-down-label czu2i6j" xid="span4" __cid="czu2i6j">下拉刷新...</span>
+                </div>  
+                <div class="x-scroll-content czu2i6j" xid="div2" __cid="czu2i6j">
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list x-cards czu2i6j" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;bookData&quot;}" __cid="czu2i6j"> 
+                    <ul class="x-list-template hide czu2i6j" xid="listTemplateUl2" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="czu2i6j"> 
+                      <li xid="li2" __cid="czu2i6j" class="czu2i6j"> 
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row czu2i6j" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czu2i6j"> 
+                          <div class="x-col x-col-fixed czu2i6j" xid="col3" style="width:auto;" __cid="czu2i6j"> 
+                            <img src="" alt="" xid="image2" bind-attr-src=" $model.toUrl( val(&quot;photo&quot;))" style="height:106px;width:107px;" __cid="czu2i6j" class="czu2i6j"/>
+                          </div>  
+                          <div class="x-col czu2i6j" xid="col4" __cid="czu2i6j"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output czu2i6j" xid="output6" style="font-size:16px;font-weight:bold;" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czu2i6j"/>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output czu2i6j" xid="output5" bind-text="'主讲师：'+ val(&quot;teacher&quot;)" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="czu2i6j"/>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output czu2i6j" xid="output4" bind-text="'总课时：'+ val(&quot;time&quot;)+'课时'" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="czu2i6j"/>
+                          </div> 
+                        </div>  
+                        <div xid="div6" style="border-bottom: 1px #ccc solid;" __cid="czu2i6j" class="czu2i6j"/>
+                      </li> 
+                    </ul> 
+                  </div>
+                </div>  
+                <div class="x-content-center x-pull-up czu2i6j" xid="div3" __cid="czu2i6j"> 
+                  <span class="x-pull-up-label czu2i6j" xid="span5" __cid="czu2i6j">加载更多...</span>
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content  x-scroll-view czu2i6j" xid="content4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="czu2i6j"> 
+              <div class="x-scroll czu2i6j" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="czu2i6j"> 
+                <div class="x-content-center x-pull-down container czu2i6j" xid="div4" __cid="czu2i6j"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down czu2i6j" xid="i5" __cid="czu2i6j"/>  
+                  <span class="x-pull-down-label czu2i6j" xid="span6" __cid="czu2i6j">下拉刷新...</span>
+                </div>  
+                <div class="x-scroll-content czu2i6j" xid="div5" __cid="czu2i6j">
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list x-cards czu2i6j" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;bookData&quot;}" __cid="czu2i6j"> 
+                    <ul class="x-list-template hide czu2i6j" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="czu2i6j"> 
+                      <li xid="li1" __cid="czu2i6j" class="czu2i6j"> 
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row czu2i6j" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czu2i6j"> 
+                          <div class="x-col x-col-fixed czu2i6j" xid="col2" style="width:auto;" __cid="czu2i6j"> 
+                            <img src="" alt="" xid="image1" bind-attr-src=" $model.toUrl( val(&quot;photo&quot;))" style="height:106px;width:107px;" __cid="czu2i6j" class="czu2i6j"/>
+                          </div>  
+                          <div class="x-col czu2i6j" xid="col1" __cid="czu2i6j"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output czu2i6j" xid="output2" style="font-size:16px;font-weight:bold;" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czu2i6j"/>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output czu2i6j" xid="output3" data-bind="component:{ref:ref('author'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czu2i6j"/>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output czu2i6j" xid="output1" data-bind="component:{ref:ref('categrey'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czu2i6j"/>
+                          </div> 
+                        </div> 
+                      </li> 
+                    </ul> 
+                  </div>
+                </div>  
+                <div class="x-content-center x-pull-up czu2i6j" xid="div7" __cid="czu2i6j"> 
+                  <span class="x-pull-up-label czu2i6j" xid="span7" __cid="czu2i6j">加载更多...</span>
+                </div> 
+              </div>
+            </div>  
+            <div class="x-contents-content  x-scroll-view czu2i6j" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="czu2i6j"> 
+              <div class="x-scroll czu2i6j" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView3" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="czu2i6j"> 
+                <div class="x-content-center x-pull-down container czu2i6j" xid="div8" __cid="czu2i6j"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down czu2i6j" xid="i6" __cid="czu2i6j"/>  
+                  <span class="x-pull-down-label czu2i6j" xid="span8" __cid="czu2i6j">下拉刷新...</span>
+                </div>  
+                <div class="x-scroll-content czu2i6j" xid="div9" __cid="czu2i6j">
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list x-cards czu2i6j" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;bookData&quot;}" __cid="czu2i6j"> 
+                    <ul class="x-list-template hide czu2i6j" xid="listTemplateUl3" bind-foreach="{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}" __cid="czu2i6j"> 
+                      <li xid="li3" __cid="czu2i6j" class="czu2i6j"> 
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row czu2i6j" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="czu2i6j"> 
+                          <div class="x-col x-col-fixed czu2i6j" xid="col6" style="width:auto;" __cid="czu2i6j"> 
+                            <img src="" alt="" xid="image3" bind-attr-src=" $model.toUrl( val(&quot;photo&quot;))" style="height:106px;width:107px;" __cid="czu2i6j" class="czu2i6j"/>
+                          </div>  
+                          <div class="x-col czu2i6j" xid="col5" __cid="czu2i6j"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output czu2i6j" xid="output8" style="font-size:16px;font-weight:bold;" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czu2i6j"/>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output czu2i6j" xid="output9" data-bind="component:{ref:ref('author'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czu2i6j"/>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output czu2i6j" xid="output7" data-bind="component:{ref:ref('categrey'),name:'$model/UI2/system/components/justep/output/output'}" __cid="czu2i6j"/>
+                          </div> 
+                        </div> 
+                      </li> 
+                    </ul> 
+                  </div>
+                </div>  
+                <div class="x-content-center x-pull-up czu2i6j" xid="div10" __cid="czu2i6j"> 
+                  <span class="x-pull-up-label czu2i6j" xid="span9" __cid="czu2i6j">加载更多...</span>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>  
+        <style __cid="czu2i6j" class="czu2i6j">.x-panel.pcJNviya-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcJNviya-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcJNviya-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJNviya-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJNviya-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcJNviya-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJNviya-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJNviya-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJNviya-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div>
+    <style __cid="czu2i6j" class="czu2i6j">.x-panel.pcURrIJf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcURrIJf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcURrIJf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcURrIJf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcURrIJf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcURrIJf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcURrIJf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcURrIJf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcURrIJf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

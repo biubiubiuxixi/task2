@@ -1,0 +1,17 @@
+[
+	{
+		"id":"1",
+		"title":"js核心技术大揭秘",
+		"theme":"javascript/jquery",
+		"starttime":"2017.08.09",
+		"stoptime":"2018.08.09",
+		"site":"杭州各地",
+		"summary":"通过一年的学习，掌握网站前端开发，数据库开发，后台开发的主要技术，运用所学的知识开发出交互性强、外观酷炫的综合型动态网站",
+		"prepare":"html语言",
+		"oldprice":"2000",
+		"newprice":"1500",
+		"name":"某某高校",
+		"hour":"100",
+		"img":"img/szjs.jpg"
+	}
+]

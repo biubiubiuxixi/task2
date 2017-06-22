@@ -1,0 +1,12 @@
+.titleCss{
+	background-color: rgba(0,0,0,0.5);
+	font-size: 16px;
+	height: 40px;
+	margin-top: -40px;
+	color: #fff;
+	z-index:100;
+	position: absolute;
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 20px;
+}

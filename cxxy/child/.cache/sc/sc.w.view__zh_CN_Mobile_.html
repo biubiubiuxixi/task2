@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="x-purpose window x-full-screen container-fluid main13 cmyYvI3" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmyYvI3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cmyYvI3{background-color: rgb(250, 250, 250)} .img6.cmyYvI3{width: 24px} .img1.cmyYvI3{width: 100%; height: 100px} .text-white.cmyYvI3{color: rgb(255, 255, 255)} .container-fluid.cmyYvI3{padding: 0} .x-purpose.cmyYvI3 .col-xs-9.cmyYvI3, .x-purpose.cmyYvI3 .col-xs-3.cmyYvI3{margin: 0; padding: 0} .x-purpose.cmyYvI3 .x-list.cmyYvI3{height: 100%; overflow-y: scroll} .x-purpose.cmyYvI3 .panel-heading.cmyYvI3{border-bottom-color: rgb(225, 225, 225); padding-left: 0; padding-right: 0} .x-purpose.cmyYvI3 .panel-body.cmyYvI3{padding-top: 10px; padding-bottom: 0} .x-purpose.cmyYvI3 .panel.cmyYvI3{border-radius: 0} .x-purpose.cmyYvI3 .x-active.cmyYvI3{background-color: rgb(51, 189, 97); color: rgb(255, 255, 255)} .x-purpose.cmyYvI3 .x-active.cmyYvI3 .panel-heading.cmyYvI3{border-bottom-color: rgb(51, 189, 97)} .x-purpose.cmyYvI3 .x-block.cmyYvI3{position: relative; margin-bottom: 10px; background: url(@justepContextPath@/v_49b7c6ced9734742ad1d93e96bfce105l_zh_CNs_d_m/cxxy/child/img/loading.jpg) no-repeat; filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')"; -moz-background-size: 100% 100%; background-size: 100% 100%} .x-purpose.cmyYvI3 .x-block.cmyYvI3 h5.cmyYvI3{display: block; width: 100%; line-height: 30px; margin: 0; position: absolute; left: 0; bottom: 0; background-color: rgb(51, 51, 51); opacity: 0.8} .o-box.cmyYvI3, .o-box.cmyYvI3 &gt; .col.cmyYvI3{height: 100%; margin: 0; padding: 0} .o-box.cmyYvI3 &gt; .col.cmyYvI3{overflow: auto}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cmyYvI3" class="cmyYvI3"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcrQfUby-iosstatusbar cmyYvI3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmyYvI3"> 
+    <div class="x-panel-content cmyYvI3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmyYvI3"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row o-box cmyYvI3" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cmyYvI3"> 
+        <div class="col col-xs-3 panel cmyYvI3" xid="col1" __cid="cmyYvI3"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cmyYvI3" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;placeOneData&quot;}" __cid="cmyYvI3"> 
+            <ul xid="listTemplateUl4" class="x-list-template hide cmyYvI3" __cid="cmyYvI3" data-bind="foreach:{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}"> 
+              <li xid="li3" class="text-center panel-body cmyYvI3" __cid="cmyYvI3" data-bind="css:{'x-active':val('fID')==data.val('fID')}"> 
+                <div class="panel-heading cmyYvI3" xid="div2" __cid="cmyYvI3"> 
+                  <a __cid="cmyYvI3" class="cmyYvI3"> 
+                    <img src="" alt="" class="img6 cmyYvI3" xid="image1" __cid="cmyYvI3" data-bind="attr:{src:$model.getLeftImageUrl($object)}"/> 
+                  </a>  
+                  <div xid="div3" __cid="cmyYvI3" class="cmyYvI3" data-bind="text:ref('fTitle')"/> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="col col-xs-9 cmyYvI3" xid="col4" __cid="cmyYvI3"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list panel-body cmyYvI3" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;placeTwoData&quot;,&quot;filter&quot;:&quot;$row.val(\&quot;fOneID\&quot;)==$model.comp('placeOneData').val(\&quot;fID\&quot;)&quot;}" __cid="cmyYvI3"> 
+            <ul xid="listTemplateUl3" class="x-list-template hide cmyYvI3" __cid="cmyYvI3" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)},event:{click:$model._callModelFn.bind($model, 'listClick')}"> 
+              <li xid="li4" class="text-center x-block cmyYvI3" __cid="cmyYvI3" data-bind="event:{click:$model._callModelFn.bind($model, 'li4Click')}"> 
+                <a __cid="cmyYvI3" class="cmyYvI3"> 
+                  <h5 xid="h52" class="text-white cmyYvI3" __cid="cmyYvI3" data-bind="text:ref('fTitle')"/> 
+                </a>  
+                <img alt="" xid="image32" class="img-responsive img1 cmyYvI3" __cid="cmyYvI3" data-bind="attr:{src:$model.getImageUrl(val(&quot;fImg&quot;))}"/> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cmyYvI3" class="cmyYvI3">.x-panel.pcrQfUby-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcrQfUby-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcrQfUby-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcrQfUby-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrQfUby-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcrQfUby-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrQfUby-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrQfUby-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrQfUby-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xui="http://www.justep.com/xui" xmlns:xu="http://www.xmldb.org/xupdate" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cRJFvui" class="cRJFvui" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div xid="model" xui:update-mode="delete" __cid="cRJFvui" class="cRJFvui"/>  
+  <div xid="popMenu" xui:update-mode="delete" __cid="cRJFvui" class="cRJFvui"/>  
+  <div xid="panel1" xui:update-mode="delete" __cid="cRJFvui" class="cRJFvui"/>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" xui:update-mode="insert" xui:parent="window" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cRJFvui" class="cRJFvui"/>  
+  <div class="x-panel x-full pczYRfqu-iosstatusbar cRJFvui" component="$model/UI2/system/components/justep/panel/panel" xid="panel1" xui:update-mode="insert" xui:parent="window" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRJFvui"> 
+    <div class="x-panel-top cRJFvui" xid="top1" xui:before="content1" xui:parent="panel1" xui:update-mode="insert" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRJFvui"> 
+      <div class="x-titlebar cRJFvui" component="$model/UI2/system/components/justep/titleBar/titleBar" style="font-size:18px;background-color:#68c398;" xid="titleBar1" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cRJFvui"> 
+        <div class="x-titlebar-left cRJFvui" xid="left1" __cid="cRJFvui"> 
+          <a class="btn btn-link btn-only-icon cRJFvui" component="$model/UI2/system/components/justep/button/button" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cRJFvui"> 
+            <i class="icon-chevron-left cRJFvui" xid="i1" __cid="cRJFvui"/>  
+            <span xid="span1" __cid="cRJFvui" class="cRJFvui"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cRJFvui" xid="title1" xui:update-mode="merge-and-replace" __cid="cRJFvui"/>  
+        <div class="x-titlebar-right  cRJFvui" xid="right1" __cid="cRJFvui">
+          <div class="empty cRJFvui" __cid="cRJFvui"/>
+        </div> 
+      </div> 
+    </div>  
+    <div _xid="C6FC2BE8FFA00001367512C113C05AE0" class="x-panel-content cRJFvui" style="bottom: 0px;" xid="content1" xui:update-mode="merge" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRJFvui"> 
+      <div class="x-panel x-full pciuUFBr-iosstatusbar cRJFvui" component="$model/UI2/system/components/justep/panel/panel" xid="panel11" xui:parent="content1" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRJFvui"> 
+        <div class="x-panel-content cRJFvui" xid="content11" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRJFvui"> 
+          <div xid="div11" __cid="cRJFvui" class="cRJFvui"> 
+            <div style="position:absolute;" xid="div2" __cid="cRJFvui" class="cRJFvui"> 
+              <div id="mediaspace_wrapper" style="position: relative; display: block; width: 938px; height: 520px;" xid="div3" __cid="cRJFvui" class="cRJFvui"> 
+                <object bgcolor="#000000" data="//webkk.chuanke.com/player/player_enc.swf" height="100%" id="mediaspace" name="mediaspace" tabindex="0" type="application/x-shockwave-flash" width="100%" xid="default1" __cid="cRJFvui" class="cRJFvui"> 
+                  <param name="allowfullscreen" value="true" xid="default2" __cid="cRJFvui" class="cRJFvui"> 
+                    <param name="allowscriptaccess" value="always" xid="default3" __cid="cRJFvui" class="cRJFvui"> 
+                      <param name="seamlesstabbing" value="true" xid="default4" __cid="cRJFvui" class="cRJFvui"> 
+                        <param name="wmode" value="opaque" xid="default5" __cid="cRJFvui" class="cRJFvui"> 
+                          <param name="flashvars" value="netstreambasepath=https%3A%2F%2Fchuanke.baidu.com%2Fv1018455-83680-112225.html&amp;flashplayer=%2F%2Fwebkk.chuanke.com%2Fplayer%2Fplayer_enc.swf&amp;anthology=true&amp;uid=0&amp;seekheader=true&amp;quickseek=true&amp;icons=true&amp;controlbar=over&amp;bufferlength=3&amp;type=http&amp;streamer=start&amp;autostart=true&amp;id=mediaspace&amp;base=https%3A%2F%2Fchuanke.baidu.com%2F&amp;file=%2F%3Fmod%3Dvideo%26act%3Dplay%26do%3Dfile%26sf%3Dbd%26id%3D0%26key1%3De47017da086147aec4e0388e4bf3535c%26pv%3D0%26ts%3D1492933624%26key%3Da0264989c631e1c4989e493afa3a91bf" xid="default6" __cid="cRJFvui" class="cRJFvui"/> 
+                        </param> 
+                      </param> 
+                    </param> 
+                  </param> 
+                </object>  
+                <div id="mediaspace_aspect" style="display: none;" xid="div4" __cid="cRJFvui" class="cRJFvui"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <style __cid="cRJFvui" class="cRJFvui">.x-panel.pciuUFBr-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pciuUFBr-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pciuUFBr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pciuUFBr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciuUFBr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pciuUFBr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciuUFBr-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciuUFBr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciuUFBr-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+      </div> 
+    </div>  
+    <style __cid="cRJFvui" class="cRJFvui">.x-panel.pczYRfqu-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pczYRfqu-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pczYRfqu-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pczYRfqu-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczYRfqu-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pczYRfqu-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczYRfqu-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczYRfqu-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczYRfqu-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

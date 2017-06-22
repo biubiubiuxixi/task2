@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xui="http://www.justep.com/xui" class="main13 ceEze2y" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceEze2y" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.ceEze2y{background-color: rgb(250, 250, 250)} .tb-user.ceEze2y{height: 150px; background-color: rgb(240, 240, 240)} .tb-user.ceEze2y .btn.ceEze2y{width: 100px; margin: 60px 5px 0 5px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ceEze2y" class="ceEze2y"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card x-has-iosstatusbar pcuiUVZv-iosstatusbar ceEze2y" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceEze2y"> 
+    <div class="x-panel-top ceEze2y" xid="top1" xui:before="content11_4" xui:parent="panel11_4" xui:update-mode="insert" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceEze2y"> 
+      <div class="x-titlebar ceEze2y" component="$model/UI2/system/components/justep/titleBar/titleBar" style="font-size:18px;background-color:#68c398;" xid="titleBar111" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="ceEze2y"> 
+        <div class="x-titlebar-left ceEze2y" xid="left111" __cid="ceEze2y"> 
+          <a class="btn btn-link btn-only-icon ceEze2y" component="$model/UI2/system/components/justep/button/button" xid="button211" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ceEze2y"> 
+            <i class="icon-chevron-left ceEze2y" xid="i111" __cid="ceEze2y"/>  
+            <span xid="span111" __cid="ceEze2y" class="ceEze2y"/>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ceEze2y" xid="title111" xui:update-mode="merge-and-replace" __cid="ceEze2y"/>  
+        <div class="x-titlebar-right  ceEze2y" xid="right111" __cid="ceEze2y">
+          <div class="empty ceEze2y" __cid="ceEze2y"/>
+          <a class="btn btn-link btn-only-icon ceEze2y" component="$model/UI2/system/components/justep/button/button" style="color:#FFFFFF;" urlMapping="login" xid="button1121" xui:parent="right111" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;icon&quot;:&quot;icon-person&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ceEze2y"> 
+            <i class="icon-person ceEze2y" xid="i41121" __cid="ceEze2y"/>  
+            <span xid="span41121" __cid="ceEze2y" class="ceEze2y"/>
+          </a>
+          <a class="btn btn-link btn-only-icon ceEze2y" component="$model/UI2/system/components/justep/button/button" style="color:#FFFFFF;" urlMapping="connect" xid="button111" xui:parent="right111" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:openDemo" data-config="{&quot;icon&quot;:&quot;icon-ios7-email&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ceEze2y"> 
+            <i class="icon-ios7-email ceEze2y" xid="i1121" __cid="ceEze2y"/>  
+            <span xid="span1121" __cid="ceEze2y" class="ceEze2y"/>
+          </a>
+          <a class="btn btn-link btn-only-icon ceEze2y" component="$model/UI2/system/components/justep/button/button" style="color:#FFFFFF;" xid="button2121" xui:parent="right111" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:menuBtnClick" data-config="{&quot;icon&quot;:&quot;icon-drag&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ceEze2y"> 
+            <i class="icon-drag ceEze2y" xid="i51121" __cid="ceEze2y"/>  
+            <span xid="span51121" __cid="ceEze2y" class="ceEze2y"/>
+          </a>
+        </div> 
+      </div> 
+    </div>
+    <div xid="div28" class="text-center tb-user ceEze2y" __cid="ceEze2y"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success ceEze2y" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;登录&quot;}" __cid="ceEze2y"> 
+        <i xid="i17" __cid="ceEze2y" class="ceEze2y"/>  
+        <span xid="span42" __cid="ceEze2y" class="ceEze2y">登录</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning ceEze2y" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="ceEze2y"> 
+        <i xid="i18" __cid="ceEze2y" class="ceEze2y"/>  
+        <span xid="span43" __cid="ceEze2y" class="ceEze2y">注册</span> 
+      </a> 
+    </div>
+    <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified ceEze2y" xid="buttonGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="ceEze2y"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ceEze2y" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chatbubble-working&quot;,&quot;label&quot;:&quot;同团聊&quot;}" __cid="ceEze2y"> 
+        <i xid="i13" class="icon-chatbubble-working icon text-muted ceEze2y" __cid="ceEze2y"/>  
+        <span xid="span38" class="text-muted ceEze2y" __cid="ceEze2y">同团聊</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ceEze2y" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-document&quot;,&quot;label&quot;:&quot;我的订单&quot;}" __cid="ceEze2y"> 
+        <i xid="i14" class="icon-document icon text-muted ceEze2y" __cid="ceEze2y"/>  
+        <span xid="span39" class="text-muted ceEze2y" __cid="ceEze2y">我的订单</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ceEze2y" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-bag&quot;,&quot;label&quot;:&quot;商城&quot;}" __cid="ceEze2y"> 
+        <i xid="i15" class="icon-bag icon text-muted ceEze2y" __cid="ceEze2y"/>  
+        <span xid="span40" class="text-muted ceEze2y" __cid="ceEze2y">商城</span> 
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ceEze2y" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-star-outline&quot;,&quot;label&quot;:&quot;我的收藏&quot;}" __cid="ceEze2y"> 
+        <i xid="i16" class="icon-ios7-star-outline icon text-muted ceEze2y" __cid="ceEze2y"/>  
+        <span xid="span41" class="text-muted ceEze2y" __cid="ceEze2y">我的收藏</span> 
+      </a> 
+    </div>  
+    <ul class="list-group x-tuniu ceEze2y" xid="ul1" __cid="ceEze2y"> 
+      <li class="list-group-item ceEze2y" xid="li1" __cid="ceEze2y">我的小金库
+        <span class="pull-right text-muted ceEze2y" xid="span1" __cid="ceEze2y">抵用卷、旅游卷
+          <i xid="i6" class="icon-ios7-arrow-forward ceEze2y" __cid="ceEze2y"/> 
+        </span>  
+        <i xid="i7" class="icon-ios7-box-outline ceEze2y" __cid="ceEze2y"/> 
+      </li>  
+      <li class="list-group-item ceEze2y" xid="li2" __cid="ceEze2y">会员俱乐部
+        <span class="pull-right text-muted ceEze2y" xid="span2" __cid="ceEze2y">活动、权益
+          <i xid="i8" class="icon-ios7-arrow-forward ceEze2y" __cid="ceEze2y"/> 
+        </span>  
+        <i xid="i9" class="icon-social-reddit-outline ceEze2y" __cid="ceEze2y"/> 
+      </li>  
+      <li class="list-group-item ceEze2y" xid="li3" __cid="ceEze2y">活动
+        <span class="pull-right text-muted ceEze2y" xid="span3" __cid="ceEze2y">抢购、红包、夺宝
+          <i xid="i10" class="icon-ios7-arrow-forward ceEze2y" __cid="ceEze2y"/> 
+        </span>  
+        <i xid="i11" class="icon-ios7-cart-outline ceEze2y" __cid="ceEze2y"/> 
+      </li>  
+      <li class="list-group-item ceEze2y" xid="li4" __cid="ceEze2y">资料管家
+        <span class="pull-right text-muted ceEze2y" xid="span4" __cid="ceEze2y">个人资料、常旅资料
+          <i xid="i12" class="icon-ios7-arrow-forward ceEze2y" __cid="ceEze2y"/> 
+        </span>  
+        <i xid="i20" class="icon-android-storage ceEze2y" __cid="ceEze2y"/> 
+      </li>  
+      <li class="list-group-item ceEze2y" xid="li5" __cid="ceEze2y">牛拉牛
+        <span class="pull-right text-muted ceEze2y" xid="span5" __cid="ceEze2y"> 
+          <i xid="i21" class="icon-ios7-arrow-forward ceEze2y" __cid="ceEze2y"/> 
+        </span>  
+        <i xid="i22" class="icon-social-freebsd-devil ceEze2y" __cid="ceEze2y"/> 
+      </li>  
+      <li class="list-group-item ceEze2y" xid="li6" __cid="ceEze2y">社区
+        <span class="pull-right text-muted ceEze2y" xid="span6" __cid="ceEze2y">抵用卷、旅游卷
+          <i xid="i23" class="icon-ios7-arrow-forward ceEze2y" __cid="ceEze2y"/> 
+        </span>  
+        <i xid="i24" class="icon-ios7-people-outline ceEze2y" __cid="ceEze2y"/> 
+      </li>  
+      <li class="list-group-item ceEze2y" xid="li7" __cid="ceEze2y">其它
+        <span class="pull-right text-muted ceEze2y" xid="span7" __cid="ceEze2y"> 
+          <i xid="i25" class="icon-ios7-arrow-forward ceEze2y" __cid="ceEze2y"/> 
+        </span>  
+        <i xid="i19" class="icon-ios7-more-outline ceEze2y" __cid="ceEze2y"/> 
+      </li> 
+    </ul>  
+    <style __cid="ceEze2y" class="ceEze2y">.x-panel.pcuiUVZv-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcuiUVZv-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcuiUVZv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuiUVZv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuiUVZv-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcuiUVZv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuiUVZv-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuiUVZv-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuiUVZv-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

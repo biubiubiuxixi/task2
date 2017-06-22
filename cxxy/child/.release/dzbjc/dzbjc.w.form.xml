@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cZNNjyu" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZNNjyu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cZNNjyu" class="cZNNjyu"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcjMNVNr-iosstatusbar cZNNjyu" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cZNNjyu"> 
+    <div class="x-panel-content  x-scroll-view cZNNjyu" xid="content1" _xid="C77BB012ACF000012385FDC81350A740" style="bottom: 0px; top: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cZNNjyu"> 
+      <div class="x-scroll cZNNjyu" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cZNNjyu"> 
+        <div class="x-content-center x-pull-down container cZNNjyu" xid="div1" __cid="cZNNjyu"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cZNNjyu" xid="i1" __cid="cZNNjyu"/>  
+          <span class="x-pull-down-label cZNNjyu" xid="span1" __cid="cZNNjyu">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content cZNNjyu" xid="div2" __cid="cZNNjyu"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cZNNjyu" xid="row2" style="margin-bottom:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZNNjyu"> 
+            <div class="x-col cZNNjyu" xid="col2" bind-click="col2Click" __cid="cZNNjyu">
+              <div xid="div3" style="margin-right:15px;margin-left:15px;box-shadow:2px 4px 6px #8fbc8f;text-align:center;" __cid="cZNNjyu" class="cZNNjyu">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cZNNjyu" xid="bookBtn" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/cxxy/img/wex5zj.png&quot;,&quot;label&quot;:&quot;wex5中级教程&quot;}" __cid="cZNNjyu"> 
+                  <i xid="i3" __cid="cZNNjyu" class="cZNNjyu"/>  
+                  <img src="$model/UI2/cxxy/img/wex5zj.png" xid="image2" style="width:90%;" height="95%" __cid="cZNNjyu" class="cZNNjyu"/>
+                  <span xid="span4" style="font-size:x-large;font-family:MS PGothic;color:#400000;" __cid="cZNNjyu" class="cZNNjyu">WeX5中级教程</span>
+                </a>
+              </div>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cZNNjyu" xid="row1" style="margin-bottom:20px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cZNNjyu"> 
+            <div class="x-col cZNNjyu" xid="col1" bind-click="col1Click" __cid="cZNNjyu"> 
+              <div xid="div4" style="margin-right:15px;margin-left:15px;box-shadow:2px 4px 6px #8fbc8f;text-align:center;" __cid="cZNNjyu" class="cZNNjyu"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cZNNjyu" xid="button1" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/cxxy/img/htmls.png&quot;,&quot;label&quot;:&quot;Head First HTML与CSS、XHTML&quot;}" __cid="cZNNjyu"> 
+                  <i xid="i2" __cid="cZNNjyu" class="cZNNjyu"/>  
+                  <img src="$model/UI2/cxxy/img/htmls.png" xid="image1" style="width:90%;" height="95%" __cid="cZNNjyu" class="cZNNjyu"/>  
+                  <span xid="span2" style="font-size:large;font-family:MS PGothic;color:#400000;" __cid="cZNNjyu" class="cZNNjyu">Head First HTML与CSS、XHTML</span>
+                </a> 
+              </div> 
+            </div> 
+          </div>
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cZNNjyu" class="cZNNjyu">.x-panel.pcjMNVNr-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcjMNVNr-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcjMNVNr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcjMNVNr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjMNVNr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcjMNVNr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjMNVNr-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjMNVNr-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjMNVNr-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cv2yMna" class="cv2yMna" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cv2yMna" class="cv2yMna"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvmmEFb-iosstatusbar cv2yMna" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cv2yMna"> 
+    <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cv2yMna" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cv2yMna"> 
+      <div class="x-contents-content active cv2yMna" xid="content1" style="background-image: url($model/UI2/cxxy/child/img/loginbg4.jpg);" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cv2yMna"> 
+        <div xid="div1" style="margin:10px 50px 0px 50px;height:20px;" align="center" __cid="cv2yMna" class="cv2yMna"/>
+        <div class="form-vertical cv2yMna" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cv2yMna">
+          <div xid="div12" class="form-group cv2yMna" style="margin-right:auto;margin-left:auto;width:95%;" __cid="cv2yMna"> 
+            <label xid="label4" class="sr-only cv2yMna" __cid="cv2yMna">用户名</label>  
+            <div xid="div14" class="input-group cv2yMna" __cid="cv2yMna">
+              <div xid="div15" class="input-group-addon cv2yMna" __cid="cv2yMna">
+                <span class="glyphicon glyphicon-user cv2yMna" __cid="cv2yMna"/>
+              </div>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cv2yMna" xid="username" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;autoFocus&quot;:true,&quot;placeHolder&quot;:&quot;请输入姓名&quot;}" __cid="cv2yMna"/>
+            </div>
+          </div>
+          <div xid="div13" class="form-group cv2yMna" style="margin-right:auto;margin-left:auto;width:95%;" __cid="cv2yMna"> 
+            <label xid="label5" class="sr-only cv2yMna" __cid="cv2yMna">密码</label>  
+            <div xid="div16" class="input-group cv2yMna" __cid="cv2yMna">
+              <div xid="div17" class="input-group-addon cv2yMna" __cid="cv2yMna">
+                <span class="glyphicon glyphicon-pencil cv2yMna" __cid="cv2yMna"/> 
+              </div>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cv2yMna" xid="input1" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;autoFocus&quot;:true,&quot;placeHolder&quot;:&quot;请输入准考证号&quot;}" __cid="cv2yMna"/>
+            </div>
+          </div>
+        </div>
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cv2yMna" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cv2yMna"> 
+          <div class="x-col cv2yMna" xid="col10" style="text-align:center;" __cid="cv2yMna">
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success btn-block cv2yMna" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;成绩查询&quot;}" __cid="cv2yMna"> 
+              <i xid="i1" __cid="cv2yMna" class="cv2yMna"/>  
+              <span xid="span1" __cid="cv2yMna" class="cv2yMna">成绩查询</span>
+            </a> 
+          </div> 
+        </div> 
+      </div>
+    </div>
+    <style __cid="cv2yMna" class="cv2yMna">.x-panel.pcvmmEFb-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcvmmEFb-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcvmmEFb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvmmEFb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvmmEFb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcvmmEFb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvmmEFb-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvmmEFb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvmmEFb-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

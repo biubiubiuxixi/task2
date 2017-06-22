@@ -1,0 +1,8 @@
+.x-menu{
+	min-width: 100px;
+}
+.x-menu li a{
+	color:#1f1f1f;
+	font-size:18px;
+	text-align: center;
+}
